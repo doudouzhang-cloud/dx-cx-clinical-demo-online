@@ -1,5 +1,11 @@
-# CX / DX 临床实验在线演示
+# CX / DX 临床实验与预约在线演示
 
-V0.9.46 静态 HTML 演示。患者与排班为虚构数据，不连接真实医疗业务。
+V0.10.0，与已确认的 DeepTrace 预约 V2 版本一致。
 
-在线地址：https://doudouzhang-cloud.github.io/dx-cx-clinical-demo-online/
+[打开在线演示](https://doudouzhang-cloud.github.io/dx-cx-clinical-demo-online/?v=0.10.0)
+
+预约入口：患者管理 → 预约申请 → 双端预约演示。
+
+支持门诊与住院申请、医生审核与日期协调、患者确认、号量管理、取消规则和双端通知。保留科研九步流程。
+
+患者与排班为虚构数据；语音、电话和提醒为模拟功能，不连接真实医疗业务。演示状态只在当前页面保留，刷新后重置。下载 index.html 后也可用浏览器打开。
