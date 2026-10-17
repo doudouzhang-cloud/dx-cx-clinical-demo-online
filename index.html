@@ -295,6 +295,300 @@ body{margin:0;background:#f7f8fa}.dx-shell{display:grid;grid-template-columns:22
 
 .guide-mode-toolbar{width:100%;padding:12px 0}.guide-mode-label{display:flex;align-items:center;gap:14px;font-weight:700;color:#355b73}.guide-mode-label select{min-width:230px}.guide-mode-panel{border-bottom:1px solid #dce8f1;padding-bottom:18px;margin-bottom:22px}.guide-mode-panel label{display:block;font-size:14px;margin-bottom:12px}.guide-mode-panel select{display:block;width:100%;min-width:0;margin-top:8px;padding:10px;border:1px solid #ccdeeb;border-radius:9px;background:#f7fbff;color:#31546c;font-size:14px}.guide-mode-panel small{display:block;color:#7a90a4;line-height:1.7}.av-doctor-heading{flex-wrap:wrap}.av-doctor-heading>div{flex:1 0 100%}.av-doctor-heading>button{white-space:nowrap}
 .guide-mode-toolbar select{padding:10px 14px;border:1px solid #cbdfea;border-radius:9px;background:#f7fbff;color:#31546c;font:inherit;min-height:42px}.guide-mode-toolbar{order:-1}
+
+/* Match the reference guide's typography and operation cards. */
+.guide-mode-toolbar{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.guide-mode-toolbar>label{display:flex;align-items:center;gap:12px;font-size:14px;color:#355b73;font-weight:700}
+.dx-workspace .research-stage .guide{padding:20px 14px;border-radius:17px;box-shadow:0 12px 28px #254c7008}
+.research-stage .guide .stage-guide-kicker{font-size:12px;letter-spacing:0;color:#7990a5}
+.research-stage .guide h2{font-size:20px;line-height:30px;color:#21465e;margin:10px 0 8px}
+.research-stage .guide h3{font-size:16px;line-height:25.6px;color:#315b89;margin:26px 0 14px}
+.research-stage .guide p,.research-stage .guide li{font-size:14px;line-height:25.9px;color:#36566e}
+.research-stage .guide .stage-phase{display:block;padding:0;border:0;margin:14px 0;font-size:14px;line-height:25.9px;color:#36566e}
+.research-stage .guide .stage-steps{display:block;margin:0;padding:0}
+.research-stage .guide .stage-steps>li{display:block;padding:14px 12px;border:2px solid transparent;border-radius:12px;margin:0 0 14px;background:transparent;box-shadow:none}
+.research-stage .guide .stage-steps>li.current-operation{background:#edf5ff;border-color:#438cd3;box-shadow:none}
+.research-stage .guide .stage-steps b{font-size:14px;line-height:25.9px;color:#254b68}
+.research-stage .guide .stage-steps p{margin:0;line-height:25.9px}
+.research-stage .guide .stage-outcome{display:block;margin:10px 0 0;padding:10px 12px;font-size:14px;line-height:25.9px;color:#285b86;background:#e3effc;border-radius:8px}
+.research-stage .guide .stage-gate{border:0;padding:0;margin:18px 0}
+.research-stage .guide .stage-gate>b{display:none}
+.research-stage .guide .stage-gate p{background:transparent;padding:0;margin:0 0 8px;color:#36566e}
+.research-stage .guide .demo-step-actions{border:0;padding:0;margin-top:26px}
+.research-stage .guide .demo-step-actions>details>summary{font-size:16px;line-height:25.6px;color:#315b89}
+.research-stage .guide .demo-reset-card{background:transparent;border:0;padding:0;margin-top:14px}
+.research-stage .guide .demo-reset-card h4{display:none}
+.research-stage .guide .demo-reset-card p{font-size:13px;line-height:24px;margin:0 0 10px}
+.research-stage .guide .demo-reset-card button{background:#fff!important;border:1px solid #d6e3ec!important;color:#2e526d!important;font-size:15px;font-weight:650;line-height:24px;padding:10px 16px;border-radius:10px;box-shadow:none}
+.research-stage .guide .guide-preview-note{font-size:13px;color:#7990a5}
+
+/* Restore the original step bar; guide mode lives in the guide header. */
+.dx-clinical-toolbar .unified-guide-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:14px;padding:16px 20px 14px;border:0;border-bottom:1px solid #deecee;background:#ffffffeb;border-radius:17px 17px 0 0;width:100%;box-sizing:border-box}
+.dx-clinical-toolbar .unified-guide-toolbar>label{display:flex;flex-direction:row;align-items:center;gap:12px;font-size:12px;font-weight:600;color:#466477;white-space:nowrap;margin:0}
+.dx-clinical-toolbar .unified-guide-toolbar select{width:412px;max-width:100%;height:40px;padding:8px 12px;margin:0;font-size:16px;font-weight:600;line-height:1.4;color:#254b63;background:#f7fbff;border:1px solid #d2e3f1;border-radius:6px;box-shadow:none;box-sizing:border-box}
+.guide-toolbar-actions{display:flex;gap:10px;flex-wrap:wrap}
+.dx-clinical-toolbar .guide-toolbar-actions button{height:40px;margin:0;padding:9px 16px;border-radius:11px;font-size:16px;font-weight:650;line-height:20px;white-space:nowrap;background:white;color:#0d827a;border:1px solid #9bd7d1;box-shadow:none}
+.dx-clinical-toolbar .guide-toolbar-actions button:first-child{background:#108a82;border-color:#108a82;color:white;box-shadow:0 4px 9px #108a821c}
+.dx-clinical-toolbar .unified-guide-toolbar>small{width:100%;margin:0;font-size:11px;color:#809397;line-height:1.5}
+.guide-header-row{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}
+.guide-header-row .stage-guide-kicker{flex:1;min-width:130px}
+.guide-header-row .guide-mode-label{margin:0 0 0 auto;display:block}
+.guide-header-row .guide-mode-label select{width:160px;min-width:0;height:30px;padding:4px 8px;border:1px solid #d2e3f1;border-radius:6px;background:#f7fbff;color:#31546c;font-family:inherit;font-size:12px;font-weight:600}
+@media(max-width:1050px){.dx-clinical-toolbar .unified-guide-toolbar{padding:14px 12px}.dx-clinical-toolbar .unified-guide-toolbar>label{flex:1 1 100%}.dx-clinical-toolbar .unified-guide-toolbar select{flex:1;min-width:0;width:auto}}
+
+/* 307 visual language: warm apricot patient surfaces, calm blue clinical surfaces. */
+.av-patient{--av-accent:#b97e58;--av-line:#efdfd2;--av-soft:#fcf5ee;color:#4c413b;font-size:14px;line-height:1.7}
+.av-doctor{--av-accent:#2876ae;--av-line:#dce8f0;--av-soft:#eef5fb;color:#28485e;font-size:14px;line-height:1.7}
+.av-patient .card,.av-doctor .card{border-radius:20px;border:1px solid var(--av-line);box-shadow:0 5px 18px #263f5410;margin:16px 0;padding:20px;background:#fff}
+.av-patient .av-form{padding:0;border:0;box-shadow:none;background:transparent}
+.av-patient .av-back{width:auto;margin:0 0 14px;padding:7px 0;border:0;background:transparent;box-shadow:none;color:#957159;font-size:13px}
+.av-form-heading{padding:20px 22px;border:1px solid #efdfd2;background:linear-gradient(120deg,#fffaf6,#f8e8d9);border-radius:20px;margin-bottom:20px}
+.av-form-heading small{font-size:12px;color:#9c765b;letter-spacing:.04em}
+.av-patient .av-form-heading h2{font-size:24px;line-height:1.4;margin:8px 0;color:#674b38}
+.av-form-heading p{font-size:13px;color:#947b69;margin:6px 0 0;line-height:1.7}
+.av-form-section{background:#fff;border:1px solid #efdfd2;border-radius:18px;padding:18px;margin:16px 0;box-shadow:0 4px 14px #a77d5510}
+.av-patient .av-form-section h3{display:flex;align-items:center;gap:10px;font-size:16px;color:#59473a;margin:0 0 18px;line-height:1.5}
+.av-form-section h3>span{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#f9eadd;color:#b47a52;font-size:12px}
+.av-form-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.av-patient .field,.av-doctor .field{display:flex;flex-direction:column;gap:8px;margin:14px 0;font-size:13px;font-weight:600;color:#6b7681;line-height:1.5}
+.av-patient .field{color:#816b5c}
+.av-patient .field input,.av-patient .field select,.av-patient .field textarea,.av-doctor .field input,.av-doctor .field select,.av-doctor .field textarea{display:block;width:100%;min-width:0;min-height:46px;padding:11px 13px;box-sizing:border-box;border:1px solid var(--av-line);border-radius:12px;background:#fbfcfd;font-family:inherit;font-size:14px;font-weight:400;line-height:1.5;color:#304b5d;outline:none}
+.av-patient .field input,.av-patient .field select,.av-patient .field textarea{background:#fffdfa;color:#594a3f}
+.av-patient .field textarea,.av-doctor .field textarea{min-height:105px;resize:vertical}
+.av-patient :is(input,select,textarea):focus-visible,.av-doctor :is(input,select,textarea,button):focus-visible{border-color:var(--av-accent);outline:3px solid #aac9e044;outline-offset:2px}
+.av-calendar{padding:0;border:0;border-radius:0}
+.av-calendar .row{margin-bottom:14px}
+.av-calendar .row b{font-size:16px;color:#594a3f}
+.av-calendar .row button{width:32px;height:32px;padding:0;background:#faf4ed;border:1px solid #f0e3d7;border-radius:10px;color:#ad7c55;font-size:22px;box-shadow:none}
+.av-week{font-size:12px;color:#a58d7c;margin:10px 0}
+.av-days{gap:6px}
+.av-patient .av-days button{min-height:49px;padding:7px 0;background:#fcf6ef;color:#966b48;border-radius:11px;font-size:14px;line-height:1.2;border:1px solid #f5eade;box-shadow:none}
+.av-days button small{font-size:10px;margin-top:4px;color:inherit}
+.av-patient .av-days button:disabled{background:#f6f7f8;border-color:transparent;color:#b4b9bd;opacity:1}
+.av-patient .av-days button.selected{background:#be855d;color:#fff;border-color:#be855d;box-shadow:0 3px 8px #be855d33}
+.av-selected{font-size:13px;color:#ae764f;background:#fcf6ef;padding:9px 12px;border-radius:10px;margin:14px 0}
+.av-patient button.primary{min-height:48px;border-radius:13px;background:linear-gradient(110deg,#cf9d70,#b77b53)!important;border:0!important;color:#fff;box-shadow:0 5px 12px #b77b5325;font-size:15px;font-weight:650}
+.av-rule{font-size:12px;border:1px solid #eedeca;background:#fcf6ed;color:#997757;border-radius:14px;padding:14px 16px}
+.av-rule p{margin:6px 0 0;line-height:1.8}
+.av-doctor-heading{background:linear-gradient(120deg,#eaf4fc,#f7fbfe);padding:22px;border:1px solid #dae8f3;border-radius:20px;gap:10px;margin-bottom:18px}
+.av-doctor-heading>div{flex:1 0 100%}
+.av-doctor .av-doctor-heading h1{font-size:24px;color:#234961;margin:6px 0 8px;line-height:1.4}
+.av-doctor-heading small{color:#7493a9;font-size:12px;letter-spacing:.05em}
+.av-doctor-heading p{font-size:13px;line-height:1.8;color:#71899e;margin:0 0 8px}
+.av-doctor-heading>button{background:#ffffffd9;border:1px solid #cfdfeb;border-radius:10px;color:#367497;padding:8px 13px;font-size:12px;font-weight:600;box-shadow:none}
+.av-role-card{display:flex;align-items:center;gap:12px;padding:16px;background:#fff;border:1px solid #dce8f0;border-radius:16px;margin:16px 0}
+.av-role-card b{font-size:13px;color:#44647b}.av-role-card p{font-size:12px;color:#8397a7;line-height:1.6;margin:5px 0 0}
+.av-role-card>div{flex:1;min-width:0}
+.av-doctor .av-role-button{flex:none;width:auto;max-width:46%;padding:10px 12px;background:#eaf3fa;border:1px solid #cce0ee;border-radius:11px;color:#2e78a6;font-size:12px;font-weight:600;line-height:1.5;box-shadow:none}
+.av-doctor .result-tabs{display:flex;padding:5px;background:#eaf1f7;border:1px solid #dce7f0;border-radius:14px;gap:4px;margin:18px 0 14px}
+.av-doctor .result-tabs button{flex:1;border:1px solid transparent;padding:11px 8px;border-radius:10px;font-size:14px;font-weight:600;background:transparent;color:#7891a4;box-shadow:none}
+.av-doctor .result-tabs button.active{background:#fff;border-color:#d9e6ef;color:#2a75a7;box-shadow:0 3px 9px #254c7010}
+.av-doctor .rule-filters{display:flex;gap:7px;margin:0 0 18px}
+.av-doctor .rule-filters button{padding:7px 11px;border:1px solid #e0e9f1;border-radius:20px;background:white;color:#718799;font-size:12px;line-height:1.5;box-shadow:none}
+.av-doctor .rule-filters button.active{background:#2d7cab;border-color:#2d7cab;color:#fff}
+.av-doctor details.card>summary{font-size:14px;font-weight:600;color:#46677e;cursor:pointer;line-height:1.7}
+.av-doctor .av-empty{text-align:center;padding:30px 16px;border-style:dashed;box-shadow:none;background:#fcfdff}
+.av-empty-icon{display:grid;place-items:center;width:46px;height:46px;margin:0 auto 12px;background:#edf4fa;color:#87a7bc;border-radius:15px;font-size:26px}
+.av-doctor .av-empty h3{font-size:14px;color:#6b879b;margin:0 0 6px}.av-doctor .av-empty p{font-size:12px;color:#9aabb8;margin:0}
+.av-doctor button.primary{background:#2b78ab!important;border:0!important;border-radius:12px;min-height:44px;color:white;font-size:14px;box-shadow:0 4px 10px #2b78ab20}
+.av-doctor .av-date-block{background:#edf5fb;border-radius:14px;border:1px solid #dfebf3;color:#315d7c}
+.av-request h2{font-size:19px;color:#315269}
+.av-doctor .av-demo{background:transparent!important;box-shadow:none;border-style:dashed}
+.av-patient .av-direction{background:#fffdf9!important;border-color:#ebd5bf!important;color:#916844!important;box-shadow:0 4px 12px #b3886020;padding:19px!important}
+@media(max-width:600px){.av-form-section{padding:14px}.av-days{gap:4px}.av-role-card{align-items:flex-start;flex-direction:column}.av-doctor .av-role-button{max-width:none;width:100%}}
+.av-patient .av-form>.av-back{display:inline-block;width:auto;min-height:0;margin:0 0 12px;padding:5px 2px;border:0;background:transparent;box-shadow:none;border-radius:0;color:#997659;font-size:12px}
+.av-patient .av-form-heading{display:block;height:auto;min-height:0;padding:18px 20px}
+
+.guide .av-role-card{display:block;margin:12px 0 18px;background:#f3f8fc;border:1px solid #dce8f0;padding:14px;border-radius:12px}.research-stage .guide .av-role-card p{font-size:13px;line-height:1.8;margin:6px 0 12px;color:#6b8497}.guide .av-role-button{width:100%;padding:10px 12px;border:1px solid #cce0ee;border-radius:10px;background:#eaf3fa;color:#2e78a6;font-size:14px;font-weight:600;box-shadow:none}
+
+.av-patient .av-rule{padding:16px 18px;background:#fff7ea;border-color:#e3c9a5;color:#704c2e;font-size:15px;line-height:1.85}.av-patient .av-rule>b{display:block;font-size:16px;font-weight:700;color:#633f22;margin-bottom:8px}.av-patient .av-rule p{margin:0;font-size:15px;line-height:1.85;color:#704c2e}.av-patient .av-rule strong{font-weight:750;color:#603b1d}.av-cancel-count{display:block;margin-top:8px}
+
+/* Airier calendar: quiet unavailable dates and a distinct selected date. */
+.av-patient .av-calendar{padding:4px 0 0;background:#fff}
+.av-patient .av-calendar .row{padding:0 0 14px;border-bottom:1px solid #f2ebe5;margin-bottom:14px}
+.av-patient .av-calendar .row b{font-size:17px;letter-spacing:.03em;color:#59473b}
+.av-patient .av-calendar .row button{width:34px;height:34px;border-radius:50%;background:#faf4ed;border:1px solid #eadccd;color:#9e704d}
+.av-patient .av-week{margin:12px 0;color:#968778;font-size:12px}
+.av-patient .av-days{gap:6px}
+.av-patient .av-days button{position:relative;min-height:54px;padding:9px 0 7px;background:#fffaf5;border:1px solid #eee1d5;border-radius:12px;color:#856045;font-size:15px;font-weight:600;line-height:1.2;box-shadow:none}
+.av-patient .av-days button small{font-size:10px;font-weight:400;margin-top:6px;color:#9a806d}
+.av-patient .av-days button:disabled{background:#f7f8fa;border-color:transparent;color:#b2b8c0;opacity:1}
+.av-patient .av-days button:disabled small{color:#a3abb5}
+.av-patient .av-days button:not(:disabled):not(.selected):hover{background:#f8ecdf;border-color:#d9b999}
+.av-patient .av-days button.selected{background:#ad7652;border-color:#ad7652;color:#fff;box-shadow:0 3px 8px #a5735325}
+.av-patient .av-days button.selected small{color:#fff}
+.av-patient .av-days button:focus-visible{outline:2px solid #9e6d49;outline-offset:2px}
+.av-patient .av-selected{border:1px solid #ecdece;background:#fffaf3;color:#8b6244;padding:11px 14px;font-size:14px;line-height:1.6;min-height:46px;box-sizing:border-box;margin:16px 0}
+.av-patient .av-days button.selected[aria-pressed="true"]{background:#ad7652!important;border-color:#ad7652!important;color:#fff!important}.av-patient .av-days button.selected[aria-pressed="true"] small{color:#fff!important}
+
+/* Keep appointment reminders inside the recipient panel, clear of the guide. */
+.av-popups.av-panel-notice{position:static;max-width:none;width:100%;margin:0 0 16px;box-sizing:border-box;z-index:auto}
+.av-panel-notice section{box-shadow:none;padding:14px;background:#f1f7fd;overflow-wrap:anywhere}
+.av-patient .av-panel-notice section{background:#fff8ef;border-color:#e7cdb5;border-left-color:#ad7652}
+.av-panel-notice p{margin:8px 0}
+
+/* Short in-app feedback overlays the device without changing its layout. */
+.product,.patient-device{position:relative}
+.av-short-toast{position:absolute;top:72px;left:50%;transform:translateX(-50%);z-index:25;display:flex;align-items:center;gap:8px;width:max-content;max-width:calc(100% - 32px);padding:11px 16px;border-radius:12px;background:rgba(37,57,76,.94);color:#fff;box-shadow:0 6px 18px #15304b24;pointer-events:none;box-sizing:border-box;animation:av-toast-in .16s ease-out}
+.av-short-toast b{font-size:14px;line-height:1.5;font-weight:500;color:#fff}
+.av-short-toast>span{color:#9ee1cc;font-size:16px}
+@keyframes av-toast-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.av-short-toast{animation:none}}
+
+.av-capacity-info{margin:12px 0;padding:12px 14px;background:#f0f6fc;border:1px solid #d6e5f3;border-radius:12px;color:#496781;font-size:13px;line-height:1.8}.av-capacity-info p{margin:0 0 10px}.av-capacity-info strong{color:#a65f2c}.av-capacity-info label{display:flex;align-items:flex-start;gap:8px}.av-capacity-info input{width:auto;margin-top:6px}
+
+.av-doctor-calendar{padding:16px;margin:16px 0;border:1px solid #dbe7f2;border-radius:16px;background:#fff}.av-doctor-calendar h3{margin:0 0 8px}.av-doctor-calendar .av-days button{position:relative;min-height:56px;background:#f0f6fc;color:#355d81;border:1px solid #dfebf5}.av-doctor-calendar .av-days button[aria-pressed=true]{background:#2874b6!important;color:#fff!important}.av-doctor-calendar .av-days button:disabled{background:#f5f6f8;color:#a1aab4}.av-doctor-calendar em{display:block;font-size:9px;font-style:normal}.av-doctor-calendar .row>button{border:1px solid #dbe7f2;border-radius:10px;background:#f0f6fc;color:#2874b6;width:32px;height:32px}.av-calendar-selection{padding:10px;background:#edf5fd;color:#355d81;border-radius:10px;font-size:13px;line-height:1.8}.av-doctor-calendar>.primary{margin-top:12px}
+
+.av-date-picker>details{margin:0}.av-date-picker summary{padding:12px;border:1px solid #d6e3f1;border-radius:10px;background:#f9fbfe;cursor:pointer;color:#355775;list-style:none}.av-date-picker summary:after{content:' ▾';float:right}.av-date-picker-panel{padding:12px;border:1px solid #d6e3f1;border-radius:12px;margin-top:8px;background:#fff}.av-date-picker .av-days button{min-height:44px;background:#edf5fc;color:#355775}.av-date-picker .av-days button:disabled{background:#f3f4f6;color:#a3aab3;cursor:not-allowed;opacity:1}.av-date-picker .av-days button[aria-pressed=true]:not(:disabled){background:#2874b6;color:white}.av-date-picker .av-days small{font-size:9px}
+
+/* Patient confirmation: one appointment ticket instead of repeated status cards. */
+.av-patient .av-detail{border:0!important;background:transparent!important;padding:0!important;box-shadow:none!important}
+.av-detail>.row{margin:16px 0}.av-detail>.row h2{font-size:20px!important}.av-detail>.row .pill{display:none}
+.av-confirmation-ticket{border:1px solid #eadfd3;border-radius:20px;background:#fff;overflow:hidden;box-shadow:0 8px 24px #805c4308;margin-bottom:20px}
+.av-confirmation-status{display:flex;gap:12px;align-items:center;padding:20px 20px 16px;background:#fcf8f3}.av-confirmation-status>span{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#e5f1eb;color:#39745c;font-size:21px}.av-confirmation-status b{font-size:18px;color:#344a40}.av-confirmation-status small{display:block;margin-top:4px;color:#809087;font-size:12px}
+.av-patient .av-confirmation-ticket .av-date-block{margin:0;padding:10px 20px 20px;background:#fcf8f3;border-radius:0}.av-confirmation-ticket .av-date-block h2{font-size:29px!important;letter-spacing:.3px;margin:8px 0!important;color:#344f65}.av-confirmation-ticket .av-date-block p{display:flex;gap:14px;margin:8px 0 0;font-size:15px}.av-confirmation-ticket .av-date-block p span{padding-left:14px;border-left:1px solid #dfd4c8}
+.av-confirmation-location{padding:18px 20px;border-top:1px dashed #e6d9cc}.av-confirmation-location small{display:block;color:#8c8278;margin-bottom:8px}.av-confirmation-location b{color:#40576a;font-size:16px}.av-confirmation-location p{margin:6px 0 0;color:#5a6c78;font-size:15px}
+.av-confirmation-note{margin:0 20px 18px;padding:14px;border-radius:12px;background:#f6f8fa;font-size:14px;line-height:1.8;color:#536575}.av-confirmation-note p{margin:6px 0}.av-confirmation-note small{font-size:13px;color:#7d8991}
+.av-patient .av-notification-link{border:0!important;border-top:1px solid #eee6de!important;border-radius:0!important;background:#fff!important;color:#9b653e!important;padding:16px!important;font-size:15px;font-weight:650}
+.av-patient .av-detail>.av-info{background:#fff;border:1px solid #eee5dc;border-radius:14px;padding:16px;margin:12px 0;font-size:14px;line-height:1.8}.av-patient .av-detail>.av-info summary{font-size:15px;color:#506575}
+
+.av-notification-center h3{margin:0;font-size:17px}.av-unread-count{font-size:12px;color:#687e92;background:#eef4fa;padding:4px 9px;border-radius:20px;white-space:nowrap}
+.av-notification-center .av-notification{margin:14px 0 0;padding:16px;border:1px solid #d7e5f2;border-radius:14px;background:#f7fbff;box-shadow:0 2px 8px #274c6f04}
+.av-notification-title{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}.av-notification-title b{font-size:15px;line-height:1.6;color:#304f6a}.av-read-status{flex-shrink:0;font-size:11px;background:#e3f0fd;color:#286b9f;border-radius:6px;padding:3px 7px}
+.av-notification p{font-size:14px;line-height:1.8;color:#52697d;margin:10px 0}.av-notification time{font-size:12px;color:#8b99a6}.av-notification-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px;padding-top:12px;border-top:1px solid #e5edf5}
+.av-notification-actions button{width:auto!important;flex:1;padding:9px 12px!important;font-size:13px!important;border-radius:9px!important;font-weight:600;min-width:90px}.av-notification-actions .av-notice-view{background:#edf5fd!important;color:#286fa9!important;border:1px solid #bdd7ee!important}.av-notification-actions .av-notice-read{background:white!important;color:#60788e!important;border:1px solid #d4dfe9!important}
+.av-notification-center .is-read{background:#fff;border-color:#e3e9ef}.is-read .av-read-status{background:#f0f3f6;color:#86929e}.av-read-done{flex:1;text-align:center;font-size:12px;color:#819489}
+.av-patient .av-notification-center .is-unread{background:#fffcf8;border-color:#ead9c7}.av-patient .av-notice-view{background:#faf0e5!important;border-color:#e5cbb0!important;color:#966641!important}
+
+/* Readable appointment details on patient and doctor devices. */
+.av-detail-fields{margin:14px 0 0}.av-detail-fields>div{padding:11px 0;border-bottom:1px solid #e8edf1}.av-detail-fields>div:last-child{border-bottom:0}.av-detail-fields dt{font-size:14px;font-weight:600;line-height:1.7;color:#596a79;margin-bottom:4px}.av-detail-fields dd{margin:0;font-size:16px;line-height:1.8;font-weight:500;color:#293e50;overflow-wrap:anywhere;white-space:pre-wrap}
+.av-patient .av-detail>.av-info summary,.av-doctor .av-info summary{font-size:16px;font-weight:650;color:#334e64}.av-patient .av-detail>.av-info{padding:18px}
+.av-cancelled-reason{padding:16px 18px;border:1px solid #e5d6c7;background:#fffaf4;border-radius:13px;margin:16px 0}.av-cancelled-reason h3{font-size:16px!important;color:#755335;margin:0 0 8px}.av-cancelled-reason p{font-size:16px!important;line-height:1.8;color:#3f4650!important;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
+.av-messages article p,.av-request>p,.av-proposal p,.av-cancel p{font-size:15px;line-height:1.85;color:#354d62}.av-messages article small,.av-request>small{font-size:13px;color:#66798b;line-height:1.7}.av-info .field{font-size:14px;color:#52677a}.av-info textarea{font-size:15px;line-height:1.7;color:#2e4356}
+
+/* Emphasize rescheduling ahead of optional discussion and history. */
+.av-doctor .av-request>.av-single-reschedule{border:1px solid #bcd5ec;border-radius:13px;background:#f0f6fd;margin:20px 0 12px;padding:0;overflow:hidden}
+.av-doctor .av-request>.av-single-reschedule>summary{padding:17px 16px;font-size:17px;font-weight:700;line-height:1.6;color:#245a86;cursor:pointer}
+.av-doctor .av-request>.av-single-reschedule>.av-doctor-calendar,.av-doctor .av-request>.av-single-reschedule>.av-editor{margin:0 12px 14px}
+.av-doctor .av-request>.av-info,.av-doctor .av-request>details:not(.av-single-reschedule){border:1px solid #dce5ed;background:#fff;border-radius:12px;padding:15px 16px;margin:12px 0}
+.av-doctor .av-request>.av-info>summary,.av-doctor .av-request>details:not(.av-single-reschedule)>summary{font-size:16px;font-weight:650;line-height:1.7;color:#3e566b;cursor:pointer}
+.av-doctor .av-request>details>p{font-size:15px;line-height:1.85;color:#354d62}.av-doctor .av-request>details>p small{font-size:13px;color:#64778a}
+
+.av-notification-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}.av-notification-tools .av-read-all{width:auto!important;padding:5px 9px!important;border:1px solid #c8dbed!important;border-radius:8px!important;background:#f4f8fc!important;color:#356b97!important;font-size:12px!important;white-space:nowrap}.av-notification-tools .av-read-all:disabled{opacity:.45;cursor:default}.av-notification-center>.row{flex-wrap:wrap;gap:10px}
+/* V0.10.27: consistent controls, compact confirmation and native-style banners. */
+.av-patient .av-form-pair>.field{display:flex;flex-direction:column;gap:8px;margin:0;min-width:0}
+.av-patient .av-form-pair>.field :is(input,select){appearance:none;-webkit-appearance:none;display:block;height:48px!important;min-height:48px!important;max-height:48px;padding:12px 14px!important;margin:0!important;border:1px solid #dfd3c9!important;border-radius:12px!important;font-size:15px!important;line-height:22px!important;background-color:#fff!important;box-shadow:none}
+.av-patient .av-form-pair>.field select{padding-right:34px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' stroke='%23786558' fill='none' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+.av-patient .av-confirmation-ticket{margin:16px 0 22px;border:1px solid #d9e6e2;border-radius:20px;background:#fff;box-shadow:0 6px 24px #234c3f08;overflow:hidden}
+.av-ticket-heading{display:flex;align-items:center;gap:12px;padding:20px;background:#f0f7f4;border-bottom:1px solid #e2ece7}
+.av-ticket-check{display:grid;place-items:center;flex-shrink:0;width:42px;height:42px;border-radius:14px;background:#dceee5;color:#277259;font-size:24px;font-weight:600}
+.av-ticket-heading small{font-size:12px;color:#617e71}.av-ticket-heading h3{font-size:20px!important;line-height:1.4;margin:3px 0 0!important;color:#244c3f!important}
+.av-ticket-badge{margin-left:auto;font-size:12px;white-space:nowrap;border:1px solid #c9e1d5;border-radius:20px;padding:4px 9px;color:#38765c;background:#fff}
+.av-ticket-schedule{display:flex;align-items:center;gap:16px;padding:22px 20px}.av-ticket-calendar{display:flex;flex-direction:column;align-items:center;justify-content:center;width:58px;height:68px;flex-shrink:0;border:1px solid #e9dbcc;border-radius:12px;background:#fbf4eb;color:#8d6546;overflow:hidden}.av-ticket-calendar small{font-size:12px;width:100%;text-align:center;padding:4px 0;background:#f1e4d6}.av-ticket-calendar b{font-size:25px;line-height:36px;font-weight:650}
+.av-ticket-schedule strong{display:block;font-size:23px;letter-spacing:.3px;color:#263f50;line-height:1.4;font-variant-numeric:tabular-nums}.av-ticket-schedule p{display:flex;gap:10px;font-size:15px;margin:5px 0 0;color:#607481}
+.av-ticket-facts{display:grid;gap:16px;margin:0!important;padding:0 20px 20px!important}.av-ticket-facts>div{display:grid;grid-template-columns:70px 1fr;gap:12px;align-items:baseline}.av-ticket-facts dt{font-size:13px;color:#71818b}.av-ticket-facts dd{margin:0;font-size:15px;font-weight:600;line-height:1.7;color:#304b5a}.av-ticket-facts dd small{display:block;font-size:14px;font-weight:400;color:#61737f;margin-top:2px}
+.av-ticket-note{margin:0 20px 18px;padding:14px 16px;background:#f7f9fa;border:1px solid #e7edef;border-radius:12px;color:#425967;font-size:14px;line-height:1.7}.av-ticket-note b{font-size:13px;color:#657781}.av-ticket-note p{margin:5px 0 0;white-space:pre-wrap;overflow-wrap:anywhere}.av-confirmation-ticket>footer{padding:13px 20px;background:#fafcfb;border-top:1px solid #e7eeeb;font-size:13px;line-height:1.7;color:#61786c}
+.av-app-banner{position:absolute;top:16px;left:12px;right:12px;z-index:80;display:flex;align-items:flex-start;border:1px solid #d5e1e8;border-radius:18px;background:rgba(255,255,255,.98);box-shadow:0 8px 30px #173b5426;overflow:hidden;animation:av-banner-in .2s ease-out}
+.av-app-banner .av-banner-open{display:flex;align-items:center;gap:12px;flex:1;min-width:0;border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;padding:14px!important;text-align:left!important;color:#253f51!important;margin:0!important}
+.av-banner-icon{display:grid;place-items:center;width:36px;height:36px;flex-shrink:0;background:#e8f1fb;color:#2e6caa;border-radius:11px;font-size:20px}.patient-device .av-banner-icon{background:#e9f4ee;color:#34775d}
+.av-banner-copy{display:grid;gap:4px;min-width:0;flex:1}.av-banner-copy>small{display:flex;justify-content:space-between;gap:8px;color:#7a8b96;font-size:11px;font-weight:400}.av-banner-copy>b{font-size:15px;line-height:1.4;color:#294657}.av-banner-copy>span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px;color:#5e7482;line-height:1.5}.av-app-banner .av-banner-close{flex-shrink:0;background:transparent!important;border:0!important;color:#778b96!important;padding:10px!important;margin:0!important;font-size:18px;box-shadow:none!important;line-height:1}
+@keyframes av-banner-in{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.av-app-banner{animation:none}}
+
+/* Clear, reversible review before rejecting a proposed date. */
+.patient-device .av-proposal .av-decline-button{background:#fff;color:#8d4b35;border:1px solid #d8b9a7;box-shadow:none;margin-top:10px;font-size:15px;min-height:46px}
+.av-decline-confirm{margin-top:16px;padding:16px;border:1px solid #dec7b4;border-radius:14px;background:#fffaf4;color:#553e30}
+.av-decline-confirm h3,.av-decline-result h3{font-size:18px;margin:0 0 10px}
+.av-decline-confirm p,.av-decline-result p{font-size:15px;line-height:1.8;margin:8px 0 12px}
+.av-decline-confirm small{font-size:13px;color:#726355;line-height:1.6}
+.av-decline-actions{display:flex;gap:10px;margin-top:12px}.av-decline-actions button{flex:1;min-height:46px;margin-top:0!important}
+.av-decline-result{margin:18px 0;padding:20px;border:1px solid #d5e1df;border-radius:16px;background:#f5f9f8;color:#304d48}
+
+/* Confirmation: one status, one prominent date, quiet supporting details. */
+.av-detail>.av-confirmed-title{display:none}
+.av-patient .av-detail:has(.av-confirmation-ticket)>button[data-av="home"]{width:auto!important;min-height:38px;border:0!important;background:transparent!important;box-shadow:none!important;padding:4px 0!important;color:#756453;font-size:14px}
+.av-patient .av-confirmation-ticket{margin:14px 0 20px;border:1px solid #e8e1d9;border-radius:24px;box-shadow:0 10px 28px #69503d09}
+.av-ticket-heading{padding:24px 24px 0;background:#fff;border:0;gap:11px;align-items:center}
+.av-ticket-check{width:34px;height:34px;border-radius:50%;background:#eaf4ee;color:#34745d;font-size:20px}
+.av-ticket-heading h3{font-size:20px!important;color:#29483d!important;margin:0!important;letter-spacing:.3px}
+.av-ticket-heading p{font-size:13px;color:#758078;margin:5px 0 0;line-height:1.5}
+.av-ticket-kind{margin-left:auto;font-size:12px;color:#8a7562;background:#f8f3ec;padding:5px 9px;border-radius:7px;white-space:nowrap}
+.av-ticket-schedule{display:block;margin:22px 24px 0;padding:22px 0 24px;border-top:1px solid #eee9e2;border-bottom:1px solid #eee9e2;background:#fff}
+.av-ticket-schedule>small{font-size:13px;color:#84796f;letter-spacing:.5px}
+.av-ticket-schedule strong{font-size:42px;line-height:1.25;font-weight:650;letter-spacing:1px;margin:9px 0;color:#303e43}
+.av-ticket-schedule strong>span{font-size:20px;font-weight:500;letter-spacing:0;margin:0 8px 0 4px;color:#526066}
+.av-ticket-schedule p{gap:12px;align-items:center;margin:9px 0 0;font-size:15px;font-weight:500;color:#5d686b}
+.av-ticket-schedule p i{width:1px;height:12px;background:#d5d6d0}
+.av-ticket-facts{padding:22px 24px!important;gap:18px}
+.av-ticket-facts>div{grid-template-columns:66px 1fr;gap:14px}
+.av-ticket-facts dt{font-size:14px;color:#7b807d}
+.av-ticket-facts dd{font-size:16px;font-weight:600;color:#334a50;line-height:1.7}
+.av-ticket-facts dd small{font-size:14px;color:#707a7c;margin-top:3px}
+.av-ticket-note{margin:0 24px 22px;padding:14px 16px;background:#f8f6f2;border:0;border-radius:12px;font-size:14px;color:#5e605b;line-height:1.8}
+.av-ticket-note b{font-size:13px;color:#83705c;font-weight:600}.av-ticket-note p{margin:5px 0 0}
+.av-confirmation-ticket>footer{padding:15px 24px;background:#f7faf8;border-top:0;font-size:13px;color:#61766a;line-height:1.8}
+@media(max-width:600px){.av-ticket-heading{padding:20px 20px 0}.av-ticket-schedule{margin-left:20px;margin-right:20px}.av-ticket-schedule strong{font-size:38px}.av-ticket-facts{padding:20px!important}.av-ticket-note{margin-left:20px;margin-right:20px}}
+
+/* Decline confirmation: equally visible actions and readable explanation. */
+.patient-device .av-decline-confirm h3{font-size:20px!important;line-height:1.5}
+.patient-device .av-decline-confirm p{font-size:17px!important;line-height:1.85;color:#344b5d}
+.patient-device .av-decline-confirm small{display:block;font-size:15px!important;line-height:1.7;color:#746252}
+.patient-device .av-decline-actions{gap:12px;margin-top:18px}
+.patient-device .av-decline-actions button{display:flex;align-items:center;justify-content:center;flex:1;min-width:0;min-height:48px;padding:10px 12px!important;border:1px solid #cbbbaa!important;border-radius:12px;background:#fff!important;color:#605345!important;font-size:16px!important;font-weight:600;box-shadow:none!important;text-decoration:none}
+.patient-device .av-decline-actions button.av-decline-button{border-color:#bd9273!important;background:#fbf4ed!important;color:#925332!important}
+
+/* Booking pass follows the warm, compact patient cards used in the 307 demo. */
+.av-patient .av-booking-pass{background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible;margin:8px 0 20px}
+.av-booking-success{display:flex;align-items:center;gap:12px;padding:12px 4px 22px}
+.av-booking-check{display:grid;place-items:center;flex:none;width:42px;height:42px;border-radius:50%;color:#43816a;background:#e7f1e9;font-size:25px;font-weight:600}
+.av-booking-success h3{margin:0!important;font-size:22px!important;font-weight:650;color:#354a40!important;line-height:1.4!important}
+.av-booking-success p{margin:5px 0 0!important;font-size:14px!important;line-height:1.6!important;color:#788079}
+.av-booking-main{border:1px solid #efe5da;border-radius:20px;background:#fff;box-shadow:0 6px 20px #8e66450a;overflow:hidden}
+.av-booking-date{background:linear-gradient(110deg,#fbecdc,#faf3e9);padding:20px 22px}
+.av-booking-eyebrow{display:flex;align-items:center;justify-content:space-between;font-size:13px;color:#9a7454;line-height:1.6}
+.av-booking-eyebrow>span:first-child{font-weight:600;color:#825c3f}
+.av-booking-when{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-top:9px;flex-wrap:wrap}
+.av-booking-when strong{font-size:28px!important;line-height:1.4;font-weight:650;letter-spacing:0;color:#69472f;white-space:nowrap}
+.av-booking-when>span{font-size:14px;font-weight:500;color:#87664c;white-space:nowrap}
+.av-booking-row{display:flex;align-items:flex-start;gap:13px;margin:0 22px;padding:19px 0}
+.av-booking-row+.av-booking-row{border-top:1px solid #f1ede8}
+.av-booking-icon{display:grid;place-items:center;width:32px;height:32px;flex:none;border-radius:10px;background:#f8f5ef;color:#a08568;margin-top:3px}
+.av-booking-icon svg{width:19px;height:19px}
+.av-booking-row small{display:block;font-size:13px;color:#91918a;margin-bottom:4px}
+.av-booking-row b{display:block;font-size:16px;color:#394a50;font-weight:600;line-height:1.6}
+.av-booking-row p{font-size:14px!important;color:#7b817f;margin:3px 0 0!important;line-height:1.65!important}
+.av-booking-note{margin:0 22px 20px;padding:13px 15px;background:#faf8f4;border-radius:11px}
+.av-booking-note b{font-size:13px;font-weight:600;color:#9a7958}
+.av-booking-note p{font-size:14px!important;line-height:1.8!important;color:#636960;margin:4px 0 0!important;white-space:pre-wrap;overflow-wrap:anywhere}
+.av-booking-tip{display:flex;gap:7px;align-items:flex-start;padding:14px 5px 0;color:#909087}
+.av-booking-tip>span{font-size:14px;line-height:1.8;flex:none}
+.av-booking-tip p{font-size:13px!important;line-height:1.8!important;margin:0!important;color:#84877e}
+
+/* Doctor decision actions are equally sized buttons, never bare text links. */
+.av-doctor .av-request>.entry-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:stretch}
+.av-doctor .av-request>.entry-grid>button{width:100%!important;min-width:0;min-height:46px;margin:0!important;padding:11px 14px!important;border-radius:12px!important;font-size:15px!important;font-weight:600;line-height:1.5;text-align:center!important}
+.av-doctor .av-request>.entry-grid>button[data-av="coordinate-open"]{border:1px solid #9dbed4!important;background:#f1f7fc!important;color:#2b6388!important;box-shadow:none!important;text-decoration:none!important}
+.av-doctor .av-request>.entry-grid>button[data-av="coordinate-open"]:hover{background:#e5f0f8!important;border-color:#6197bb!important}
+.av-doctor .av-request>.entry-grid>button:focus-visible{outline:2px solid #347ca9;outline-offset:3px}
+/* Direct criterion choices and report-photo attachment controls. */
+.product .criterion-row{display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;padding:20px 0;border-bottom:1px solid #e4edf4}
+.product .criterion-direct{grid-column:2;min-width:0}
+.criterion-choice{display:flex;gap:10px;margin:12px 0}
+.product .criterion-choice button{flex:1;min-height:42px;border:1px solid #bdcfe0;border-radius:10px;background:#fff;color:#47647c;font-size:15px;font-weight:600;margin:0}
+.product .criterion-choice button.selected.pass{background:#e8f5ef;border-color:#489d7d;color:#216c51}
+.product .criterion-choice button.selected.fail{background:#fff0ed;border-color:#d58a7a;color:#a24f3d}
+.product .criterion-choice button.selected:before{content:'✓ ';font-weight:700}
+.review-photo-upload{position:relative;display:inline-flex;align-items:center;padding:10px 14px;border:1px solid #b8cee2;border-radius:10px;background:#f4f8fc;color:#32678c;font-size:14px;font-weight:600;cursor:pointer;overflow:hidden}
+.review-photo-upload:focus-within{outline:2px solid #337ab5;outline-offset:2px}
+.review-photo-upload input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%}
+.review-photo-upload:has(input:disabled){opacity:.5;cursor:default}
+.review-photo-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}.review-photo-list:empty{display:none}
+.review-photo-list figure{position:relative;width:90px;margin:0;border:1px solid #dce5ef;border-radius:10px;padding:5px;background:#fff}
+.review-photo-list img{width:78px;height:78px;object-fit:cover;border-radius:6px}
+.review-photo-list figcaption{font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#61758b}
+.product .review-photo-list button{position:absolute;right:-6px;top:-6px;width:24px;height:24px;min-height:0;padding:0;background:#fff;border:1px solid #cbd8e5;border-radius:50%;color:#54687b}
+
+.product .criterion-choice button.selected.pass{background:#e8f5ef!important;border-color:#489d7d!important;color:#216c51!important}.product .criterion-choice button.selected.fail{background:#fff0ed!important;border-color:#d58a7a!important;color:#a24f3d!important}
 </style></head><body><div id="app"></div><script>const PROJECTS = [
   {
     "id": "RX0074",
@@ -673,19 +967,19 @@ resultCard=function(r){let h=flowResultCard(r);if(state.records.some(c=>c.projec
 function progress(){const visible=state.records.filter(r=>flow.filter==='all'||flow.filter==='mine'&&WF[r.status][2]===role||flow.filter==='end'&&isTerminal(r));return `<h1>${role==='manager'?'全流程数据总览':'项目进度与待办'}</h1><div class="stats"><div class="stat"><b>${state.records.length}</b><span>项目交接</span></div><div class="stat"><b>${state.records.filter(r=>r.status==='enrolled').length}</b><span>正式入组</span></div><div class="stat"><b>${state.records.filter(isTerminal).length}</b><span>已终止</span></div></div><div class="rule-filters">${[['all','全部项目'],['mine','当前角色待办'],['end','已终止']].map(([id,t])=>`<button data-action="wf-filter-${id}" aria-pressed="${flow.filter===id}">${t}</button>`).join('')}</div>${visible.length?visible.map(r=>`<section class="card case-card" data-review-anchor="case-${r.id}"><div class="row between"><b>${r.projectId}</b><span class="pill ${isTerminal(r)?'red':r.status==='enrolled'?'green':'blue'}">步骤 ${caseStep(r)}</span></div><h3>${esc(projectById(r.projectId).name)}</h3><p><b>${statusText(r)}</b></p><p class="muted">${r.id} · 患者 A · 推送资料 V${r.version}<br>负责角色：${WF[r.status][2]?ROLE_NAMES[WF[r.status][2]]:'流程已终止'}</p>${r.reason?`<div class="note danger">${esc(r.reason)}</div>`:''}<button class="primary full" data-action="wf-open" data-id="${r.id}">${WF[r.status][2]===role?'处理当前待办':'查看流程详情'}</button></section>`).join(''):'<div class="card empty"><h3>暂无记录</h3><p>完成医生初筛并推送后，每个项目生成独立记录；当前角色没有待办时可查看全部项目。</p></div>'}`}
 function workflowForm(r){let s=r.status;if(isTerminal(r))return `<div class="note danger"><b>此项目流程已终止</b><p>${esc(r.reason)}</p>终止后不能进入后续步骤；历史记录保留供追溯。</div>`;if(WF[s][2]!==role)return '';
  let body='',buttons='';
- if(s==='crc'){body=wfCheck('eligibility','已结合完整纳排标准核对拟入组条件')+wfCheck('recruiting','已人工核实项目当前招募状态')+wfField('opinion','审核意见 / 不纳入原因','textarea');buttons=wfButton('crc-yes','同意拟入组 → 交 PI 完成知情同意')+wfButton('crc-no','不纳入 · 终止此项目','danger-button')}
+ if(s==='crc'){body=wfField('opinion','审核意见 / 不纳入原因','textarea');buttons=wfButton('crc-yes','同意拟入组 → 交 PI 完成知情同意')+wfButton('crc-no','不纳入 · 终止此项目','danger-button')}
  if(s==='consent'){body='<div class="note">当前为拟入组阶段：CRC 同意拟入组后，由 PI 主导知情同意；签署完成不等于正式入组，仍须检查、审核和 PI 最终判定。</div><div class="note warning">卡点① · PI 主导知情同意。这里只记录已发生的虚构签署，不是电子签名。</div>'+wfCheck('disclosed','已告知试验收益、风险及替代方案（演示）')+wfField('icfVersion','知情同意书版本')+'<p class="muted">按实际签署文件的版本号及版本日期填写；演示可填 DEMO-V1.0（模拟）。版本日期不同于下方的签署日期。</p>'+wfField('signedDate','签署日期','date')+wfField('signRef','签署记录编号（虚构）')+wfCheck('signed','确认受试者已签署知情同意书（演示）')+wfField('refusal','拒绝签署原因（仅终止时填写）','textarea');buttons=wfButton('icf','保存签署记录')+wfButton('refused','拒绝签署 · 终止此项目','danger-button')}
  if(s==='confirm'){body=`<div class="note good">知情同意书 ${esc(r.icf.version)} · ${esc(r.icf.date)}<br>记录：${esc(r.icf.ref)}</div>`+wfCheck('confirmSigned','PI 核对签署记录完整有效，确认已签知情同意');buttons=wfButton('confirm','确认已签署并推送至 CRC')}
  if(s==='plan'){body='<div class="note">PI 已确认签署。CRC 按本项目方案安排检查，具体项目与时间由人工填写。</div>'+wfField('plan','检查方案 / 检验、影像及基线评估安排','textarea')+wfField('checkDate','计划检查日期','date');buttons=wfButton('plan','保存安排 → 等待检查结果')}
  if(s==='checks'){body=`<div class="note">${esc(r.plan.text)}<br>计划日期：${esc(r.plan.date)}</div>`+wfField('lab','检验结果记录 / 方案不要求的说明','textarea')+wfField('imaging','影像结果记录 / 方案不要求的说明','textarea')+wfField('baseline','基线评估记录','textarea')+wfCheck('complete','确认本项目要求的检查结果已回传齐全');buttons=wfButton('checks','提交结果 → 进入医学审核')}
- if(s==='review'){body='<div class="note warning">检查结果需人工审核，审核通过后提交 PI 最终判定。</div>'+wfCheck('allCriteria','已逐条核对完整纳排标准与检查结果')+wfCheck('central','已核对本项目中心实验室规则（或确认该项目不要求）')+wfField('reviewNote','审核结论 / 剔除原因','textarea');buttons=wfButton('recommend','符合 · 推荐入组并通知 PI')+wfButton('exclude','不符合 · 剔除并终止','danger-button')}
- if(s==='decision'){body='<div class="note warning">卡点③ · PI 最终决策。CRC 的推荐尚不代表正式入组。</div>'+wfCheck('finalReview','PI 已核查推荐意见、签署与全部检查资料')+wfField('decisionNote','最终决定说明 / 不入组原因','textarea');buttons=wfButton('enroll','PI 同意 · 正式入组')+wfButton('pi-no','PI 不同意 · 终止','danger-button')}
+ if(s==='review'){body='<div class="note warning">查看条目分析与选择结果，提交推荐或不纳入决定。</div>'+wfField('reviewNote','审核结论 / 剔除原因','textarea');buttons=wfButton('recommend','符合 · 推荐入组并通知 PI')+wfButton('exclude','不符合 · 剔除并终止','danger-button')}
+ if(s==='decision'){body='<div class="note warning">卡点③ · PI 最终决策。CRC 的推荐尚不代表正式入组。</div>'+wfField('decisionNote','最终决定说明 / 不入组原因','textarea');buttons=wfButton('enroll','PI 同意 · 正式入组')+wfButton('pi-no','PI 不同意 · 终止','danger-button')}
  if(s==='enrolled'){body=`<div class="note good">入组编号 ${r.enrollment}<br>PI 判定时间 ${esc(r.enrolledAt)}</div>`+wfField('followDate','下一次随访日期','date')+wfField('followContent','随访事项（按项目方案填写）','textarea');buttons=wfButton('follow','保存随访计划')}
  return `<section class="card workflow-form" data-review-anchor="workflow-action"><h2>${statusText(r)}</h2>${body}<div class="workflow-actions">${buttons}<button class="quiet full" data-action="wf-back">暂不处理，返回列表</button></div></section>`}
 function caseFocus(r){const owner=WF[r.status][2],ended=isTerminal(r);const next={crc:'核对完整纳排及招募状态，给出拟入组意见',consent:'完成告知并记录知情同意书签署情况',confirm:'核对签署记录，确认后推送 CRC',plan:'填写入组前检查方案与计划日期',checks:'回传检验、影像与基线评估结果',review:'审核检查结果，给出推荐或剔除意见',decision:'核查全部资料，作出最终入组判定',enrolled:'按项目方案安排随访并记录计划'};return `<section class="case-focus ${ended?'ended':''}"><div class="focus-top"><span>当前进度</span><b>第 ${caseStep(r)} / 9 步</b></div><h2>${statusText(r)}</h2><div class="step-meter" aria-hidden="true">${auditRows.map((_,i)=>`<i class="${i+1<=caseStep(r)?'reached':''}"></i>`).join('')}</div>${!ended?`<div class="focus-owner"><span>负责角色</span><strong>${ROLE_NAMES[owner]}</strong></div><p><b>下一步</b>${next[r.status]}</p>${owner!==role?`<div class="focus-handoff"><small>当前为${ROLE_NAMES[role]}，仅查看此环节</small><button class="primary full" data-action="role-${owner}">切换到${owner==='crc'?'CRC':ROLE_NAMES[owner]}继续演示 →</button></div>`:'<div class="focus-ready">请在下方完成当前待办</div>'}`:'<p>此项目已终止，可展开下方记录查看原因与历史。</p>'}</section>`}
 function caseDetail(){const r=currentCase();if(!r)return progress();let at=caseStep(r);return `<button class="quiet" data-action="wf-back">← 返回项目进度</button><div class="case-title"><span class="pill blue">${r.projectId} · ${r.id}</span><h1>${esc(projectById(r.projectId).name)}</h1><p class="muted">演示患者 A · 项目交接 ${r.id}</p></div>${r.version!==flow.version?'<div class="note warning">患者材料已更新；本项目仍保留推送时的 V'+r.version+' 资料快照，请审核人员对照新材料核实。已有审批不会被自动覆盖。</div>':''}${errorBox()}${caseFocus(r)}${workflowForm(r)}<details class="card project-records"><summary>项目流转记录<span class="summary-hint">交接 · 知情同意 · 检查与审核</span></summary><p class="muted">汇总本项目已发生的交接、签署和审核记录；未完成的环节会显示待处理。</p><section class="record-section"><h3>医生交接</h3><p>推送资料 V${r.version} · ${r.materials} 份 · ${esc(r.patient.age)} 岁 / ${esc(r.patient.hr)} / HER2 ${esc(r.patient.her2)}</p><p>医生备注：${esc(r.note)}</p><details><summary>推送时逐条初筛依据</summary>${r.rules.map(q=>`<p><b>${esc(q.label)}</b>：患者 ${esc(q.actual)} / 要求 ${esc(q.expected)} · ${q.status==='pass'?'关键项符合':q.status==='fail'?'待复核':'待核验'}</p>`).join('')}</details></section><section class="record-section"><h3>CRC 拟入组审核</h3><p>${r.crcOpinion?esc(r.crcOpinion):'暂无审核记录'}</p></section><section class="record-section"><h3>知情同意</h3>${r.icf?`<dl class="check-record"><dt>知情同意书版本</dt><dd>${esc(r.icf.version)}</dd><dt>签署日期</dt><dd>${esc(r.icf.date)}</dd><dt>签署记录编号</dt><dd>${esc(r.icf.ref)}</dd></dl>`:'<p class="muted">暂无签署记录</p>'}</section><section class="record-section"><h3>检查与审核</h3>${r.plan?`<p>检查计划：${esc(r.plan.date)} · ${esc(r.plan.text)}</p>`:'<p class="muted">暂无检查安排</p>'}${r.checks?`<dl class="check-record"><dt>检验</dt><dd>${esc(r.checks.lab)}</dd><dt>影像</dt><dd>${esc(r.checks.imaging)}</dd><dt>基线评估</dt><dd>${esc(r.checks.baseline)}</dd></dl>`:''}${r.reviewNote?`<p>检查审核结论：${esc(r.reviewNote)}</p>`:''}</section><section class="record-section"><h3>PI 最终判定</h3><p>${r.decisionNote?esc(r.decisionNote):'暂无最终判定记录'}</p></section><section class="record-section"><h3>随访计划</h3>${r.followups.length?r.followups.map(f=>`<p>${esc(f.date)} · ${esc(f.content)}</p>`).join(''):'<p class="muted">暂无随访计划</p>'}</section></details><details class="card"><summary>完整流程与责任<span class="summary-hint">共 9 步 · 展开查看</span></summary><ol class="flow-track">${auditRows.map((s,i)=>`<li class="${i+1<at?'done':i+1===at?'current':''}"><span>${i+1<at?'✓':s[0]}</span><div><b>${s[1]}</b><small>${i+1<at?'已完成':i+1===at?statusText(r):isTerminal(r)?'未进入 · 流程已终止':'等待前序步骤'}</small></div></li>`).join('')}</ol></details><details class="card"><summary>操作留痕 · ${r.log.length} 条</summary>${r.log.map(l=>`<div class="audit-log"><b>${esc(l.role)}</b><small>${esc(l.at)}</small><p>${esc(l.text)}</p></div>`).join('')}</details><button class="quiet full" data-action="wf-back">返回项目进度 · 保留位置</button>`}
 function processCase(cmd){const r=currentCase();if(!r)return deny('请先打开一个项目。');const d=r.draft,s=r.status;const map={'crc-yes':['crc','consent'],'crc-no':['crc','declined'],icf:['consent','confirm'],refused:['consent','refused'],confirm:['confirm','plan'],plan:['plan','checks'],checks:['checks','review'],recommend:['review','decision'],exclude:['review','excluded'],enroll:['decision','enrolled'],'pi-no':['decision','piRejected'],follow:['enrolled','enrolled']};const config=map[cmd];if(!config||s!==config[0])return deny('当前步骤已变化，不能重复提交或跳过前序步骤。');if(!requireRole(WF[s][2]))return;let err='';const value=k=>String(d[k]||'').trim();
- if(cmd==='crc-yes'&&(!d.eligibility||!d.recruiting||!value('opinion')))err='请核对完整纳排及招募状态，并填写审核意见。';
+ if(cmd==='crc-yes'&&!value('opinion'))err='请填写审核意见。';
  if(cmd==='crc-no'&&!value('opinion'))err='请填写不纳入原因。';
  if(cmd==='icf'&&(!d.disclosed||!d.signed||!value('icfVersion')||!value('signedDate')||!value('signRef')))err='请完成告知、知情同意书版本、签署日期、记录编号及签署确认。';
  if(cmd==='icf'&&value('signedDate')>new Date().toLocaleDateString('en-CA'))err='签署日期不能晚于今天。';
@@ -694,9 +988,9 @@ function processCase(cmd){const r=currentCase();if(!r)return deny('请先打开�
  if(cmd==='plan'&&(!value('plan')||!value('checkDate')))err='请填写检查安排和计划日期。';
  if(cmd==='plan'&&value('checkDate')<r.icf.date)err='检查日期不能早于知情同意签署日期。';
  if(cmd==='checks'&&(!d.complete||!value('lab')||!value('imaging')||!value('baseline')))err='请补齐检验、影像和基线记录，并确认要求的结果已回传齐全。';
- if(cmd==='recommend'&&(!d.allCriteria||!d.central||!value('reviewNote')))err='请核对完整纳排、中心实验室规则，并填写审核结论。';
+ if(cmd==='recommend'&&!value('reviewNote'))err='请填写审核结论。';
  if(cmd==='exclude'&&!value('reviewNote'))err='请填写剔除原因。';
- if((cmd==='enroll'||cmd==='pi-no')&&(!d.finalReview||!value('decisionNote')))err='PI 须核查全部资料并填写最终决定说明。';
+ if((cmd==='enroll'||cmd==='pi-no')&&!value('decisionNote'))err='请填写最终决定说明。';
  if(cmd==='follow'&&(!value('followDate')||!value('followContent')))err='请填写随访日期和随访事项。';
  if(cmd==='follow'&&value('followDate')<new Date().toLocaleDateString('en-CA'))err='新的随访计划日期不能早于今天。';
  if(err)return deny(err);if(flow.failNext){flow.failNext=false;return deny('模拟提交失败，未流转。所有输入已保留，请重试。')}
@@ -783,7 +1077,7 @@ function extractCriteria(p){const lines=p.sourceText.replace(/([。；])(?=\d+\.
 function reviewState(pid){if(!extra.reviews[pid])extra.reviews[pid]={items:extractCriteria(projectById(pid)),values:{},version:flow.version,history:[]};return extra.reviews[pid]}
 function reviewCounts(rv){return {pass:rv.items.filter(x=>rv.values[x.key]?.status==='pass').length,fail:rv.items.filter(x=>rv.values[x.key]?.status==='fail').length,unknown:rv.items.filter(x=>!rv.values[x.key]||rv.values[x.key].status==='unknown').length}}
 function canEditReview(){return ['screener','crc','pi'].includes(role)}
-function reviewPage(){const pid=extra.reviewProject,p=projectById(pid),rv=reviewState(pid),counts=reviewCounts(rv),stale=rv.version!==flow.version;const record=state.records.find(r=>r.projectId===pid);return `<button class="quiet" data-action="review-back">← 返回原页面</button><div class="patient-summary"><div class="avatar">A</div><div><h2>演示患者 A · ${esc(state.patient.age)} 岁</h2><small>${pid} · ${esc(p.name)}</small></div></div><div class="result-tabs" role="tablist">${[['criteria','入排明细'],['info','患者信息'],['materials','患者材料']].map(([k,v])=>`<button role="tab" aria-selected="${extra.reviewTab===k}" data-action="review-tab" data-id="${k}">${v}</button>`).join('')}</div>${extra.reviewTab==='info'?`<section class="card"><h2>患者信息</h2>${[['姓名',state.patient.name],['性别',state.patient.sex],['年龄',state.patient.age],['激素受体',state.patient.hr],['HER2',state.patient.her2],['ISH',state.patient.ish],['ECOG',state.patient.ecog],['化疗线数',state.patient.chemo],['内分泌治疗线数',state.patient.et],['CDK4/6 用药史',state.patient.cdk],['中心实验室',state.patient.central]].map(([k,v])=>`<div class="info-row"><span>${k}</span><b>${esc(v===undefined||v===null||v===''?'待提供':v)}</b></div>`).join('')}${extraButton('archive','查看完整患者档案')}</section>`:extra.reviewTab==='materials'?`<section class="card"><h2>患者材料</h2><p>当前资料 V${flow.version} · ${materialCount()} 份材料</p>${materialList()}${extraButton('contact-request','请患者补充资料','primary full')}</section>`:`<section class="card review-summary"><h2>入排标准明细</h2><div class="review-score"><span class="pill ${counts.fail?'red':'blue'}">${stale?'资料更新 · 待重核':counts.unknown?'待确认':'已逐条核对'}</span><strong>${counts.pass}<small> / ${rv.items.length}</small></strong></div><p class="muted">${counts.unknown} 项不确定 · ${counts.fail} 项不符合。条款来自本项目资料，不代表完整方案已齐备。</p><div class="rule-filters">${[['all','全部'],['pass','符合'],['fail','不符合'],['unknown','不确定']].map(([k,v])=>`<button data-action="review-filter" data-id="${k}" aria-pressed="${extra.reviewFilter===k}">${v}</button>`).join('')}</div><p class="muted">排除条款：符合表示未触发；不符合表示触发排除条件。</p></section><div class="note">知情同意${record?.icf?'已记录，仍需按条款核验':'待 PI 主导签署'}。初筛不要求先签署，正式判定前须完成。</div>${stale?`<div class="note warning">患者补充了资料，请点击“根据新资料重新核对”。已有状态保留为历史，不自动判为符合。${extraButton('review-recheck','根据新资料重新核对','primary full')}</div>`:''}${['in','out'].map(kind=>`<details class="card criterion-group" open><summary>${kind==='in'?'入选标准':'排除标准'} <span class="pill">${rv.items.filter(x=>x.kind===kind).length} 项</span></summary><div class="criterion-batch"><button data-action="review-batch-pass" data-id="${kind}" ${!canEditReview()||!rv.items.some(x=>x.kind===kind)?'disabled':''}>${kind==='in'?'全部符合（演示）':'全部未触发排除（演示）'}</button><small>一键设置本组全部条目，可再逐项修改。</small></div>${rv.items.filter(x=>x.kind===kind&&(extra.reviewFilter==='all'||(rv.values[x.key]?.status||'unknown')===extra.reviewFilter)).map(x=>{const v=rv.values[x.key]||{status:'unknown'},lab={pass:'符合',fail:'不符合',unknown:'不确定'}[v.status];return `<div class="criterion-row"><span class="criterion-code">${x.label}</span><div><p>${esc(x.text)}</p>${v.note?`<small class="criterion-note">依据：${esc(v.note)}</small>`:''}${v.source?`<button class="quiet" data-action="review-source" data-id="${x.key}">查看材料来源 ↗</button>`:''}</div><button class="criterion-status ${v.status}" data-action="review-edit" data-id="${x.key}" ${!canEditReview()?'disabled':''}>${v.status==='pass'?'✓':v.status==='fail'?'×':'?'}<small>${lab}</small></button></div>`}).join('')||'<p class="muted">当前筛选无条目，或资料未提供该组内容。</p>'}</details>`).join('')}<details class="card"><summary>完整项目原文</summary><pre class="original">${esc(p.sourceText)}</pre></details>${extra.sourceItem?`<section class="card source-preview"><h3>材料来源</h3><p>${esc(extra.sourceItem)}</p><div class="note">${esc(sourceExcerpt(extra.sourceItem))}</div>${extraButton('review-source-close','关闭来源')}</section>`:''}${extra.ruleEditor?ruleEditForm(rv):''}<section class="card"><h3>后续操作</h3>${extraButton('contact-request','补充资料并继续复核','primary full')}${extraButton('review-recheck','重新核对当前资料')}${record?extraButton('review-workflow','返回项目流程，处理拟入组 / 不纳入'):extraButton('review-back','返回初筛结果，选择候选并推送 CRC')}<p class="muted">逐条复核不会自动推进流程。拟入组、剔除与 PI 最终决定仍在原有审核表单中完成。</p></section>`}`}
+function reviewPage(){const pid=extra.reviewProject,p=projectById(pid),rv=reviewState(pid),counts=reviewCounts(rv),stale=rv.version!==flow.version;const record=state.records.find(r=>r.projectId===pid);return `<button class="quiet" data-action="review-back">← 返回原页面</button><div class="patient-summary"><div class="avatar">A</div><div><h2>演示患者 A · ${esc(state.patient.age)} 岁</h2><small>${pid} · ${esc(p.name)}</small></div></div><div class="result-tabs" role="tablist">${[['criteria','入排明细'],['info','患者信息'],['materials','患者材料']].map(([k,v])=>`<button role="tab" aria-selected="${extra.reviewTab===k}" data-action="review-tab" data-id="${k}">${v}</button>`).join('')}</div>${extra.reviewTab==='info'?`<section class="card"><h2>患者信息</h2>${[['姓名',state.patient.name],['性别',state.patient.sex],['年龄',state.patient.age],['激素受体',state.patient.hr],['HER2',state.patient.her2],['ISH',state.patient.ish],['ECOG',state.patient.ecog],['化疗线数',state.patient.chemo],['内分泌治疗线数',state.patient.et],['CDK4/6 用药史',state.patient.cdk],['中心实验室',state.patient.central]].map(([k,v])=>`<div class="info-row"><span>${k}</span><b>${esc(v===undefined||v===null||v===''?'待提供':v)}</b></div>`).join('')}${extraButton('archive','查看完整患者档案')}</section>`:extra.reviewTab==='materials'?`<section class="card"><h2>患者材料</h2><p>当前资料 V${flow.version} · ${materialCount()} 份材料</p>${materialList()}${extraButton('contact-request','请患者补充资料','primary full')}</section>`:`<section class="card review-summary"><h2>入排标准明细</h2><div class="review-score"><span class="pill ${counts.fail?'red':'blue'}">${stale?'资料更新 · 待重核':counts.unknown?'待确认':'已逐条核对'}</span><strong>${counts.pass}<small> / ${rv.items.length}</small></strong></div><p class="muted">${counts.unknown} 项不确定 · ${counts.fail} 项不符合。条款来自本项目资料，不代表完整方案已齐备。</p><div class="rule-filters">${[['all','全部'],['pass','符合'],['fail','不符合'],['unknown','不确定']].map(([k,v])=>`<button data-action="review-filter" data-id="${k}" aria-pressed="${extra.reviewFilter===k}">${v}</button>`).join('')}</div><p class="muted">排除条款：符合表示未触发；不符合表示触发排除条件。</p></section><div class="note">知情同意${record?.icf?'已记录，仍需按条款核验':'待 PI 主导签署'}。初筛不要求先签署，正式判定前须完成。</div>${stale?`<div class="note warning">患者补充了资料，请点击“根据新资料重新核对”。已有状态保留为历史，不自动判为符合。${extraButton('review-recheck','根据新资料重新核对','primary full')}</div>`:''}${['in','out'].map(kind=>`<details class="card criterion-group" open><summary>${kind==='in'?'入选标准':'排除标准'} <span class="pill">${rv.items.filter(x=>x.kind===kind).length} 项</span></summary>${rv.items.filter(x=>x.kind===kind&&(extra.reviewFilter==='all'||(rv.values[x.key]?.status||'unknown')===extra.reviewFilter)).map(x=>{const v=rv.values[x.key]||{status:'unknown'},lab={pass:'符合',fail:'不符合',unknown:'不确定'}[v.status];return `<div class="criterion-row"><span class="criterion-code">${x.label}</span><div><p>${esc(x.text)}</p>${v.note?`<small class="criterion-note">AI 初判：${({pass:'符合',fail:'不符合',unknown:'待补资料'})[(rv.aiValues?.[x.key]||v).status]||'待补资料'}<br>依据：${esc(v.note)}</small>`:''}${v.source?`<button class="quiet" data-action="review-source" data-id="${x.key}">查看材料来源 ↗</button>`:''}</div><div class="criterion-direct"><div class="criterion-choice" role="group" aria-label="${esc(x.label)} 条目结论">${['pass','fail'].map(choice=>`<button data-action="review-choice" data-id="${x.key}:${choice}" aria-pressed="${rv.decisions?.[x.key]===choice}" class="${rv.decisions?.[x.key]===choice?'selected '+choice:''}" ${!canEditReview()?'disabled':''}>${choice==='pass'?'符合':'不符合'}</button>`).join('')}</div>${reviewPhotoInput(x.key,x.label+' 上传照片')}${reviewPhotoList(rv,x.key)}</div></div>`}).join('')||'<p class="muted">当前筛选无条目，或资料未提供该组内容。</p>'}</details>`).join('')}<details class="card"><summary>完整项目原文</summary><pre class="original">${esc(p.sourceText)}</pre></details>${extra.sourceItem?`<section class="card source-preview"><h3>材料来源</h3><p>${esc(extra.sourceItem)}</p><div class="note">${esc(sourceExcerpt(extra.sourceItem))}</div>${extraButton('review-source-close','关闭来源')}</section>`:''}<section class="card"><h3>后续操作</h3>${extraButton('contact-request','补充资料并继续复核','primary full')}${extraButton('review-recheck','重新核对当前资料')}${record?extraButton('review-workflow','返回项目流程，处理拟入组 / 不纳入'):extraButton('review-back','返回初筛结果，选择候选并推送 CRC')}<p class="muted">条目选择即时保存；返回项目流程后提交拟入组或不纳入决定。</p></section>`}`}
 function ruleEditForm(rv){const x=rv.items.find(i=>i.key===extra.ruleEditor),v=extra.ruleDraft||rv.values[x.key]||{status:'unknown'};return `<section class="card rule-editor" role="region" aria-label="修改条款核对状态"><h3>${x.label} · 修改状态</h3><p>${esc(x.text)}</p><label class="field">核对结论<select id="criterion-value">${[['unknown','不确定'],['pass',x.kind==='out'?'符合（未触发排除）':'符合'],['fail',x.kind==='out'?'不符合（触发排除）':'不符合']].map(([k,t])=>`<option value="${k}" ${v.status===k?'selected':''}>${t}</option>`).join('')}</select></label><label class="field">核对依据<textarea id="criterion-note" placeholder="说明依据，不确定可暂留空">${esc(v.note||'')}</textarea></label><label class="field">资料来源<select id="criterion-source"><option value="">未选择</option>${['病理摘要（虚构）','治疗记录（虚构）','影像摘要（虚构）','检验摘要（虚构）',...extra.materialExtras.map(x=>x.name)].map(t=>`<option ${v.source===t?'selected':''}>${esc(t)}</option>`).join('')}</select></label><div class="bar">${extraButton('review-edit-cancel','取消','quiet')}${extraButton('review-save','保存核对','primary')}</div></section>`}
 caseDetail=function(){const r=currentCase();return extBase.caseDetail().replace('<details class="card project-records">',`<section class="card"><h3>复核与患者沟通</h3>${extraButton('review-open','查看入排明细 · 逐条核对','primary full',r?.projectId)}${extraButton('contact','发消息 / 电话 / 补充资料')}</section><details class="card project-records">`)};
 overview=function(){return extBase.overview().replace('<h2>患者筛选与入组</h2>',`<h2>患者筛选与入组</h2>${extraButton('invite','邀请患者扫码绑定')}`)};
@@ -826,8 +1120,8 @@ function extraAction(a,id){
  if(a==='desk-question'){extra.deskAnswer=true;render();return true}
  return false;
 }
-action=function(a,id){flow.error='';if(a==='reset'){extra=newExtra();extBase.action(a,id);state.page='desk';render();return}if(a==='wf-authorize'&&!extra.scanned)return deny('请先扫描医生邀请二维码');if(extraAction(a,id))return;if(a.startsWith('role-')&&['invite','contact','review'].includes(state.page)){const keep=state.page;extBase.action(a,id);state.page=keep;render();return}extBase.action(a,id)};
-processCase=function(cmd){if(['recommend','enroll'].includes(cmd)){const r=currentCase(),rv=r?reviewState(r.projectId):null;if(rv&&(!rv.confirmation||rv.confirmation.fingerprint!==reviewFingerprint(r.projectId)||reviewCounts(rv).fail))return deny('请先查看 AI 复核结果，并完成一次人工整体确认。')}extBase.processCase(cmd);if(cmd==='follow'&&flow.guidePhase==='complete'){state.page='desk';render()}};
+action=function(a,id){flow.error='';if(a==='reset'){extra=newExtra();extBase.action(a,id);state.page='home';render();return}if(a==='wf-authorize'&&!extra.scanned)return deny('请先扫描医生邀请二维码');if(extraAction(a,id))return;if(a.startsWith('role-')&&['invite','contact','review'].includes(state.page)){const keep=state.page;extBase.action(a,id);state.page=keep;render();return}extBase.action(a,id)};
+processCase=function(cmd){if(['crc-yes','recommend','enroll'].includes(cmd)){const r=currentCase(),rv=r?reviewState(r.projectId):null;if(rv&&reviewCounts(rv).fail)return deny('仍有不符合条目，请处理条目结论或选择不纳入。')}extBase.processCase(cmd);if(cmd==='follow'&&flow.guidePhase==='complete'){state.page='desk';render()}};
 currentGuide=function(){let g=extBase.currentGuide();if(flow.guidePhase==='complete')g[1]='已返回医生首页，项目与随访记录保留。';if(flow.guidePhase==='case'&&currentCase()?.status==='review')g[2][1]='打开入排明细逐条核对，所有条目明确后填写审核结论并勾选确认。';if(flow.guidePhase==='prepare'){g[2]=['医生在“邀请患者”展示二维码；直接点击 CX 端“演示扫码”（自动切换患者），核对医生后勾选授权并确认绑定。','患者载入 4 份虚构材料或选择演示文件。','切换初筛医生→科研中心→患者档案→查看患者详情→核对已有资料；点击“运行初筛 · 17 个项目” → 进入下一步演示说明']}
 if(currentCase()?.status==='consent'&&flow.guidePhase==='case')g[2]=['切换 PI，选择“载入虚构示例”“拍照自动识别（演示）”或“手动填写”。','核对录入字段，完成告知并勾选签署确认。','点击“保存签署记录” → 进入下一步演示说明'];return g};
 render=function(){extBase.render();for(const [id,key] of [['staff-message','messageDraft'],['patient-message','patientDraft'],['desk-question','deskText']]){const el=$('#'+id);if(el)el.addEventListener('input',()=>{extra[key]=el.value})}};
@@ -900,11 +1194,13 @@ render=function(){queueBase.render();$('#queue-search')?.addEventListener('input
 
 // Demonstration-only AI review: explicit rule-based evidence, no model or clinical service.
 const aiBase={reviewState,reviewPage,action,render};
-function reviewFingerprint(pid){const r=state.records.find(x=>x.projectId===pid);return JSON.stringify({v:flow.version,p:state.patient,kind:preparation.kind,materials:extra.materialExtras,icf:r?.icf,sign:r?.piSignoff,checks:r?.checks,supp:r?.supplements})}
-function simulateAIReview(pid,rv){if(rv.aiFingerprint)rv.history.push({previous:JSON.parse(JSON.stringify(rv.values)),confirmation:rv.confirmation,version:rv.version,reason:'AI重新复核'});const preliminary=evaluate(projectById(pid)).rules||[];rv.values={};for(const x of rv.items){let status='unknown',note='现有结构化资料不足以核实整条条件，请人工检查原始资料或补充资料。',source='';const t=x.text.replace(/^\s*\d+[.、．]\s*/,''),age=t.match(/(?:年龄)?\s*(\d+)\s*[~～–—\-至]\s*(\d+)\s*(?:岁|周岁)/);if(x.kind==='in'&&age&&t.length<85&&!/病理|治疗|肿瘤|签署/.test(t)&&state.patient.age!==''&&state.patient.age!=null){status=+state.patient.age>=+age[1]&&+state.patient.age<=+age[2]?'pass':'fail';note=`已录入年龄 ${state.patient.age} 岁；条款范围 ${age[1]}–${age[2]} 岁。`;if(/女性|男性/.test(t)&&!/性别不限/.test(t)){status='unknown';note+=' 条款含性别条件，需核对整条。'}source='患者结构化资料'}else if(x.kind==='in'&&/ECOG/i.test(t)&&t.length<65&&!/病灶|器官|生存|治疗/.test(t)&&/0\s*[~～–—\-至]\s*1|[≤≤]\s*1/.test(t)&&state.patient.ecog!==''&&state.patient.ecog!=null){status=+state.patient.ecog<=1?'pass':'fail';note=`已录入 ECOG ${state.patient.ecog} 分；仅对照此条评分范围。`;source='检验摘要（虚构）'}else if(x.kind==='in'&&/组织切片/.test(t)&&t.length<55&&state.patient.slices!==''&&state.patient.slices!=null){const range=t.match(/(\d+)\s*[-–~～]\s*(\d+)\s*片/);if(range){status=+state.patient.slices>=+range[1]?'pass':'fail';note=`已录入可提供组织切片 ${state.patient.slices} 片；条款要求 ${range[1]}–${range[2]} 片，按可提供数量核对下限。`;source='患者结构化资料'}}else{const hits=preliminary.filter(q=>/HER2/i.test(t)&&/HER2/.test(q.label)||/激素受体|HR.*阳性|ER.*阳性/.test(t)&&q.label==='激素受体'||/中心实验室/.test(t)&&/中心/.test(q.label));if(hits.length){note=hits.map(q=>`${q.label}：${q.actual}；要求：${q.expected}`).join('。')+'。上述仅为部分依据，整条条件仍需人工核实。';source=/HER2|激素受体|HR|ER/.test(t)?'病理摘要（虚构）':''}}rv.values[x.key]={status,note,source,by:'AI 复核（模拟）'}}rv.version=flow.version;rv.aiFingerprint=reviewFingerprint(pid);rv.aiAt=stamp();rv.confirmation=null;rv.confirmDraft='';rv.confirmCheck=false}
+function reviewFingerprint(pid){const r=state.records.find(x=>x.projectId===pid);return JSON.stringify({photos:extra.reviews[pid]?.photoVersion||0,v:flow.version,p:state.patient,kind:preparation.kind,materials:extra.materialExtras,icf:r?.icf,sign:r?.piSignoff,checks:r?.checks,supp:r?.supplements})}
+function simulateAIReview(pid,rv){if(rv.aiFingerprint)rv.history.push({previous:JSON.parse(JSON.stringify(rv.values)),confirmation:rv.confirmation,version:rv.version,reason:'AI重新复核'});const preliminary=evaluate(projectById(pid)).rules||[];rv.values={};for(const x of rv.items){let status='unknown',note='现有结构化资料不足以核实整条条件，请补充对应资料。',source='';const t=x.text.replace(/^\s*\d+[.、．]\s*/,''),age=t.match(/(?:年龄)?\s*(\d+)\s*[~～–—\-至]\s*(\d+)\s*(?:岁|周岁)/);if(x.kind==='in'&&age&&t.length<85&&!/病理|治疗|肿瘤|签署/.test(t)&&state.patient.age!==''&&state.patient.age!=null){status=+state.patient.age>=+age[1]&&+state.patient.age<=+age[2]?'pass':'fail';note=`已录入年龄 ${state.patient.age} 岁；条款范围 ${age[1]}–${age[2]} 岁。`;if(/女性|男性/.test(t)&&!/性别不限/.test(t)){status='unknown';note+=' 条款含性别条件，需核对整条。'}source='患者结构化资料'}else if(x.kind==='in'&&/ECOG/i.test(t)&&t.length<65&&!/病灶|器官|生存|治疗/.test(t)&&/0\s*[~～–—\-至]\s*1|[≤≤]\s*1/.test(t)&&state.patient.ecog!==''&&state.patient.ecog!=null){status=+state.patient.ecog<=1?'pass':'fail';note=`已录入 ECOG ${state.patient.ecog} 分；仅对照此条评分范围。`;source='检验摘要（虚构）'}else if(x.kind==='in'&&/组织切片/.test(t)&&t.length<55&&state.patient.slices!==''&&state.patient.slices!=null){const range=t.match(/(\d+)\s*[-–~～]\s*(\d+)\s*片/);if(range){status=+state.patient.slices>=+range[1]?'pass':'fail';note=`已录入可提供组织切片 ${state.patient.slices} 片；条款要求 ${range[1]}–${range[2]} 片，按可提供数量核对下限。`;source='患者结构化资料'}}else{const hits=preliminary.filter(q=>/HER2/i.test(t)&&/HER2/.test(q.label)||/激素受体|HR.*阳性|ER.*阳性/.test(t)&&q.label==='激素受体'||/中心实验室/.test(t)&&/中心/.test(q.label));if(hits.length){note=hits.map(q=>`${q.label}：${q.actual}；要求：${q.expected}`).join('。')+'。上述仅为部分依据，整条条件暂不能自动判断。';source=/HER2|激素受体|HR|ER/.test(t)?'病理摘要（虚构）':''}}rv.values[x.key]={status,note,source,by:'AI 复核（模拟）'}}rv.aiValues=structuredClone(rv.values);rv.decisions={};rv.version=flow.version;rv.aiFingerprint=reviewFingerprint(pid);rv.aiAt=stamp();rv.confirmation=null;rv.confirmDraft='';rv.confirmCheck=false}
 reviewState=function(pid){const rv=aiBase.reviewState(pid);if(rv.aiFingerprint!==reviewFingerprint(pid))simulateAIReview(pid,rv);return rv};
-function aiReviewPanel(rv){const c=reviewCounts(rv);return `<section class="card ai-review-panel"><span class="pill blue">AI 自动复核 · 演示规则</span><h2>${rv.confirmation?'AI 复核已完成人工确认':'AI 已整理，待人工检查确认'}</h2><p>进入页面自动对照当前资料，展示初判与依据。无需逐条重复点击；有误的条目可单独修改。</p><div class="stats"><div class="stat"><b>${c.pass}</b><span>初判符合</span></div><div class="stat"><b>${c.unknown}</b><span>需人工核实</span></div><div class="stat"><b>${c.fail}</b><span>存在不符合</span></div></div><p class="muted">此 Demo 使用规则模拟 AI，未连接真实模型。缺少资料不会自动判为符合。</p>${rv.confirmation?`<div class="note good"><b>人工已整体确认</b><p>${esc(rv.confirmation.by)} · ${esc(rv.confirmation.at)}</p><p>${esc(rv.confirmation.note||'已检查当前复核结果')}</p></div>`:`<label class="field">人工复核说明${c.unknown?'（有待核实项时必填）':''}<textarea id="ai-confirm-note" placeholder="说明待核实项的核查依据或处理情况；尚未核实请先补充资料">${esc(rv.confirmDraft||'')}</textarea></label><label class="selectline"><input id="ai-confirm-check" type="checkbox" ${rv.confirmCheck?'checked':''} ${!canEditReview()?'disabled':''}>我已检查 AI 依据，并人工核实待确认项；修改意见已处理。</label><button class="primary full" data-action="ai-confirm" ${!canEditReview()?'disabled':''}>确认整体复核结果</button>`}<button class="quiet full" data-action="review-recheck">重新运行 AI 复核</button><p class="muted">仅确认人工复核，不代表正式入组；条款原有 AI 状态保留可追溯，最终由 PI 判定。</p></section>`}
-reviewPage=function(){const rv=reviewState(extra.reviewProject);let h=aiBase.reviewPage();if(extra.reviewTab==='criteria'){h=h.replace('<section class="card review-summary">',aiReviewPanel(rv)+'<section class="card review-summary">');h=h.replace('<h2>入排标准明细</h2>','<h2>AI 初判与资料依据</h2>').replace('已逐条核对','AI 初判已完成').replace('逐条复核不会自动推进流程','整体复核确认不会自动推进流程').replace('重新核对当前资料','重新运行 AI 复核').replace('请结合当前资料逐条核验','请检查 AI 结果与依据')}return h};
+function reviewPhotoInput(key='',label='上传照片'){return `<label class="review-photo-upload">＋ ${esc(label)}<input type="file" accept="image/jpeg,image/png,image/webp" multiple data-review-photo="${esc(key)}" aria-label="${esc(label)}" ${!canEditReview()?'disabled':''}></label>`}
+function reviewPhotoList(rv,key=''){return `<div class="review-photo-list">${(rv.photos||[]).filter(p=>p.key===key).map(p=>`<figure><img src="${esc(p.url)}" alt="${esc(p.name)}"><figcaption>${esc(p.name)}</figcaption><button data-action="review-photo-remove" data-id="${p.id}" ${!canEditReview()?'disabled':''} aria-label="删除照片 ${esc(p.name)}">×</button></figure>`).join('')}</div>`}
+function aiReviewPanel(rv){return `<section class="card ai-review-panel"><span class="pill blue">AI 条目分析 · 演示</span><h2>上传资料，直接选择条目结论</h2><p>支持上传报告照片，也可在具体条目下添加对应照片。资料变更后自动更新分析；CRC 直接选择“符合”或“不符合”，即时保存。</p>${reviewPhotoInput()}${reviewPhotoList(rv)}${rv.photoError?`<p role="alert">${esc(rv.photoError)}</p>`:''}${rv.photos?.length?'<p class="note">照片已添加，AI 演示分析已更新。请在下方选择条目结论。</p>':''}<p class="muted">本 Demo 照片仅在本地预览，未接入图片识别；AI 初判来自已录入的结构化演示资料。资料不足显示“待补资料”，不会自动判为符合。</p></section>`}
+reviewPage=function(){const rv=reviewState(extra.reviewProject);let h=aiBase.reviewPage();if(extra.reviewTab==='criteria'){h=h.replace('<section class="card review-summary">',aiReviewPanel(rv)+'<section class="card review-summary">');h=h.replace('<h2>入排标准明细</h2>','<h2>AI 初判与资料依据</h2>').replace('已逐条核对','AI 初判已完成').replace('逐条复核不会自动推进流程','条目选择即时保存').replace('重新核对当前资料','重新运行 AI 复核').replace('请结合当前资料逐条核验','请检查 AI 结果与依据')}return h};
 action=function(a,id){if(a==='review-batch-pass'){
  if(!canEditReview())return deny('当前角色只读');
  if(!['in','out'].includes(id))return;
@@ -912,8 +1208,8 @@ action=function(a,id){if(a==='review-batch-pass'){
  if(flow.failNext){flow.failNext=false;return deny('模拟保存失败，未修改条目，请重试。')}
  rv.history.push({previous:structuredClone(rv.values),confirmation:structuredClone(rv.confirmation),kind:id,by:ROLE_NAMES[role],at:stamp(),reason:'演示批量设置：'+(id==='in'?'全部符合':'全部未触发排除')});
  for(const x of items)rv.values[x.key]={status:'pass',note:id==='in'?'演示预设：本条入选条件符合，可按演示情景逐项修改。':'演示预设：未触发本条排除条件，可按演示情景逐项修改。',source:'',by:ROLE_NAMES[role]+'（演示批量设置）'};
- rv.confirmation=null;rv.confirmCheck=false;extra.ruleEditor=null;extra.ruleDraft=null;flow.error='';render();toast('已设置本组 '+items.length+' 项；未提交整体复核或推进流程');return;
- }if(a==='review-recheck'){if(!canEditReview())return deny('当前角色只读');const rv=aiBase.reviewState(extra.reviewProject);simulateAIReview(extra.reviewProject,rv);extra.ruleEditor=null;extra.reviewFilter='all';render();toast('AI 已重新复核，请检查并整体确认');return}if(a==='ai-confirm'){if(!canEditReview())return deny('请由初筛医生、CRC 或 PI 检查确认');const rv=reviewState(extra.reviewProject),c=reviewCounts(rv);if(!rv.items.length)return deny('项目未提供可复核条款，请先补齐项目规则');if(c.fail)return deny('仍有不符合条款，请核实依据并处理，不能直接整体通过');if(!rv.confirmCheck)return deny('请先勾选人工检查确认');if(c.unknown&&!rv.confirmDraft.trim())return deny('请填写待核实项的人工核查依据或处理情况');if(flow.failNext){flow.failNext=false;return deny('模拟保存失败，人工复核输入已保留')}rv.confirmation={by:ROLE_NAMES[role],at:stamp(),note:rv.confirmDraft,fingerprint:reviewFingerprint(extra.reviewProject)};rv.history.push({confirmation:{...rv.confirmation}});render();toast('人工整体复核已确认，无需逐条重复点击');return}if(a==='review-save'){const rv=reviewState(extra.reviewProject),before=rv.history.length;aiBase.action(a,id);if(rv.history.length>before){rv.confirmation=null;render()}return}return aiBase.action(a,id)};
+ rv.confirmation=null;rv.confirmCheck=false;extra.ruleEditor=null;extra.ruleDraft=null;flow.error='';render();toast('已设置本组 '+items.length+' 项；未推进项目流程');return;
+ }if(a==='review-recheck'){if(!canEditReview())return deny('当前角色只读');const rv=aiBase.reviewState(extra.reviewProject);simulateAIReview(extra.reviewProject,rv);extra.ruleEditor=null;extra.reviewFilter='all';render();toast('AI 分析已更新，可直接选择条目结论');return}if(a==='ai-confirm'){return}if(a==='review-save'){const rv=reviewState(extra.reviewProject),before=rv.history.length;aiBase.action(a,id);if(rv.history.length>before){rv.confirmation=null;render()}return}return aiBase.action(a,id)};
 render=function(){aiBase.render();$('#ai-confirm-note')?.addEventListener('input',e=>reviewState(extra.reviewProject).confirmDraft=e.target.value);$('#ai-confirm-check')?.addEventListener('change',e=>reviewState(extra.reviewProject).confirmCheck=e.target.checked)};
 const aiSourceExcerpt=sourceExcerpt;
 sourceExcerpt=function(source){return source==='患者结构化资料'?`当前已录入：年龄 ${state.patient.age??'未提供'} 岁；可提供组织切片 ${state.patient.slices??'未提供'} 片。请结合原始报告核实。`:aiSourceExcerpt(source)};
@@ -949,7 +1245,7 @@ function shellIcon(key){const paths={plus:'<path d="M12 5v14M5 12h14"/>',search:
 function shellSidebar(){return `<aside class="dx-sidebar"><div class="dx-brand"><span class="dx-monogram">DX</span><strong>暖欣健康</strong><small>演示</small><button data-shell="collapse" aria-label="${shellCollapsed?'展开':'收起'}导航">☰</button></div><nav aria-label="DX 主导航">${shellItems.map(([id,label,icon])=>`<button data-shell="${id}" class="dx-nav-item ${shellSection===id?'selected':''}" aria-current="${shellSection===id?'page':'false'}" title="${label}">${shellIcon(icon)}<span>${label}</span></button>`).join('')}</nav><div class="dx-demo-controls"></div><div class="dx-profile"><span>演</span><div><b>演示工作台</b><small>${esc(ROLE_NAMES[role])}</small></div></div></aside>`}
 function shellWelcome(){return `<section class="dx-welcome"><div class="dx-welcome-inner"><h1>暖欣健康</h1><div class="dx-question"><textarea id="shell-question" aria-label="医学问题（演示）" placeholder="输入您的医学问题，例如：如何整理患者的检查资料？">${esc(shellQuestion)}</textarea><div class="dx-question-tools"><button data-shell="example">深度循证</button><button data-shell="example">患教内容创作</button><span></span><button data-shell="patients">♙ 选择患者</button><button data-shell="records" aria-label="病历附件">⌕</button><button data-shell="example" aria-label="查看问答演示">➤</button></div></div><div class="dx-search-cards">${['搜文献','搜指南','搜药品'].map((t,i)=>`<button data-shell="search"><span class="search-symbol s${i}">${shellIcon(i===2?'trial':'file')}</span><b>${t}</b><span>›</span></button>`).join('')}</div><div class="dx-question-examples"><h3>✧ 试试这些问题</h3>${['如何整理病理和影像资料？','如何查看患者的项目进度？'].map(t=>`<button data-shell="example">${t}<span>›</span></button>`).join('')}</div><p class="dx-home-note">首页为演示还原 · 临床实验流程使用虚构数据</p></div></section>`}
 function shellReferencePage(){const names={search:'智能搜索',favorites:'我的收藏',team:'团队管理',example:'医学问答演示'};if(shellSection==='team')return `<section class="dx-reference"><div class="dx-team-banner"><small>团队管理</small><h1>黄隽团队 · 临床科研协作</h1><p>演示角色与职责 · 虚构团队</p></div><section class="card"><h2>团队成员与职责</h2><p class="muted">左侧“演示角色”可切换视图，查看同一患者在各环节的处理方式。</p>${Object.entries(ROLE_NAMES).filter(([k])=>k!=='patient').map(([k,t])=>`<div class="dx-team-row"><b>${t}</b><span>${{screener:'绑定患者、核对资料、初筛推送',crc:'拟入组审核、检查安排、结果审核与随访',pi:'主导知情同意、最终入组判定',manager:'跨项目查看患者与随访、单发或群发消息'}[k]}</span></div>`).join('')}<button class="primary" data-shell="clinical">进入临床实验</button></section><section class="card"><h2>角色与患者可见范围</h2><p>实际 SIT 团队管理支持按角色配置本人、指定人或全团队患者范围。本页仅展示科研分工，不修改真实团队权限。</p></section></section>`;return `<section class="dx-reference"><h1>${names[shellSection]||'功能演示'}</h1><section class="card"><h2>${shellSection==='favorites'?'暂无演示收藏':'首页入口已保留'}</h2><p>当前 Demo 重点演示临床实验流程，该入口未连接实际检索或诊疗服务。</p><button class="primary" data-shell="clinical">进入临床实验</button><button data-shell="home">返回首页</button></section></section>`}
-action=function(a,id){if(a==='reset'){shellSection='home';shellQuestion=''}if(a==='desk'){shellSection='home'}if(a==='coverage'){shellSection='clinical'}if(a.startsWith('role-')&&['home','team','search','favorites','example'].includes(shellSection)){role=a.slice(5);resetMessagePreview();render();return}return shellBase.action(a,id)};
+action=function(a,id){if(a==='reset'){shellSection='clinical';shellQuestion=''}if(a==='desk'){shellSection='home'}if(a==='coverage'){shellSection='clinical'}if(a.startsWith('role-')&&['home','team','search','favorites','example'].includes(shellSection)){role=a.slice(5);resetMessagePreview();render();return}return shellBase.action(a,id)};
 function shellNavigate(section){if(section==='collapse'){shellCollapsed=!shellCollapsed;render();return}shellSection=section;if(section==='home'){state.page='desk'}else if(section==='clinical'){if(['desk','coverage'].includes(state.page))state.page=role==='manager'?'progress':'home'}else if(section==='patients')state.page='archive';else if(section==='records')state.page='upload';else if(section==='tasks')state.page='progress';render()}
 render=function(){shellBase.render();if(state.page==='desk'&&!['team','search','favorites','example'].includes(shellSection))shellSection='home';const app=$('#app'),bar=$('.reviewbar'),layout=$('.flow-layout'),controls=$('.review-controls'),nav=$('.flow-nav'),oldSide=$('.flow-sidebar');const clinical=['clinical','patients','records','tasks'].includes(shellSection);const root=document.createElement('div');root.className='dx-shell'+(shellCollapsed?' nav-collapsed':'');root.innerHTML=shellSidebar()+'<div class="dx-workspace"></div>';app.appendChild(root);root.querySelector('.dx-demo-controls').appendChild(controls);oldSide.remove();const workspace=root.querySelector('.dx-workspace');workspace.appendChild(bar);bar.querySelector('strong').textContent='黄隽团队 · 临床实验演示';bar.querySelector('span').textContent=' V0.8.3';const toolbar=document.createElement('div');toolbar.className='dx-clinical-toolbar';toolbar.innerHTML='<div><b>临床实验</b><span>科研队列 · 患者协作</span></div>';toolbar.appendChild(nav);workspace.appendChild(toolbar);workspace.appendChild(layout);layout.hidden=!clinical;toolbar.hidden=!clinical;if(!clinical){const view=document.createElement('div');view.className='dx-home-surface';view.innerHTML=shellSection==='home'?shellWelcome():shellReferencePage();workspace.appendChild(view)}document.querySelectorAll('[data-shell]').forEach(el=>el.addEventListener('click',()=>shellNavigate(el.dataset.shell)));$('#shell-question')?.addEventListener('input',e=>shellQuestion=e.target.value)};
 
@@ -1238,11 +1534,11 @@ makeCase=function(pid){const r=crcHandoffBase.makeCase(pid),rv=reviewState(pid);
 function crcHandoff(r){const p=r.patient||{},value=v=>v===undefined||v===null||v===''?'待提供':String(v);return `<section class="card crc-handoff"><span class="pill blue">初筛医生交接 · 资料 V${r.version}</span><h2>患者信息与审核依据</h2><p><b>${esc(p.name||'演示患者 A')}</b> · ${esc(value(p.age))} 岁 · ${esc(value(p.sex))}</p><div class="crc-patient-facts">${[['激素受体',p.hr],['HER2',p.her2],['ISH',p.ish],['ECOG',p.ecog],['化疗线数',p.chemo],['内分泌治疗线数',p.et]].map(([k,v])=>`<div><small>${k}</small><b>${esc(value(v))}</b></div>`).join('')}</div><p class="muted">以上为推送时患者信息 · ${r.materials} 份材料${r.version!==flow.version?'；当前资料已更新至 V'+flow.version+'，请对照最新资料重新核对。':''}</p><p>初筛医生备注：${esc(r.note||'未填写')}</p><div class="crc-review-links">${[['criteria','入排标准与逐条依据'],['info','查看患者信息'],['materials','查看病历材料']].map(([tab,label])=>`<button data-action="crc-review" data-id="${tab}" class="${tab==='criteria'?'primary':'quiet'} full">${label}</button>`).join('')}</div><details><summary>初筛推送依据 · ${(r.rules||[]).length} 项</summary>${(r.rules||[]).map(q=>`<div class="crc-evidence"><b>${esc(q.label)}</b><p>患者：${esc(value(q.actual))}<br>要求：${esc(value(q.expected))}</p><span class="pill">${q.status==='pass'?'关键项符合':q.status==='fail'?'不符合 · 需复核':'待核验'}</span></div>`).join('')||'<p>无初筛依据快照，请打开完整入排标准核对。</p>'}</details>${r.handoffReview?`<details><summary>推送时完整入排核对 · ${r.handoffReview.items.length} 条</summary>${r.handoffReview.items.map(x=>{const v=r.handoffReview.values[x.key]||{};return `<div class="crc-evidence"><b>${esc(x.label)} · ${v.status==='pass'?'符合':v.status==='fail'?'不符合':'待核实'}</b><p>${esc(x.text)}</p><small>依据：${esc(v.note||'尚未提供，需 CRC 核对')}${v.source?' · 来源：'+esc(v.source):''}</small></div>`}).join('')}</details>`:''}<p class="muted">先核对患者、材料和逐条依据，再填写下方拟入组审核意见。</p></section>`}
 workflowForm=function(r){return (r.status==='crc'?crcHandoff(r):'')+crcHandoffBase.workflowForm(r)};
 action=function(a,id){if(a==='crc-review'){const r=currentCase();if(!r||!['criteria','info','materials'].includes(id))return;extra.reviewOrigin='case';extra.reviewScroll=$('.product')?.scrollTop||0;extra.reviewProject=r.projectId;extra.reviewTab=id;extra.reviewFilter='all';extra.ruleEditor=null;extra.sourceItem=null;reviewState(r.projectId);jump('review');return;}return crcHandoffBase.action(a,id)};
-currentGuide=function(){const g=crcHandoffBase.currentGuide();if(flow.guidePhase==='case'&&currentCase()?.status==='crc'){g[1]='CRC 对照初筛医生交接的患者信息、病历材料及完整入排依据，填写拟入组审核意见。';g[2]=['在当前项目的“患者信息与审核依据”查看推送时患者资料和初筛依据。','打开“入排标准与逐条依据”，结合“患者信息”“患者材料”核对；返回当前项目填写审核意见。','点击“同意拟入组 → 交 PI 完成知情同意” → 进入下一步演示说明'];g[4]=g[2].map(()=>'DX · CRC / CRA / 申办方');}return g};
+currentGuide=function(){const g=crcHandoffBase.currentGuide();if(flow.guidePhase==='case'&&currentCase()?.status==='crc'){g[1]='CRC 对照初筛医生交接的患者信息、病历材料及完整入排依据，填写拟入组审核意见。';g[2]=['在当前项目的“患者信息与审核依据”查看推送时患者资料和初筛依据。','打开“入排标准与逐条依据”，可上传照片；查看 AI 演示分析后直接点“符合 / 不符合”，返回项目填写审核意见。','点击“同意拟入组 → 交 PI 完成知情同意” → 进入下一步演示说明'];g[4]=g[2].map(()=>'DX · CRC / CRA / 申办方');}return g};
 
 // Appointment V2 prototype: local fictional data, no HIS, telephony, voice or push service.
 const avBase={render,action,currentGuide,cxSubpageMarkup};
-const avNew=()=>({kind:'out',view:'home',selected:null,filter:'pending',doctorKind:'out',now:null,limits:{},cancellations:0,blockedUntil:null,notifications:[],popups:[],serial:0,draft:{name:'演示患者 A',age:'58',sex:'女',date:'',period:'上午',treatment:'',visitType:'',reason:'',note:'',attachments:[],previews:[]},editor:null,editing:{},message:'',cancelReason:'',call:{reason:'',newDate:''},month:0,error:'',capacityDate:'',capacity:'10',batchDate:'',batchTarget:'',batchNote:''});
+const avNew=()=>({kind:'out',view:'home',selected:null,filter:'pending',doctorKind:'out',now:null,limits:{},cancellations:0,blockedUntil:null,notifications:[],popups:[],serial:0,draft:{name:'演示患者 A',age:'58',sex:'女',date:'',period:'上午',treatment:'',visitType:'',reason:'',note:'',attachments:[],previews:[]},editor:null,editing:{},message:'',cancelReason:'',call:{reason:'',newDate:''},month:0,error:'',capacityDate:'',capacity:'10',batchDate:'',batchTarget:'',batchNote:'',batchExtra:false});
 let av=avNew();
 const avNames={out:'门诊就诊',in:'住院预约'},avStatuses={pending:'待处理',coordinating:'日期协商中',rescheduling:'改期待确认',approved:'预约已确认',cancelled:'已取消'};
 const avTreatments=['解救化疗','新辅助化疗','辅助化疗','内分泌治疗'],avVisits=['日间放化疗（院内可报销）','双通道','普外科门诊（不可报销）'],avReasons=['穿刺','手术','化疗'];
@@ -1256,50 +1552,99 @@ const avActive=r=>r.status!=='cancelled';
 const avAt=()=>avNow().toLocaleString('zh-CN',{hour12:false});
 const avHolidayRanges=[['01-01','01-03'],['02-15','02-23'],['04-04','04-06'],['05-01','05-05'],['06-19','06-21'],['09-25','09-27'],['10-01','10-07']];
 const avWorkdays=['01-04','02-14','02-28','05-09','09-20','10-10'];
+function avHoliday(date){if(!date.startsWith('2026-'))return null;const md=date.slice(5);return avHolidayRanges.some(([a,b])=>md>=a&&md<=b)}
 function avWorking(date){if(!date.startsWith('2026-'))return null;const md=date.slice(5);if(avWorkdays.includes(md))return true;if(avHolidayRanges.some(([a,b])=>md>=a&&md<=b))return false;const day=new Date(date+'T12:00:00').getDay();return day!==0&&day!==6}
 const avUsed=(date,exclude=[])=>apt.requests.filter(r=>r.kind==='out'&&avActive(r)&&!exclude.includes(r.id)&&(r.date===date||r.proposal?.date===date)).length;
 const avLimit=date=>av.limits[date]??10;
 const avBlocked=()=>av.blockedUntil&&avTime(av.blockedUntil)>avNow().getTime();
-function avDateIssue(kind,date,exclude=[]){if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||date<avToday())return '请选择今天或之后的日期';if(kind==='in')return '';const working=avWorking(date);if(working===null)return '该年度工作日日历尚未载入，请选择 2026 年日期';if(!working)return '该日为节假日或休息日，门诊不可预约';if(avUsed(date,exclude)>=avLimit(date))return '该日已约满，请选择其他日期';return ''}
-function avNotify(to,title,text,id){const n={id:'N'+(++av.serial),to,title,text,requestId:id,at:avAt(),read:false};av.notifications.unshift(n);av.popups.push(n)}
+function avDateIssue(kind,date,exclude=[],allowExtra=false){if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||date<avToday())return '请选择今天或之后的日期';const holiday=avHoliday(date);if(holiday===null)return '该年度预约日历尚未开放';if(holiday)return '节假日不开放预约，请选择其他日期';if(kind==='in')return '';const working=avWorking(date);if(working===null)return '该年度工作日日历尚未载入，请选择 2026 年日期';if(!working)return '该日为节假日或休息日，门诊不可预约';if(!allowExtra&&avUsed(date,exclude)>=avLimit(date))return '该日已约满，请选择其他日期';return ''}
+function avNotify(to,title,text,id){const n={id:'N'+(++av.serial),to,title,text,requestId:id,at:avAt(),read:false,popupUntil:Date.now()+5500};av.notifications=av.notifications.filter(x=>!(x.to===to&&x.requestId===id&&x.title===title));av.notifications.unshift(n);av.notifications=av.notifications.slice(0,40);av.popups=av.popups.filter(x=>x.to!==to);av.popups.push(n)}
 function avLog(r,text){r.history.push({at:avAt(),text})}
 function avFail(text){av.error=text;render()}
 function avGuard(){if(!flow.failNext)return false;flow.failNext=false;avFail('模拟提交失败，输入已保留，请重试。');return true}
 function avDefault(r){return r.kind==='in'?'按约定日期前往医生办公室办理入院':'按约定日期前往医生办公室就诊'}
-function avConfirm(r,date,period,note){r.date=date;r.period=period;r.status='approved';r.proposal=null;r.note=note.trim()||avDefault(r);r.result=r.note;r.location='中南大学湘雅医院 · 住院部医生办公室';r.appointment={date,period};r.reviewedAt=avAt();r.reviewer='黄隽教授';r.read=false;r.remindedDate=null;avLog(r,'预约确认：'+date+' '+period);avNotify('patient','预约已确认',avNames[r.kind]+' · '+date+' '+period+'。'+r.note,r.id)}
+function avConfirm(r,date,period,note){r.date=date;r.period=period;r.status='approved';r.proposal=null;r.note=note.trim()||avDefault(r);r.result=r.note;r.location='中南大学湘雅医院 · 住院部医生办公室';r.appointment={date,period};r.reviewedAt=avAt();r.confirmationViewed=false;r.reviewer='黄隽教授';r.read=false;r.remindedDate=null;avLog(r,'预约确认：'+date+' '+period);avNotify('patient','预约已确认',avNames[r.kind]+' · '+date+' '+period+'。'+r.note,r.id)}
 function avCancel(r,reason,patientCount){r.status='cancelled';r.cancelReason=reason;r.proposal=null;r.result='已取消：'+reason;if(r.kind==='out'&&patientCount){av.cancellations++;if(av.cancellations>=3&&!avBlocked()){const until=avNow();const day=until.getDate();until.setDate(1);until.setMonth(until.getMonth()+3);const max=new Date(until.getFullYear(),until.getMonth()+1,0).getDate();until.setDate(Math.min(day,max));av.blockedUntil=avDate(until)}}avLog(r,'取消预约：'+reason);avNotify('doctor','预约取消通知',r.name+' · '+avNames[r.kind]+' · '+reason,r.id);avNotify('patient','预约已取消',reason+(r.kind==='out'&&patientCount?'；累计门诊取消 '+av.cancellations+' 次。':''),r.id)}
 function avRemind(){for(const r of apt.requests){const hours=(avTime(r.date,r.period)-avNow().getTime())/3600000;if(r.status==='pending'&&!r.processingAt&&hours<=48&&hours>0&&(!r.lastUrgent||avNow().getTime()-r.lastUrgent>=3600000)){r.lastUrgent=avNow().getTime();avNotify('doctor','[请尽快处理] 预约申请',r.name+' · '+r.date+' '+r.period+' · '+avNames[r.kind],r.id)}if(r.kind==='out'&&r.status==='approved'&&avAdd(avToday(),1)===r.date&&r.remindedDate!==r.date){r.remindedDate=r.date;avNotify('patient','明日就诊提醒',r.date+' '+r.period+'，请前往住院部医生办公室。',r.id)}}}
 function avButton(cmd,label,id='',cls='quiet full',disabled=false){return `<button data-av="${cmd}" data-id="${esc(id)}" class="${cls}" ${disabled?'disabled':''}>${label}</button>`}
-function avField(key,label,value='',type='text',group='draft'){return `<label class="field">${label}${type==='textarea'?`<textarea data-av-field="${key}" data-av-group="${group}">${esc(value)}</textarea>`:`<input type="${type}" data-av-field="${key}" data-av-group="${group}" value="${esc(value)}" ${type==='date'?`min="${avToday()}"`:''}>`}</label>`}
+function avField(key,label,value='',type='text',group='draft'){if(type==='date')return avRestrictedDate(key,label,value,group);return `<label class="field">${label}${type==='textarea'?`<textarea data-av-field="${key}" data-av-group="${group}">${esc(value)}</textarea>`:`<input type="${type}" data-av-field="${key}" data-av-group="${group}" value="${esc(value)}" ${type==='date'?`min="${avToday()}"`:''}>`}</label>`}
+function avRestrictedDate(key,label,value,group,month=''){
+ const base=new Date((month||value||avToday()).slice(0,7)+'-01T12:00:00'),days=new Date(base.getFullYear(),base.getMonth()+1,0).getDate(),offset=(base.getDay()+6)%7;
+ const capacityOnly=['capacityDate','batchDate'].includes(key),r=apt.requests.find(r=>'doctor:'+r.id===av.editor),kind=group==='call'?'in':group==='editing'?(r?.kind||'out'):'out',extra=key==='batchTarget'?av.batchExtra:av.editing.extra;
+ return `<div class="field av-date-picker" data-picker-key="${key}" data-picker-group="${group}" data-picker-label="${label}" data-picker-month="${avDate(base)}"><span>${label}</span><details><summary aria-label="${label}">${value||'请选择可预约日期'}</summary><div class="av-date-picker-panel"><div class="row between"><button type="button" data-pick-month="-1" aria-label="上个月" ${avDate(base).slice(0,7)<=avToday().slice(0,7)?'disabled':''}>‹</button><b>${base.getFullYear()} 年 ${base.getMonth()+1} 月</b><button type="button" data-pick-month="1" aria-label="下个月" ${base.getFullYear()>=2026&&base.getMonth()===11?'disabled':''}>›</button></div><div class="av-week">${['一','二','三','四','五','六','日'].map(x=>`<span>${x}</span>`).join('')}</div><div class="av-days">${'<i></i>'.repeat(offset)}${Array.from({length:days},(_,i)=>{const date=avDate(new Date(base.getFullYear(),base.getMonth(),i+1)),issue=avDateIssue(kind,date,group==='editing'&&r?[r.id]:[],capacityOnly||extra),label=date<avToday()?'已过期':avHoliday(date)===null?'未开放':avHoliday(date)?'节假日':kind==='in'?'可预约':avWorking(date)!==true?'休息':Math.max(0,avLimit(date)-avUsed(date))?'余 '+Math.max(0,avLimit(date)-avUsed(date)):'已满';return `<button type="button" data-pick-date="${date}" aria-label="${date} ${label}" aria-pressed="${date===value}" ${issue?'disabled':''}>${i+1}<small>${label}</small></button>`}).join('')}</div></div></details></div>`;
+}
+function avBindRestrictedDates(){document.querySelectorAll('.av-date-picker').forEach(host=>{
+ const key=host.dataset.pickerKey,group=host.dataset.pickerGroup,obj=group==='root'?av:av[group];
+ host.querySelectorAll('[data-pick-month]').forEach(b=>b.onclick=()=>{const d=new Date(host.dataset.pickerMonth+'T12:00:00');d.setMonth(d.getMonth()+Number(b.dataset.pickMonth));const tmp=document.createElement('div');tmp.innerHTML=avRestrictedDate(key,host.dataset.pickerLabel,obj[key]||'',group,avDate(d));host.dataset.pickerMonth=avDate(d);host.innerHTML=tmp.firstElementChild.innerHTML;host.querySelector('details').open=true;avBindRestrictedDates()});
+ host.querySelectorAll('[data-pick-date]').forEach(b=>b.onclick=()=>{obj[key]=b.dataset.pickDate;host.querySelector('summary').textContent=obj[key];host.querySelector('details').open=false;host.querySelectorAll('[data-pick-date]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));if(key==='capacityDate'){av.capacity=String(avLimit(obj[key]));document.querySelector('[data-av-field="capacity"]').value=av.capacity}avCapacityRefresh()});
+})}
+function avRefreshRestrictedDates(){document.querySelectorAll('.av-date-picker').forEach(host=>{const obj=host.dataset.pickerGroup==='root'?av:av[host.dataset.pickerGroup],open=host.querySelector('details').open,tmp=document.createElement('div');tmp.innerHTML=avRestrictedDate(host.dataset.pickerKey,host.dataset.pickerLabel,obj[host.dataset.pickerKey]||'',host.dataset.pickerGroup,host.dataset.pickerMonth);host.innerHTML=tmp.firstElementChild.innerHTML;host.querySelector('details').open=open});avBindRestrictedDates()}
 function avSelect(key,label,items,value,group='draft'){return `<label class="field">${label}<select data-av-field="${key}" data-av-group="${group}"><option value="">请选择</option>${items.map(v=>`<option value="${esc(v)}" ${value===v?'selected':''}>${esc(v)}</option>`).join('')}</select></label>`}
 function avRule(kind){return kind==='out'?`门诊累计第 3 次取消后，暂停门诊预约 3 个月；住院预约不受影响。当前已取消 ${av.cancellations} 次。`:'住院须在预约时间前超过 48 小时自助取消；48 小时内请通过电话说明情况，由医生处理取消。'}
-function avCalendar(){const d=av.draft,base=new Date(avToday()+'T12:00:00');base.setDate(1);base.setMonth(base.getMonth()+av.month);const days=new Date(base.getFullYear(),base.getMonth()+1,0).getDate(),start=(base.getDay()+6)%7;return `<div class="av-calendar"><div class="row between">${avButton('month-prev','‹','','quiet',av.month<=0)}<b>${base.getFullYear()} 年 ${base.getMonth()+1} 月</b>${avButton('month-next','›','','quiet',av.month>=3)}</div><div class="av-week">${['一','二','三','四','五','六','日'].map(x=>`<span>${x}</span>`).join('')}</div><div class="av-days">${'<i></i>'.repeat(start)}${Array.from({length:days},(_,i)=>{const date=avDate(new Date(base.getFullYear(),base.getMonth(),i+1)),issue=avDateIssue(av.kind,date),label=av.kind==='in'?'可预约':date<avToday()?'已过期':avWorking(date)===null?'待同步':!avWorking(date)?'休息':avUsed(date)>=avLimit(date)?'已约满':'余 '+(avLimit(date)-avUsed(date));return `<button data-av="date" data-id="${date}" aria-label="${date} ${label}" class="${d.date===date?'selected':''}" ${issue?'disabled':''}>${i+1}<small>${label}</small></button>`}).join('')}</div></div>`}
-function avPatientForm(){const d=av.draft;return `<section class="card av-form">${avButton('home','‹ 返回预约首页')}<h2>${avNames[av.kind]}</h2>${avCalendar()}<p class="av-selected">${d.date?'已选：'+d.date:'请选择预约日期'}</p>${avSelect('period','就诊时段',['上午','下午'],d.period)}${avField('name','患者姓名（演示）',d.name)}${avField('age','年龄',d.age,'number')}${avSelect('sex','性别',['女','男','未填写'],d.sex)}${av.kind==='out'?avSelect('treatment','治疗分类',avTreatments,d.treatment)+avSelect('visitType','就诊类型',avVisits,d.visitType):avSelect('reason','住院原因',avReasons,d.reason)}${avField('note',av.kind==='out'?'申请就诊原因':'住院需求说明',d.note,'textarea')}${av.kind==='in'?`${avButton('voice-patient','语音转文字示例（模拟）')}<label class="upload-box">添加照片或附件<input data-av-files type="file" multiple accept="image/*,.pdf"></label><small>仅在本次浏览器演示中预览，不上传或进行 AI 解析。</small>${avAttachments(d)}`:''}<div class="av-rule"><b>提交前请阅读取消规则</b><p>${avRule(av.kind)}</p></div>${avButton('submit','提交'+avNames[av.kind]+'申请','','primary full')}${av.error?`<p role="alert" class="note danger">${esc(av.error)}</p>`:''}</section>`}
-function avPatientDetail(r){return `<section class="card av-detail">${avButton('home','‹ 我的预约')}<div class="row between"><h2>${avNames[r.kind]}</h2><span class="pill">${avStatuses[r.status]}</span></div><div class="av-date-block"><small>当前预约日期</small><h2>${esc(r.date)}</h2><p>${esc(r.period)} · 黄隽教授</p></div>${r.status==='approved'?`<div class="av-confirmed"><b>预约已确认</b><p>${esc(r.note)}</p><p>就诊地点：住院部医生办公室</p><small>${r.kind==='out'?'无需前往门诊大厅人工加号。':'预约用于协调入院安排，不代表已分配床位。'}</small></div>`:''}${r.proposal?`<section class="av-proposal"><h3>${r.status==='rescheduling'?'医生临时改期':'医生建议新日期'}</h3><strong>${esc(r.proposal.date)} · ${esc(r.proposal.period)}</strong><p>${esc(r.proposal.note)}</p><p>当前日期在确认前保持不变。</p>${avButton('accept','同意新日期',r.id,'primary full')}${r.status==='rescheduling'?avButton('decline','不接受，取消本次预约',r.id):'<p class="muted">如有疑问，请在下方留言协商；患者不能自行修改日期。</p>'}</section>`:''}${avDetails(r)}${avMessages(r,'patient')}${avCancelUI(r)}${r.status==='cancelled'?`<p>取消原因：${esc(r.cancelReason)}</p>${avButton('new', '重新预约',r.kind)}`:''}${av.error?`<p role="alert" class="note danger">${esc(av.error)}</p>`:''}</section>`}
+function avCalendar(){const d=av.draft,base=new Date(avToday()+'T12:00:00');base.setDate(1);base.setMonth(base.getMonth()+av.month);const days=new Date(base.getFullYear(),base.getMonth()+1,0).getDate(),start=(base.getDay()+6)%7;return `<div class="av-calendar"><div class="row between">${avButton('month-prev','‹','','quiet',av.month<=0)}<b>${base.getFullYear()} 年 ${base.getMonth()+1} 月</b>${avButton('month-next','›','','quiet',av.month>=3)}</div><div class="av-week">${['一','二','三','四','五','六','日'].map(x=>`<span>${x}</span>`).join('')}</div><div class="av-days">${'<i></i>'.repeat(start)}${Array.from({length:days},(_,i)=>{const date=avDate(new Date(base.getFullYear(),base.getMonth(),i+1)),issue=avDateIssue(av.kind,date),label=date<avToday()?'已过期':avHoliday(date)===null?'未开放':avHoliday(date)?'节假日':av.kind==='in'?'可预约':avWorking(date)===null?'待同步':!avWorking(date)?'休息':avUsed(date)>=avLimit(date)?'已约满':'余 '+(avLimit(date)-avUsed(date));return `<button data-av="date" data-id="${date}" aria-label="${date} ${label}" aria-pressed="${d.date===date}" class="${d.date===date?'selected':''}" ${issue?'disabled':''}>${i+1}<small>${label}</small></button>`}).join('')}</div></div>`}
+// Update only the calendar, keeping the form, its focus and all scroll containers intact.
+function avRefreshCalendar(changeMonth=false,focusCommand=''){
+ const calendar=document.querySelector('.av-calendar');if(!calendar)return false;
+ if(changeMonth){
+  const temp=document.createElement('div');temp.innerHTML=avCalendar();calendar.innerHTML=temp.firstElementChild.innerHTML;
+  calendar.querySelectorAll('[data-av]').forEach(el=>el.onclick=()=>avCommand(el.dataset.av,el.dataset.id));
+  const focus=calendar.querySelector(`[data-av="${focusCommand}"]`);if(focus&&!focus.disabled)focus.focus({preventScroll:true});
+ }else calendar.querySelectorAll('[data-av="date"]').forEach(el=>{const selected=el.dataset.id===av.draft.date;el.classList.toggle('selected',selected);el.setAttribute('aria-pressed',String(selected))});
+ const selected=document.querySelector('.av-selected');if(selected)selected.textContent=av.draft.date?'已选：'+av.draft.date:'请选择预约日期';
+ if(typeof updateGuideOperation==='function')updateGuideOperation();
+ return true;
+}
+function avPatientForm(){const d=av.draft;return `<section class="card av-form">${avButton('home','‹ 返回预约首页','','av-back')}<div class="av-form-heading"><small>黄隽教授团队 · 就诊服务</small><h2>${avNames[av.kind]}</h2><p>选择合适的日期，向医生提交${av.kind==='out'?'复诊':'住院'}申请。</p></div><section class="av-form-section"><h3><span>01</span> 预约时间</h3>${avCalendar()}<p class="av-selected">${d.date?'已选：'+d.date:'请选择预约日期'}</p>${avSelect('period','就诊时段',['上午','下午'],d.period)}</section><section class="av-form-section"><h3><span>02</span> 患者信息</h3>${avField('name','患者姓名（演示）',d.name)}<div class="av-form-pair">${avField('age','年龄',d.age,'number')}${avSelect('sex','性别',['女','男','未填写'],d.sex)}</div></section><section class="av-form-section"><h3><span>03</span> ${av.kind==='out'?'就诊需求':'住院需求'}</h3>${av.kind==='out'?avSelect('treatment','治疗分类',avTreatments,d.treatment)+avSelect('visitType','就诊类型',avVisits,d.visitType):avSelect('reason','住院原因',avReasons,d.reason)}${avField('note',av.kind==='out'?'申请就诊原因':'住院需求说明',d.note,'textarea')}${av.kind==='in'?`${avButton('voice-patient','语音转文字示例（模拟）')}<label class="upload-box">添加照片或附件<input data-av-files type="file" multiple accept="image/*,.pdf"></label><small>仅在本次浏览器演示中预览，不上传或进行 AI 解析。</small>${avAttachments(d)}`:''}</section><div class="av-rule"><b>提交前请阅读取消规则</b><p>${av.kind==='out'?`门诊累计第 <strong>3 次</strong>取消后，暂停门诊预约 <strong>3 个月</strong>；住院预约不受影响。<span class="av-cancel-count">当前已取消 <strong>${av.cancellations} 次</strong>。</span>`:avRule(av.kind)}</p></div>${avButton('submit','提交'+avNames[av.kind]+'申请','','primary full')}${av.error?`<p role="alert" class="note danger">${esc(av.error)}</p>`:''}</section>`}
+function avPatientDetail(r){return `<section class="card av-detail">${avButton('home','‹ 我的预约')}<div class="row between ${r.status==='approved'?'av-confirmed-title':''}"><h2>${avNames[r.kind]}</h2><span class="pill">${avStatuses[r.status]}</span></div>${r.status==='approved'?`<section class="av-confirmation-ticket av-booking-pass"><div class="av-booking-success"><span class="av-booking-check" aria-hidden="true">✓</span><div><h3>预约成功</h3><p>医生已确认，请按时${r.kind==='out'?'就诊':'办理入院'}</p></div></div><div class="av-booking-main"><div class="av-booking-date"><div class="av-booking-eyebrow"><span>${avNames[r.kind]}</span><span>${esc(r.date.slice(0,4))} 年</span></div><div class="av-booking-when"><strong>${Number(r.date.slice(5,7))}月${Number(r.date.slice(8))}日</strong><span>${['周日','周一','周二','周三','周四','周五','周六'][new Date(r.date+'T12:00:00').getDay()]} · ${esc(r.period)}</span></div></div><div class="av-booking-row"><span class="av-booking-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M5 20v-2a7 7 0 0 1 14 0v2"/></svg></span><div><small>就诊医生</small><b>黄隽教授</b></div></div><div class="av-booking-row"><span class="av-booking-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><small>就诊地点</small><b>中南大学湘雅医院</b><p>住院部医生办公室</p></div></div>${r.note?`<div class="av-booking-note"><b>医生叮嘱</b><p>${esc(r.note)}</p></div>`:''}</div><div class="av-booking-tip"><span aria-hidden="true">ⓘ</span><p>${r.kind==='out'?'按预约时间前往医生办公室，无需到门诊大厅人工加号。':'请按约定时间办理入院，床位以医院安排为准。'}</p></div></section>`:`<div class="av-date-block"><small>${r.status==='cancelled'?'原预约日期（已取消）':'当前预约日期'}</small><h2>${esc(r.date)}</h2><p>${esc(r.period)} · 黄隽教授</p></div>`}${r.proposal?`<section class="av-proposal"><h3>${r.status==='rescheduling'?'医生临时改期':'医生建议新日期'}</h3><strong>${esc(r.proposal.date)} · ${esc(r.proposal.period)}</strong><p>${esc(r.proposal.note)}</p><p>当前日期在确认前保持不变。</p>${avButton('accept','同意新日期',r.id,'primary full')}${av.editor==='decline:'+r.id?`<div class="av-decline-confirm" role="alert"><h3>确认拒绝新日期？</h3><p>拒绝后，本次预约将取消。如仍需就诊，请自行重新预约。</p><small>本次拒绝不计入门诊主动取消次数。</small><div class="av-decline-actions">${avButton('close-editor','暂不拒绝')}${avButton('decline-confirm','确认拒绝',r.id,'av-decline-button')}</div></div>`:avButton('decline','拒绝新日期',r.id,'full av-decline-button')}</section>`:''}${r.declinedProposal?`<section class="av-decline-result" role="status"><h3>${apt.requests.some(x=>x.id!==r.id&&avActive(x))?'本次预约已取消':'当前暂无有效预约'}</h3><p>您已拒绝医生建议的新日期，原预约也已取消。如仍需就诊，请重新提交预约申请。</p>${avButton('new','重新预约',r.kind,'primary full')}</section>`:''}${avDetails(r)}${avCancelUI(r)}${r.status==='cancelled'&&!r.declinedProposal?`<section class="av-cancelled-reason"><h3>取消原因</h3><p>${esc(r.cancelReason)}</p></section>${avButton('new', '重新预约',r.kind)}`:''}${av.error?`<p role="alert" class="note danger">${esc(av.error)}</p>`:''}</section>`}
 function avAttachments(r){return (r.attachments||[]).map((n,i)=>{const p=r.previews?.[i];return `<div class="av-attachment"><p>${esc(n)}</p>${p?.type?.startsWith('image/')?`<a href="${esc(p.url)}" target="_blank" rel="noopener"><img src="${esc(p.url)}" alt="${esc(n)}"></a>`:p?`<a href="${esc(p.url)}" target="_blank" rel="noopener">打开附件</a>`:''}</div>`}).join('')}
-function avDetails(r){return `<details class="av-info"><summary>查看申请信息</summary><p>${esc(r.name)} · ${esc(r.age)} 岁 · ${esc(r.sex)}</p><p>${esc(r.kind==='out'?r.treatment+' / '+r.visitType:r.reason)}</p><p>${esc(r.patientNote)}</p>${avAttachments(r)}<small>申请时间：${esc(r.at)}<br>申请编号：${r.id}</small></details>`}
-function avMessages(r,side){if(r.status==='cancelled')return '';return `<details class="av-info" ${r.proposal?'open':''}><summary>留言协商 · ${r.messages.length} 条</summary><div class="av-messages">${r.messages.map(m=>`<article><b>${m.side==='doctor'?'黄隽教授':'患者'}</b><small>${esc(m.at)}</small><p>${esc(m.text)}</p></article>`).join('')||'<p class="muted">暂无留言。日期调整由医生发起。</p>'}</div>${avField('message','留言内容',av.message,'textarea','root')}${avButton('message-'+side,'发送留言',r.id,'primary full',side==='doctor'&&!avDoctor())}</details>`}
+function avDetails(r){const rows=[['患者姓名',r.name],['年龄 / 性别',r.age+' 岁 · '+r.sex],...(r.kind==='out'?[['治疗分类',r.treatment],['就诊类型',r.visitType]]:[['住院原因',r.reason]]),['申请说明',r.patientNote||'未填写'],['申请时间',r.at],['申请编号',r.id]];return `<details class="av-info av-application-info"><summary>查看申请信息</summary><dl class="av-detail-fields">${rows.map(([label,value])=>`<div><dt>${label}</dt><dd>${esc(value||'未填写')}</dd></div>`).join('')}</dl>${avAttachments(r)}</details>`}
+
 function avCancelUI(r){if(!avActive(r)||avTime(r.date,r.period)<=avNow().getTime())return '';const late=r.kind==='in'&&avTime(r.date,r.period)-avNow().getTime()<=48*3600000;return `<div class="av-rule"><b>${avRule(r.kind)}</b></div>${late?`<button class="full" disabled>距入院不足 48 小时，无法自助取消</button>${avButton('call-open','电话联系，说明取消需求（模拟）',r.id)}`:avButton('cancel-open','取消预约',r.id)}${av.editor==='cancel:'+r.id?`<section class="av-cancel" role="dialog" aria-label="取消预约确认"><h3>确认取消预约</h3><strong>${avRule(r.kind)}</strong>${avField('cancelReason','取消原因（必填）',av.cancelReason,'textarea','root')}${avButton('cancel-confirm','确认取消',r.id,'primary full')}${avButton('close-editor','暂不取消')}</section>`:''}${av.editor==='call:'+r.id?`<section class="av-cancel"><h3>AI 电话记录（模拟）</h3><p>患者：${esc(r.name)} · ${esc(r.age)} 岁 · ${esc(r.sex)}</p>${avField('reason','取消原因',av.call.reason,'textarea','call')}${avField('newDate','希望重新预约的日期（选填）',av.call.newDate,'date','call')}<small>本演示以表单模拟电话询问，不会拨打真实电话。</small>${avButton('call-submit','提交电话记录给医生',r.id,'primary full')}</section>`:''}`}
-function avPatientHome(){const unread=av.notifications.filter(n=>n.to==='patient'&&!n.read).length;return `<section class="card av-intro"><small>黄隽教授团队 · 就诊服务</small><h2>预约就诊</h2><p>老患者复诊、住院安排，在这里向医生提交申请。</p>${avButton('new','门诊就诊','out','av-direction')} ${avButton('new','住院预约','in','av-direction')}<p class="muted">新患者请通过医院官方挂号系统预约。</p>${aptOfficialLink()}${avButton('notifications-patient','预约通知'+(unread?' · '+unread+' 条未读':''))}${avBlocked()?`<div class="av-rule">门诊预约暂停至 ${esc(av.blockedUntil)}，住院仍可正常预约。</div>`:''}</section><section class="card"><h3>我的预约</h3>${[...apt.requests].reverse().map(r=>`<button class="av-history" data-av="detail" data-id="${r.id}"><b>${avNames[r.kind]} · ${esc(r.date)}</b><span>${avStatuses[r.status]}</span><small>${esc(r.period)} · ${esc(r.kind==='out'?r.treatment:r.reason)}</small></button>`).join('')||'<p class="muted">暂无预约，选择上方服务开始申请。</p>'}</section>`}
-aptPatient=function(){return `<div class="av-patient">${av.view==='apply'?avPatientForm():av.view==='detail'&&apt.requests.find(r=>r.id===av.selected)?avPatientDetail(apt.requests.find(r=>r.id===av.selected)):avPatientHome()}${av.view!=='apply'&&av.view!=='detail'&&av.error?`<p role="alert" class="note danger">${esc(av.error)}</p>`:''}${av.view==='notifications'?avNotifications('patient'):''}</div>`};
+function avPatientHome(){const unread=av.notifications.filter(n=>n.to==='patient'&&!n.read).length;return `<section class="card av-intro"><small>黄隽教授团队 · 就诊服务</small><h2>预约就诊</h2><p>老患者复诊、住院安排，在这里向医生提交申请。</p>${avButton('new','门诊就诊','out','av-direction')} ${avButton('new','住院预约','in','av-direction')}${avBlocked()?`<div class="av-rule">门诊预约暂停至 ${esc(av.blockedUntil)}，住院仍可正常预约。</div>`:''}</section><section class="card"><h3>我的预约</h3>${[...apt.requests].reverse().map(r=>`<button class="av-history" data-av="detail" data-id="${r.id}"><b>${avNames[r.kind]} · ${esc(r.date)}</b><span>${avStatuses[r.status]}</span><small>${esc(r.period)} · ${esc(r.kind==='out'?r.treatment:r.reason)}</small></button>`).join('')||'<p class="muted">暂无预约，选择上方服务开始申请。</p>'}</section>`}
+aptPatient=function(){return `<div class="av-patient">${av.view==='apply'?avPatientForm():av.view==='detail'&&apt.requests.find(r=>r.id===av.selected)?avPatientDetail(apt.requests.find(r=>r.id===av.selected)):avPatientHome()}${av.view!=='apply'&&av.view!=='detail'&&av.error?`<p role="alert" class="note danger">${esc(av.error)}</p>`:''}</div>`};
 aptSuccessCards=()=>'';
-function avNotifications(side){return `<section class="card"><h3>${side==='patient'?'患者':'医生'}预约通知</h3>${av.notifications.filter(n=>n.to===side).map(n=>`<article class="av-notification"><b>${esc(n.title)}</b><p>${esc(n.text)}</p><small>${esc(n.at)}</small>${avButton('notification',n.read?'查看预约':'查看并标记已读',n.id)}</article>`).join('')||'<p>暂无通知</p>'}</section>`}
-function avDoctorEditor(r){if(av.editor!=='doctor:'+r.id)return '';return `<section class="av-editor" role="dialog" aria-label="处理预约申请"><h3>${av.editing.mode==='approve'?'同意预约':'发起日期协调'}</h3>${av.editing.mode==='coordinate'?avField('date','建议日期',av.editing.date,'date','editing')+avSelect('period','时段',['上午','下午'],av.editing.period,'editing'):`<p>同意患者申请日期：${r.date} · ${r.period}</p>`}${avField('note','医生备注（选填）',av.editing.note,'textarea','editing')}${avButton('voice-doctor','语音转文字示例（模拟）',r.id)}<p class="muted">不填写备注时，将通知患者按约定日期前往医生办公室${r.kind==='in'?'办理入院':'就诊'}。</p>${avButton('doctor-save','确认并通知患者',r.id,'primary full')}${avButton('close-editor','返回列表')}</section>`}
-function avDoctorCard(r){const urgent=r.status==='pending'&&!r.processingAt&&avTime(r.date,r.period)-avNow().getTime()<=48*3600000;return `<article class="card av-request" id="av-${r.id}"><div class="row between"><h2>${esc(r.name)}</h2><span class="pill">${avStatuses[r.status]}</span></div><p>${esc(r.age)} 岁 · ${esc(r.sex)} · ${avNames[r.kind]}</p>${urgent?'<div class="av-urgent">[请尽快处理] 距申请日期不足 48 小时</div>':''}<div class="av-date-block"><small>申请日期 / 当前安排</small><h2>${esc(r.date)} · ${esc(r.period)}</h2><p>${esc(r.kind==='out'?r.treatment+' · '+r.visitType:r.reason)}</p></div><p>${esc(r.patientNote||'患者未补充说明')}</p>${r.attachments?.length?`<details><summary>附件 · ${r.attachments.length} 份</summary>${avAttachments(r)}<p>附件仅供本次演示查看；未接入 AI 分析，请人工核对。</p></details>`:''}${r.proposal?`<div class="av-proposal">待患者确认：${r.proposal.date} · ${r.proposal.period}<p>${esc(r.proposal.note)}</p></div>`:''}${r.status==='approved'?`<p>${esc(r.note)}</p><small>地点：${esc(r.location)}</small>`:''}${r.status==='cancelled'?`<p>取消原因：${esc(r.cancelReason)}</p>`:''}${avDoctor()&&avActive(r)?`<div class="entry-grid">${r.status==='pending'?avButton('approve-open','同意',r.id,'primary full'):''}${avButton('coordinate-open','发起日期协调',r.id)}</div>`:''}${avDoctorEditor(r)}${avMessages(r,'doctor')}${r.call?`<section class="av-call"><h3>AI 电话取消请求（模拟）</h3><p>${esc(r.name)} · ${esc(r.age)} 岁 · ${esc(r.sex)}</p><p>取消原因：${esc(r.call.reason)}</p><p>希望新预约日期：${esc(r.call.newDate||'未提供')}</p><small>${esc(r.call.at)}</small>${avActive(r)?avButton('doctor-cancel','根据电话记录取消行程',r.id,'primary full',!avDoctor()):'<p>已处理取消</p>'}</section>`:''}<details><summary>处理记录</summary>${r.history.map(h=>`<p><small>${esc(h.at)}</small><br>${esc(h.text)}</p>`).join('')}</details></article>`}
-function avManagement(){return `<details class="card"><summary>门诊号量管理与临时改期</summary><div class="av-management-grid"><section><h3>调整每日号量</h3><p>默认每日 10 个号；待处理与已确认预约占用名额。</p>${avField('capacityDate','调整日期',av.capacityDate||avToday(),'date','root')}${avField('capacity','当日上限',av.capacity,'number','root')}${avButton('capacity-save','保存当日号量','','primary full',!avDoctor())}</section><section><h3>当日全部已约患者改期</h3><p>仅门诊；患者接受后生效，不接受则取消，不计入患者主动取消次数。</p>${avField('batchDate','原预约日期',av.batchDate||avToday(),'date','root')}${avField('batchTarget','新的就诊日期',av.batchTarget,'date','root')}${avField('batchNote','改期原因',av.batchNote,'textarea','root')}${avButton('batch','一键发送改期通知','','primary full',!avDoctor())}</section></div></details>`}
-function avDemoControls(){return `<details class="card av-demo"><summary>预约演示控制</summary><p>当前模拟时间：${avAt()}。提醒仅在本演示页面运行，不发送真实消息。</p><div class="row">${avButton('advance-hour','推进 1 小时','','quiet')}${avButton('advance-day','推进 1 天','','quiet')}${avButton('remind','检查到期提醒','','quiet')}</div><div class="row">${avButton('demo-dual','打开双端预约演示','','quiet')}${avButton('demo-doctor','切换黄隽教授','','quiet')}</div><div class="row">${avButton('fixture-out','载入门诊待处理样例','','quiet')}${avButton('fixture-in','载入住院 48 小时内样例','','quiet')}</div></details>`}
-aptDoctor=function(){const list=apt.requests.filter(r=>r.kind===av.doctorKind&&(av.filter==='all'||(av.filter==='coordinating'?['coordinating','rescheduling'].includes(r.status):r.status===av.filter)));return `<div class="av-doctor"><div class="av-doctor-heading"><div><small>黄隽教授团队</small><h1>预约就诊管理</h1><p>门诊与住院统一处理，安排结果同步患者。</p></div>${avButton('demo-dual','双端预约演示','','quiet')}${avButton('notifications-doctor','通知 · '+av.notifications.filter(n=>n.to==='doctor'&&!n.read).length,'','quiet')}</div>${!avDoctor()?'<div class="note">当前仅黄隽教授账号可处理预约。可在演示角色中切换“黄隽主任 · 全览”。</div>'+avButton('demo-doctor','切换黄隽教授处理预约')+'':''}<div class="result-tabs">${['out','in'].map(k=>avButton('doctor-kind',avNames[k]+' · '+apt.requests.filter(r=>r.kind===k&&avActive(r)).length,k,av.doctorKind===k?'active':'')).join('')}</div><div class="rule-filters">${[['pending','待处理'],['coordinating','待确认日期'],['approved','已确认'],['cancelled','已取消'],['all','全部']].map(([k,t])=>avButton('filter',t,k,av.filter===k?'active':'')).join('')}</div>${av.error?`<div class="note danger" role="alert">${esc(av.error)}</div>`:''}${av.doctorKind==='out'?avManagement():''}${av.editor==='notifications-doctor'?avNotifications('doctor'):''}${list.map(avDoctorCard).join('')||'<section class="card empty">暂无此类预约申请</section>'}${avDemoControls()}<p class="muted">虚构演示 · 不连接 HIS、床位系统、真实语音或电话服务。</p></div>`};
+
+function avDoctorEditor(r){if(av.editor!=='doctor:'+r.id)return '';return `<section class="av-editor" role="dialog" aria-label="处理预约申请"><h3>${av.editing.mode==='approve'?'同意预约':'发起日期协调'}</h3>${av.editing.mode==='coordinate'?avField('date','建议日期',av.editing.date,'date','editing')+avSelect('period','时段',['上午','下午'],av.editing.period,'editing'):`<p>同意患者申请日期：${r.date} · ${r.period}</p>`}${av.editing.mode==='coordinate'&&r.kind==='out'?'<div data-av-capacity="single"></div>':''}${avField('note','医生备注（选填）',av.editing.note,'textarea','editing')}${avButton('voice-doctor','语音转文字示例（模拟）',r.id)}<p class="muted">不填写备注时，将通知患者按约定日期前往医生办公室${r.kind==='in'?'办理入院':'就诊'}。</p>${avButton('doctor-save','确认并通知患者',r.id,'primary full')}${avButton('close-editor','返回列表')}</section>`}
+function avDoctorCalendar(r){
+ if(r.kind!=='out'||!avActive(r))return '';
+ const pick=(av.doctorCalendars||{})[r.id]||{month:0,date:''},base=new Date(avToday()+'T12:00:00');base.setDate(1);base.setMonth(base.getMonth()+pick.month);
+ const total=new Date(base.getFullYear(),base.getMonth()+1,0).getDate(),offset=(base.getDay()+6)%7;
+ return `<section class="av-doctor-calendar" data-calendar-request="${r.id}"><h3>改期号源日历</h3><p class="muted">每日显示剩余加号名额；点选日期后发起协调，患者确认后生效。</p><div class="row between"><button data-dc="prev" aria-label="号源日历上个月" ${pick.month<=0?'disabled':''}>‹</button><b>${base.getFullYear()} 年 ${base.getMonth()+1} 月</b><button data-dc="next" aria-label="号源日历下个月" ${base.getFullYear()>=2026&&base.getMonth()===11?'disabled':''}>›</button></div><div class="av-week">${['一','二','三','四','五','六','日'].map(t=>`<span>${t}</span>`).join('')}</div><div class="av-days">${'<i></i>'.repeat(offset)}${Array.from({length:total},(_,i)=>{const date=avDate(new Date(base.getFullYear(),base.getMonth(),i+1)),issue=avDateIssue('out',date,[r.id]),left=Math.max(0,avLimit(date)-avUsed(date)),label=date<avToday()?'已过期':avHoliday(date)===null?'未开放':avHoliday(date)?'节假日':!avWorking(date)?'休息':left?'余 '+left:'已满';return `<button data-dc="date" data-date="${date}" aria-label="医生号源 ${date} ${label}" aria-pressed="${pick.date===date}" ${issue?'disabled':''}>${i+1}<small>${label}</small>${date===r.date?'<em>原约</em>':''}</button>`}).join('')}</div>${pick.date?`<p class="av-calendar-selection">已选 ${pick.date} · 剩余 ${Math.max(0,avLimit(pick.date)-avUsed(pick.date))} 个 / 上限 ${avLimit(pick.date)} 个${avUsed(pick.date)>=avLimit(pick.date)?'<br>已约满，可在协调表单中选择临时加号。':''}</p>`:''}<button data-dc="coordinate" class="primary full" ${!pick.date||!avDoctor()?'disabled':''}>用所选日期发起协调</button>${!avDoctor()?'<p class="muted">处理预约前，请在操作指引中切换至黄隽教授。</p>':''}</section>`;
+}
+function avBindDoctorCalendars(){
+ document.querySelectorAll('[data-calendar-request]').forEach(host=>host.querySelectorAll('[data-dc]').forEach(button=>button.onclick=()=>{
+ const r=apt.requests.find(r=>r.id===host.dataset.calendarRequest);if(!r)return;
+ av.doctorCalendars??={};const pick=av.doctorCalendars[r.id]??={month:0,date:''};
+ if(button.dataset.dc==='coordinate'){if(!avDoctor())return;avCommand('coordinate-open',r.id);av.editing.date=pick.date;render();return}
+ if(button.dataset.dc==='date')pick.date=button.dataset.date;else pick.month=Math.max(0,pick.month+(button.dataset.dc==='next'?1:-1));
+ const tmp=document.createElement('div');tmp.innerHTML=avDoctorCalendar(r);host.innerHTML=tmp.firstElementChild.innerHTML;avBindDoctorCalendars();
+ }));
+}
+function avDoctorCard(r){const urgent=r.status==='pending'&&!r.processingAt&&avTime(r.date,r.period)-avNow().getTime()<=48*3600000;return `<article class="card av-request" id="av-${r.id}"><div class="row between"><h2>${esc(r.name)}</h2><span class="pill">${avStatuses[r.status]}</span></div><p>${esc(r.age)} 岁 · ${esc(r.sex)} · ${avNames[r.kind]}</p>${urgent?'<div class="av-urgent">[请尽快处理] 距申请日期不足 48 小时</div>':''}<div class="av-date-block"><small>申请日期 / 当前安排</small><h2>${esc(r.date)} · ${esc(r.period)}</h2><p>${esc(r.kind==='out'?r.treatment+' · '+r.visitType:r.reason)}</p></div><p>${esc(r.patientNote||'患者未补充说明')}</p>${r.attachments?.length?`<details><summary>附件 · ${r.attachments.length} 份</summary>${avAttachments(r)}<p>附件仅供本次演示查看；未接入 AI 分析，请人工核对。</p></details>`:''}${r.proposal?`<div class="av-proposal">待患者确认：${r.proposal.date} · ${r.proposal.period}<p>${esc(r.proposal.note)}</p></div>`:''}${r.status==='approved'?`<p>${esc(r.note)}</p><small>地点：${esc(r.location)}</small>`:''}${r.status==='cancelled'?`<section class="av-cancelled-reason"><h3>取消原因</h3><p>${esc(r.cancelReason)}</p></section>`:''}${avDoctor()&&avActive(r)?`<div class="entry-grid">${r.status==='pending'?avButton('approve-open','同意',r.id,'primary full'):''}${r.kind==='in'?avButton('coordinate-open','发起日期协调',r.id):''}</div>`:''}${av.editor==='doctor:'+r.id&&av.editing.mode==='approve'?avDoctorEditor(r):r.kind==='out'&&avActive(r)?`<details class="av-single-reschedule" ${av.editor==='doctor:'+r.id?'open':''}><summary>该患者预约改期</summary>${avDoctorCalendar(r)}${avDoctorEditor(r)}</details>`:avDoctorEditor(r)}${r.call?`<section class="av-call"><h3>AI 电话取消请求（模拟）</h3><p>${esc(r.name)} · ${esc(r.age)} 岁 · ${esc(r.sex)}</p><p>取消原因：${esc(r.call.reason)}</p><p>希望新预约日期：${esc(r.call.newDate||'未提供')}</p><small>${esc(r.call.at)}</small>${avActive(r)?avButton('doctor-cancel','根据电话记录取消行程',r.id,'primary full',!avDoctor()):'<p>已处理取消</p>'}</section>`:''}<details><summary>处理记录</summary>${r.history.map(h=>`<p><small>${esc(h.at)}</small><br>${esc(h.text)}</p>`).join('')}</details></article>`}
+function avCapacityInfo(source,target,items,extra,group){
+ const used=avUsed(source),limit=avLimit(source),ids=items.map(r=>r.id),projected=avUsed(target,ids)+items.length;
+ return `<div class="av-capacity-info"><p><b>原日期 ${esc(source)}</b><br>已占用 ${used} / ${limit} 个 · 剩余 ${Math.max(0,limit-used)} 个<br>本次拟改期 ${items.length} 位，患者接受后释放原号源。</p>${target?`<p><b>新日期 ${esc(target)}</b><br>当前剩余 ${Math.max(0,avLimit(target)-avUsed(target))} 个 · 当日上限 ${avLimit(target)} 个<br>改期后预计占用 <strong>${projected}</strong> 个${projected>10?`，超过默认 10 个号 ${projected-10} 个`:'，未超过默认 10 个号'}。${projected>avLimit(target)?`<br><strong>需临时增加 ${projected-avLimit(target)} 个名额。</strong>`:''}</p>`:'<p>请选择新日期查看剩余号量。</p>'}<label><input type="checkbox" data-av-extra="${group}" ${extra?'checked':''}> 允许本次临时加号（不足时将当日上限补至所需号量）</label></div>`;
+}
+function avCapacityRefresh(){
+ const batch=document.querySelector('[data-av-capacity="batch"]');if(batch)batch.innerHTML=avCapacityInfo(av.batchDate||avToday(),av.batchTarget,apt.requests.filter(r=>r.kind==='out'&&r.status==='approved'&&r.date===(av.batchDate||avToday())),av.batchExtra,'batch');
+ const single=document.querySelector('[data-av-capacity="single"]');if(single){const r=apt.requests.find(r=>'doctor:'+r.id===av.editor);if(r)single.innerHTML=avCapacityInfo(r.date,av.editing.date,[r],av.editing.extra,'single')}
+ document.querySelectorAll('[data-av-extra]').forEach(el=>el.onchange=()=>{if(el.dataset.avExtra==='batch')av.batchExtra=el.checked;else av.editing.extra=el.checked;avRefreshRestrictedDates()});
+}
+function avManagement(){return `<details class="card"><summary>门诊号量管理与临时改期</summary><div class="av-management-grid"><section><h3>调整每日号量</h3><p>默认每日 10 个号；待处理、已确认及待确认改期占用名额。</p>${avField('capacityDate','调整日期',av.capacityDate||avToday(),'date','root')}${avField('capacity','当日上限',av.capacity,'number','root')}${avButton('capacity-save','保存当日号量','','primary full',!avDoctor())}</section><section><h3>整日批量改期</h3><p>仅门诊；患者接受后生效，不接受则取消，不计入患者主动取消次数。</p>${avField('batchDate','原预约日期',av.batchDate||avToday(),'date','root')}${avField('batchTarget','新的就诊日期',av.batchTarget,'date','root')}<div data-av-capacity="batch"></div>${avField('batchNote','改期原因（选填）',av.batchNote,'textarea','root')}${avButton('batch','向当日已确认患者发送改期通知','','primary full',!avDoctor())}</section></div></details>`}
+aptDoctor=function(){const list=apt.requests.filter(r=>r.kind===av.doctorKind&&(av.filter==='all'||(av.filter==='coordinating'?['coordinating','rescheduling'].includes(r.status):r.status===av.filter)));return `<div class="av-doctor"><div class="av-doctor-heading"><div><small>黄隽教授团队</small><h1>预约就诊管理</h1><p>门诊与住院统一处理，安排结果同步患者。</p></div></div>${!avDoctor()?'<section class="av-role-card"><div><b>切换医生角色以处理预约</b><p>当前为患者视角，审核由黄隽教授完成。</p></div>'+avButton('demo-doctor','切换至黄隽教授','','av-role-button')+'</section>'+'':''}<div class="result-tabs">${['out','in'].map(k=>avButton('doctor-kind',avNames[k]+' · '+apt.requests.filter(r=>r.kind===k&&avActive(r)).length,k,av.doctorKind===k?'active':'')).join('')}</div><div class="rule-filters">${[['pending','待处理'],['coordinating','待确认日期'],['approved','已确认'],['cancelled','已取消'],['all','全部']].map(([k,t])=>avButton('filter',t,k,av.filter===k?'active':'')).join('')}</div>${av.error?`<div class="note danger" role="alert">${esc(av.error)}</div>`:''}${av.doctorKind==='out'?avManagement():''}${list.map(avDoctorCard).join('')||'<section class="card empty av-empty"><span class="av-empty-icon" aria-hidden="true">▤</span><h3>暂无此类预约申请</h3><p>患者提交后，申请会显示在这里。</p></section>'}<p class="muted">虚构演示 · 不连接 HIS、床位系统、真实语音或电话服务。</p></div>`};
 function avCommand(cmd,id){av.error='';const r=apt.requests.find(r=>r.id===id);
  if(cmd==='dismiss'){av.popups=av.popups.filter(n=>n.id!==id);render();return}
- if(cmd==='month-prev'||cmd==='month-next'){av.month+=cmd==='month-next'?1:-1;render();return}
- if(cmd==='date'){if(!avDateIssue(av.kind,id))av.draft.date=id;render();return}
+ if(cmd==='month-prev'||cmd==='month-next'){av.month=Math.max(0,Math.min(3,av.month+(cmd==='month-next'?1:-1)));if(!avRefreshCalendar(true,cmd))render();return}
+ if(cmd==='date'){if(!avDateIssue(av.kind,id))av.draft.date=id;if(!avRefreshCalendar())render();return}
  if(cmd==='home'){av.view='home';av.editor=null;render();return}
  if(cmd==='new'){if(id==='out'&&avBlocked())return avFail('累计取消已达 3 次，门诊预约暂停至 '+av.blockedUntil+'；仍可预约住院。');av.kind=id;av.view='apply';av.month=0;av.draft={...avNew().draft,name:state.patient.name||'演示患者 A',age:String(state.patient.age||58),sex:['女','男'].includes(state.patient.sex)?state.patient.sex:'女'};render();return}
- if(cmd==='detail'){av.selected=id;av.view='detail';av.editor=null;av.message='';render();return}
+ if(cmd==='detail'){if(r?.status==='approved')r.confirmationViewed=true;av.selected=id;av.view='detail';av.editor=null;av.message='';render();return}
  if(cmd==='close-editor'){av.editor=null;render();return}
- if(cmd==='notifications-patient'){av.view='notifications';render();return}
- if(cmd==='notifications-doctor'){av.editor='notifications-doctor';render();return}
- if(cmd==='notification'){const n=av.notifications.find(n=>n.id===id);if(!n)return;n.read=true;av.popups=av.popups.filter(p=>p.id!==id);if(n.to==='patient'){cxSubpage='appointment';cxView='home';av.view='detail';av.selected=n.requestId;role='patient';}else{state.page='appointments';av.filter='all';av.doctorKind=apt.requests.find(r=>r.id===n.requestId)?.kind||'out';av.editor=null;}render();return}
+ if(cmd==='notifications-patient'){av.view='home';render();return}
+ if(cmd==='notifications-doctor'){av.editor=null;render();return}
+ if(cmd==='notifications-read-all'){if(!['doctor','patient'].includes(id))return;av.notifications.filter(n=>n.to===id).forEach(n=>n.read=true);av.popups=av.popups.filter(n=>n.to!==id);render();return}
+ if(cmd==='notification-read'){const n=av.notifications.find(n=>n.id===id);if(!n)return;n.read=true;av.popups=av.popups.filter(p=>p.id!==id);render();return}
+ if(cmd==='notification'){const n=av.notifications.find(n=>n.id===id);if(!n)return;n.read=true;av.popups=av.popups.filter(p=>p.id!==id);if(n.to==='patient'){cxSubpage='appointment';cxView='home';av.view='detail';av.selected=n.requestId;const viewed=apt.requests.find(x=>x.id===n.requestId);if(viewed?.status==='approved')viewed.confirmationViewed=true;role='patient';}else{state.page='appointments';av.filter='all';av.doctorKind=apt.requests.find(r=>r.id===n.requestId)?.kind||'out';av.editor=null;}render();return}
  if(cmd==='voice-patient'){av.draft.note='希望按计划办理入院，请医生帮助协调时间。（语音转文字演示示例）';render();return}
  if(cmd==='voice-doctor'){if(!avDoctor())return avFail('当前角色无处理权限');av.editing.note='请携带既往病历和检查资料，按约定日期前往住院部医生办公室。（语音转文字演示示例）';render();return}
  if(cmd==='doctor-kind'){av.doctorKind=id;av.filter='pending';av.editor=null;render();return}
@@ -1309,27 +1654,27 @@ function avCommand(cmd,id){av.error='';const r=apt.requests.find(r=>r.id===id);
  if(['advance-hour','advance-day','remind'].includes(cmd)){if(cmd!=='remind')av.now=new Date(avNow().getTime()+(cmd==='advance-hour'?3600000:86400000)).toISOString();avRemind();render();return}
  if(cmd==='fixture-out'||cmd==='fixture-in'){const kind=cmd==='fixture-out'?'out':'in';let date=avAdd(avToday(),kind==='in'?1:3);while(kind==='out'&&avWorking(date)===false)date=avAdd(date,1);const fixture={...avNew().draft,date,name:'演示患者 A',treatment:avTreatments[0],visitType:avVisits[0],reason:avReasons[0],note:'虚构预约样例，用于演示。'};avCreate(fixture,kind);av.doctorKind=kind;av.filter='pending';avRemind();render();return}
  if(cmd==='submit'){const d=av.draft;if(av.kind==='out'&&avBlocked())return avFail('门诊预约已暂停，住院预约不受影响');const issue=avDateIssue(av.kind,d.date);if(issue)return avFail(issue);if(!d.name.trim()||!d.age||+d.age<1||+d.age>120)return avFail('请填写患者姓名和有效年龄');if(!['上午','下午'].includes(d.period)||avTime(d.date,d.period)<=avNow().getTime())return avFail('请选择尚未开始的预约时段');if(av.kind==='out'&&(!avTreatments.includes(d.treatment)||!avVisits.includes(d.visitType)))return avFail('请选择治疗分类与就诊类型');if(av.kind==='in'&&!avReasons.includes(d.reason))return avFail('请选择住院原因');if(!d.note.trim())return avFail('请填写申请原因或需求说明');if(apt.requests.some(x=>x.name===d.name&&x.kind===av.kind&&x.date===d.date&&avActive(x)))return avFail('该日期已有同类预约，请勿重复提交');if(avGuard())return;const created=avCreate(d,av.kind);av.view='detail';av.selected=created.id;avRemind();render();return}
- if(cmd==='capacity-save'){if(!avDoctor())return avFail('仅黄隽教授可调整号量');const date=av.capacityDate||avToday(),n=Number(av.capacity);if(avWorking(date)!==true)return avFail('请选择已开放的门诊工作日');if(!Number.isInteger(n)||n<0||n<avUsed(date))return avFail('上限须为非负整数，且不能少于已占用的 '+avUsed(date)+' 个名额');if(avGuard())return;av.limits[date]=n;render();toast('已更新 '+date+' 门诊上限为 '+n);return}
- if(cmd==='batch'){if(!avDoctor())return avFail('仅黄隽教授可发起改期');const source=av.batchDate||avToday(),items=apt.requests.filter(x=>x.kind==='out'&&x.status==='approved'&&x.date===source),target=av.batchTarget;if(!items.length)return avFail('该日没有已确认的门诊预约');if(source===target)return avFail('请选择不同的新日期');const issue=avDateIssue('out',target,items.map(x=>x.id));if(issue)return avFail(issue);if(avUsed(target,items.map(x=>x.id))+items.length>avLimit(target))return avFail('新日期剩余号量不足，请先调整号量或选择其他日期');if(!av.batchNote.trim())return avFail('请填写改期原因');if(avGuard())return;for(const x of items){x.status='rescheduling';x.proposal={date:target,period:x.period,note:av.batchNote,batch:true};avLog(x,'医生临时改期建议：'+target);avNotify('patient','门诊临时改期，请确认',target+' · '+av.batchNote,x.id)}av.filter='coordinating';render();return}
+ if(cmd==='capacity-save'){if(!avDoctor())return avFail('仅黄隽教授可调整号量');const date=av.capacityDate||avToday(),n=Number(av.capacity);if(date<avToday()||avWorking(date)!==true)return avFail('请选择今天或之后已开放的门诊工作日');if(!String(av.capacity).trim())return avFail('请填写当日上限');if(!Number.isInteger(n)||n<0||n<avUsed(date))return avFail('上限须为非负整数，且不能少于已占用的 '+avUsed(date)+' 个名额');if(avGuard())return;av.limits[date]=n;render();toast('已更新 '+date+' 门诊上限为 '+n);return}
+ if(cmd==='batch'){if(!avDoctor())return avFail('仅黄隽教授可发起改期');const source=av.batchDate||avToday(),items=apt.requests.filter(x=>x.kind==='out'&&x.status==='approved'&&x.date===source),target=av.batchTarget;if(!items.length)return avFail('该日没有已确认的门诊预约');if(source===target)return avFail('请选择不同的新日期');if(items.some(x=>avTime(target,x.period)<=avNow().getTime()))return avFail('新日期的预约时段已过，请选择未来日期');const issue=avDateIssue('out',target,items.map(x=>x.id),av.batchExtra);if(issue)return avFail(issue);if(!av.batchExtra&&avUsed(target,items.map(x=>x.id))+items.length>avLimit(target))return avFail('新日期剩余号量不足，请先调整号量或选择其他日期');if(avGuard())return;if(av.batchExtra)av.limits[target]=Math.max(avLimit(target),avUsed(target,items.map(x=>x.id))+items.length);for(const x of items){x.status='rescheduling';x.proposal={date:target,period:x.period,note:av.batchNote.trim()||'医生调整了就诊日期，请确认新的安排。',batch:true};avLog(x,'医生临时改期建议：'+target);avNotify('patient','门诊临时改期，请确认',target+' · '+(av.batchNote.trim()||'请确认新的就诊安排。'),x.id)}av.batchExtra=false;av.batchNote='';av.filter='coordinating';render();return}
  if(!r)return;
- if(cmd==='message-patient'||cmd==='message-doctor'){const side=cmd==='message-patient'?'patient':'doctor';if(side==='doctor'&&!avDoctor())return avFail('当前角色只读');if(!avActive(r))return avFail('该预约已取消');if(!av.message.trim())return avFail('请输入留言内容');if(avGuard())return;const text=av.message.trim();r.messages.push({side,text,at:avAt()});avLog(r,(side==='doctor'?'医生':'患者')+'留言：'+text);avNotify('doctor','预约留言更新',r.name+'：'+text,r.id);avNotify('patient','预约留言更新',text,r.id);av.message='';render();return}
  if(cmd==='approve-open'||cmd==='coordinate-open'){if(!avDoctor())return avFail('仅黄隽教授可处理预约');if(!avActive(r)||cmd==='approve-open'&&r.status!=='pending')return avFail('申请状态已变化');if(avTime(r.date,r.period)<=avNow().getTime()&&cmd==='approve-open')return avFail('原日期已过，请发起日期协调');r.processingAt=avAt();av.editor='doctor:'+id;av.editing={mode:cmd==='approve-open'?'approve':'coordinate',date:r.proposal?.date||r.date,period:r.proposal?.period||r.period,note:r.proposal?.note||''};render();return}
- if(cmd==='doctor-save'){if(!avDoctor()||av.editor!=='doctor:'+id||!avActive(r))return avFail('请先选择处理中的预约');const e=av.editing,date=e.mode==='approve'?r.date:e.date,period=e.mode==='approve'?r.period:e.period;const issue=avDateIssue(r.kind,date,[r.id]);if(issue)return avFail(issue);if(!['上午','下午'].includes(period)||avTime(date,period)<=avNow().getTime())return avFail('请选择未来的预约时段');if(e.mode==='coordinate'&&date===r.date&&period===r.period)return avFail('新日期或时段需与原安排不同');if(avGuard())return;if(e.mode==='approve'){if(r.status!=='pending')return avFail('申请状态已变化');avConfirm(r,date,period,e.note)}else{r.status='coordinating';r.proposal={date,period,note:e.note.trim()||avDefault(r),batch:false};avLog(r,'医生提出协调日期：'+date+' '+period);avNotify('patient','医生发起日期协调',date+' '+period+'；请确认或留言协商。',r.id)}av.editor=null;av.filter=r.status==='approved'?'approved':'coordinating';render();return}
- if(cmd==='accept'){if(!r.proposal||!['coordinating','rescheduling'].includes(r.status))return avFail('当前没有待确认的日期');const p=r.proposal,issue=avDateIssue(r.kind,p.date,[r.id]);if(issue)return avFail(issue);if(avTime(p.date,p.period)<=avNow().getTime())return avFail('建议日期已过，请留言联系医生');if(avGuard())return;avConfirm(r,p.date,p.period,p.note);avNotify('doctor','患者已同意新日期',r.name+' · '+r.date+' '+r.period,r.id);render();return}
- if(cmd==='decline'){if(r.status!=='rescheduling')return avFail('当前不是临时改期通知');if(avGuard())return;avCancel(r,'患者不接受医生临时改期，请重新预约门诊。',false);render();return}
+ if(cmd==='doctor-save'){if(!avDoctor()||av.editor!=='doctor:'+id||!avActive(r))return avFail('请先选择处理中的预约');const e=av.editing,date=e.mode==='approve'?r.date:e.date,period=e.mode==='approve'?r.period:e.period;const issue=avDateIssue(r.kind,date,[r.id],e.mode==='coordinate'&&e.extra);if(issue)return avFail(issue);if(!['上午','下午'].includes(period)||avTime(date,period)<=avNow().getTime())return avFail('请选择未来的预约时段');if(e.mode==='coordinate'&&date===r.date&&period===r.period)return avFail('新日期或时段需与原安排不同');if(avGuard())return;if(e.mode==='coordinate'&&e.extra&&r.kind==='out')av.limits[date]=Math.max(avLimit(date),avUsed(date,[r.id])+1);if(e.mode==='approve'){if(r.status!=='pending')return avFail('申请状态已变化');avConfirm(r,date,period,e.note)}else{r.status='coordinating';r.proposal={date,period,note:e.note.trim()||avDefault(r),batch:false};avLog(r,'医生提出协调日期：'+date+' '+period);avNotify('patient','医生发起日期协调',date+' '+period+'；请确认新的预约安排。',r.id)}av.editor=null;av.filter=r.status==='approved'?'approved':'coordinating';render();return}
+ if(cmd==='accept'){if(!r.proposal||!['coordinating','rescheduling'].includes(r.status))return avFail('当前没有待确认的日期');const p=r.proposal,issue=avDateIssue(r.kind,p.date,[r.id]);if(issue)return avFail(issue);if(avTime(p.date,p.period)<=avNow().getTime())return avFail('建议日期已过，请联系医生重新安排');if(avGuard())return;avConfirm(r,p.date,p.period,p.note);avNotify('doctor','患者已同意新日期',r.name+' · '+r.date+' '+r.period,r.id);render();return}
+ if(cmd==='decline'){if(!r.proposal||!['coordinating','rescheduling'].includes(r.status))return avFail('当前没有待确认的日期');av.editor='decline:'+id;render();return}
+ if(cmd==='decline-confirm'){if(av.editor!=='decline:'+id||!r.proposal||!['coordinating','rescheduling'].includes(r.status))return avFail('预约状态已变化，请重新查看');if(avGuard())return;r.declinedProposal={...r.proposal};avCancel(r,'患者拒绝医生建议的新日期，本次预约已取消。',false);av.editor=null;render();return}
  if(cmd==='cancel-open'){if(!avActive(r))return avFail('该预约已取消');if(r.kind==='in'&&avTime(r.date,r.period)-avNow().getTime()<=48*3600000)return avFail('距入院不足 48 小时，请电话联系医生');av.editor='cancel:'+id;av.cancelReason='';render();return}
  if(cmd==='cancel-confirm'){if(!avActive(r)||av.editor!=='cancel:'+id)return avFail('预约状态已变化');if(avTime(r.date,r.period)<=avNow().getTime())return avFail('预约时间已过，请联系医生');if(r.kind==='in'&&avTime(r.date,r.period)-avNow().getTime()<=48*3600000)return avFail('已进入 48 小时内，请电话联系医生');if(!av.cancelReason.trim())return avFail('请填写取消原因');if(avGuard())return;avCancel(r,av.cancelReason.trim(),true);av.editor=null;render();return}
  if(cmd==='call-open'){av.editor='call:'+id;av.call={reason:'',newDate:''};render();return}
- if(cmd==='call-submit'){if(r.kind!=='in'||!avActive(r))return avFail('当前没有可处理的住院预约');if(!av.call.reason.trim())return avFail('请说明取消原因');if(av.call.newDate&&av.call.newDate<avToday())return avFail('新预约日期不能早于今天');if(avGuard())return;r.call={...av.call,at:avAt()};avLog(r,'收到 AI 电话模拟记录：'+av.call.reason);avNotify('doctor','住院取消请求 · AI 电话记录',r.name+'：'+av.call.reason,r.id);avNotify('patient','电话记录已提交','等待医生处理取消，当前预约仍保留。',r.id);av.editor=null;render();return}
+ if(cmd==='call-submit'){if(r.kind!=='in'||!avActive(r))return avFail('当前没有可处理的住院预约');if(!av.call.reason.trim())return avFail('请说明取消原因');if(av.call.newDate&&avDateIssue('in',av.call.newDate))return avFail(avDateIssue('in',av.call.newDate));if(avGuard())return;r.call={...av.call,at:avAt()};avLog(r,'收到 AI 电话模拟记录：'+av.call.reason);avNotify('doctor','住院取消请求 · AI 电话记录',r.name+'：'+av.call.reason,r.id);avNotify('patient','电话记录已提交','等待医生处理取消，当前预约仍保留。',r.id);av.editor=null;render();return}
  if(cmd==='doctor-cancel'){if(!avDoctor()||r.kind!=='in'||!r.call||!avActive(r))return avFail('当前不可取消');if(avGuard())return;avCancel(r,'医生根据电话记录取消：'+r.call.reason,false);render();return}
 }
 function avCreate(d,kind){const r={...structuredClone(d),patientNote:d.note,note:'',kind,id:'AV-'+(++av.serial),at:avAt(),status:'pending',messages:[],history:[],doctor:{...aptTargetDoctor},read:false,proposal:null};apt.requests.push(r);avLog(r,'患者提交'+avNames[kind]+'申请');avNotify('doctor','新的'+avNames[kind]+'申请',r.name+' · '+r.date+' '+r.period,r.id);return r}
-action=function(a,id){if(a==='reset')av=avNew();if(a.startsWith('apt-')){if(a==='apt-list'){shellSection='patients';state.page='appointments';render();return}if(a==='apt-read'){const r=apt.requests.find(x=>x.id===id);if(r)r.read=true;render();return}return;}return avBase.action(a,id)};
+action=function(a,id){if(a==='reset'){av=avNew();appointmentGuidePick=null;researchGuideRoute=null;appointmentStepNotice='';}if(a.startsWith('apt-')){if(a==='apt-list'){shellSection='patients';state.page='appointments';render();return}if(a==='apt-read'){const r=apt.requests.find(x=>x.id===id);if(r)r.read=true;render();return}return;}return avBase.action(a,id)};
 cxSubpageMarkup=function(){return avBase.cxSubpageMarkup().replaceAll('门诊预约与加号','预约就诊')};
-currentGuide=function(){if(state.page==='appointments')return ['预约就诊 · 门诊 / 住院','患者申请、医生处理与双方确认，独立于科研九步流程。',['CX 选择预约就诊，老患者选择门诊或住院，填写日期和原因后提交。','DX 黄隽教授在患者管理处理申请：同意或发起日期协调；患者确认新日期后才生效。','双方可留言；门诊可取消或接受临时改期，住院 48 小时内须电话说明后由医生取消。'],['门诊默认每日 10 个号；工作日开放，调休与节假日按 2026 日历显示。','门诊累计第 3 次主动取消后停约 3 个月，住院不受影响。','住院周一至周日均可预约；本演示未连接床位、语音、电话或真实推送。'],['CX 患者端','DX · 黄隽教授 / CX 患者端','CX / DX 双端']];return avBase.currentGuide()};
+currentGuide=function(){if(state.page==='appointments')return ['预约就诊 · 门诊 / 住院','患者申请、医生处理与双方确认，独立于科研九步流程。',['CX 选择预约就诊，老患者选择门诊或住院，填写日期和原因后提交。','DX 黄隽教授在患者管理处理申请：同意或发起日期协调；患者确认新日期后才生效。','医生提出新日期后由患者确认；门诊可取消或接受临时改期，住院 48 小时内须电话说明后由医生取消。'],['门诊默认每日 10 个号；工作日开放，调休与节假日按 2026 日历显示。','门诊累计第 3 次主动取消后停约 3 个月，住院不受影响。','住院普通周末可预约，节假日不开放；本演示未连接床位、语音、电话或真实推送。'],['CX 患者端','DX · 黄隽教授 / CX 患者端','CX / DX 双端']];return avBase.currentGuide()};
 render=function(){avBase.render();
  for(const el of document.querySelectorAll('[data-av]'))el.onclick=()=>avCommand(el.dataset.av,el.dataset.id);
- document.querySelectorAll('[data-av-field]').forEach(el=>el.addEventListener('input',()=>{const obj=el.dataset.avGroup==='root'?av:av[el.dataset.avGroup];obj[el.dataset.avField]=el.value}));
+ document.querySelectorAll('[data-av-field]').forEach(el=>el.addEventListener('input',()=>{const obj=el.dataset.avGroup==='root'?av:av[el.dataset.avGroup];obj[el.dataset.avField]=el.value;if(el.dataset.avField==='capacityDate'){av.capacity=String(avLimit(el.value));const input=document.querySelector('[data-av-field="capacity"]');if(input)input.value=av.capacity}if(['batchDate','batchTarget','date'].includes(el.dataset.avField)){if(el.dataset.avField==='batchTarget')av.batchExtra=false;if(el.dataset.avField==='date')av.editing.extra=false;avCapacityRefresh()}}));
  document.querySelector('[data-av-files]')?.addEventListener('change',e=>{const files=[...e.target.files];av.draft.previews?.forEach(p=>URL.revokeObjectURL(p.url));av.draft.attachments=files.map(f=>f.name);av.draft.previews=files.map(f=>({type:f.type,url:URL.createObjectURL(f)}));render()});
  for(const el of document.querySelectorAll('[data-action="cx-appointment"],[data-action="cxnav-appointment"]')){el.innerHTML=(apt.requests.some(r=>r.status==='approved')?'✓ 预约已确认':'▦ 预约就诊');}
  for(const el of document.querySelectorAll('[data-pm="appointments"]')){el.innerHTML='预约申请 <span>'+apt.requests.filter(r=>r.status==='pending').length+'</span>';}
@@ -1342,31 +1687,187 @@ render=function(){avBase.render();
  const footer=document.querySelector('.product .mobile-footer');if(footer)footer.textContent='虚构患者 · 就诊预约演示';
 }
 document.querySelector('.reviewbar span').textContent=' V0.10.0';
- const notices=document.createElement('aside');notices.className='av-popups';notices.setAttribute('aria-live','polite');notices.innerHTML=av.popups.slice(-2).map(n=>`<section role="dialog" aria-label="${n.to==='doctor'?'医生':'患者'}通知"><div class="row between"><b>${n.to==='doctor'?'DX 医生端':'CX 患者端'} · ${esc(n.title)}</b><button data-av-dismiss="${n.id}" aria-label="关闭通知">×</button></div><p>${esc(n.text)}</p><small>通知已保存在预约通知中心</small></section>`).join('');document.querySelector('#app').append(notices);notices.querySelectorAll('[data-av-dismiss]').forEach(el=>el.onclick=()=>avCommand('dismiss',el.dataset.avDismiss));
+ avCapacityRefresh();avBindDoctorCalendars();avBindRestrictedDates();
+ for(const [recipient,selector] of [['doctor','.product'],['patient','.patient-device']]){
+ const host=document.querySelector(selector),n=av.popups.filter(n=>n.to===recipient&&n.popupUntil>Date.now()).at(-1);if(!host||!n)continue;
+ const notice=document.createElement('aside');notice.className='av-app-banner';notice.setAttribute('role','status');notice.setAttribute('aria-live','polite');
+ notice.innerHTML=`<button class="av-banner-open" aria-label="查看${esc(n.title)}"><span class="av-banner-icon" aria-hidden="true">${recipient==='doctor'?'✚':'✓'}</span><span class="av-banner-copy"><small>${recipient==='doctor'?'DX 医生端':'CX 患者端'} · 预约提醒<span>刚刚</span></small><b>${esc(n.title)}</b><span>${esc(n.text)}</span></span></button><button class="av-banner-close" aria-label="关闭预约提醒">×</button>`;
+ notice.style.top=(host.scrollTop+16)+'px';host.append(notice);notice.querySelector('.av-banner-open').onclick=()=>avCommand('notification',n.id);notice.querySelector('.av-banner-close').onclick=()=>{notice.remove();av.popups=av.popups.filter(item=>item.id!==n.id)};
+ setTimeout(()=>{notice.remove();av.popups=av.popups.filter(item=>item.id!==n.id)},Math.max(0,n.popupUntil-Date.now()));
+ }
+
 };
 // Timers are active only while the prototype is open; demo clock controls cover boundary cases.
-if(typeof setInterval==='function')setInterval(()=>{const count=av.notifications.length;avRemind();if(av.notifications.length!==count)render()},60000);
+if(typeof setInterval==='function')setInterval(()=>{const serial=av.serial;avRemind();if(av.serial!==serial)render()},60000);
 
 // Separate walkthroughs; selecting instructions never completes a business action.
 const guideModesBase={render,currentGuide,avCommand};
 let appointmentGuidePick=null,researchGuideRoute=null;
-const appointmentGuideNames=['选择预约方向','填写并提交申请','医生处理申请','日期协调与留言','预约确认与就诊','取消预约','门诊号量与批量改期','提醒与通知'];
+const appointmentGuideNames=['选择预约方向','填写并提交申请','医生处理申请','日期协调与确认','预约确认与就诊','取消预约','门诊号量与批量改期','提醒与通知'];
 function appointmentGuideStep(){if(av.view==='apply')return 2;const r=apt.requests.find(x=>x.id===av.selected)||apt.requests.filter(x=>x.kind===av.doctorKind).at(-1);if(av.editor?.startsWith('cancel:')||av.editor?.startsWith('call:')||r?.call||r?.status==='cancelled')return 6;if(r?.proposal)return 4;if(av.view==='apply')return 2;if(r?.status==='approved')return 5;if(r)return 3;return 1}
 function chooseGuideMode(mode){appointmentGuidePick=null;if(mode==='appointment'){if(state.page!=='appointments')researchGuideRoute={page:state.page,role,cxView,cxSubpage};shellSection='clinical';state.page='appointments';cxSubpage='appointment';cxView='home';role='manager';}else{shellSection='clinical';const saved=researchGuideRoute;if(saved){state.page=saved.page;role=saved.role;cxView=saved.cxView;cxSubpage=saved.cxSubpage;}else{state.page='home';role='screener';cxView='home';cxSubpage='';}}render()}
 function appointmentStepGuide(){const n=appointmentGuidePick||appointmentGuideStep();const guides=[
-['选择预约方向',['CX 首页点击“预约就诊”，老患者选择“门诊就诊”或“住院预约”。','新患者使用医院官方挂号入口；本演示的申请仅使用虚构资料。'],['门诊和住院共用入口，取消规则不同。'],['CX 患者端','CX 患者端']],
-['填写并提交申请',['门诊选择工作日、治疗分类、就诊类型并填写原因；住院可选择周一至周日，填写穿刺／手术／化疗及需求说明，可添加附件。','阅读取消规则后点击“提交申请”。DX 的患者管理同步待处理申请。'],['门诊默认每日 10 个号，约满不可选；调休上班日开放。','附件仅本地预览，语音输入为示例；未接入真实 AI 解析。'],['CX 患者端','CX 患者端']],
-['医生处理申请',['在 DX 患者管理打开预约申请，选择门诊或住院；切换“黄隽教授处理预约”。','核对患者资料及日期，点击“同意”，填写可选备注，再点击“确认并通知患者”；如需调整，点击“发起日期协调”。'],['当前仅黄隽教授演示角色可审核。','默认通知前往住院部医生办公室就诊或办理入院。'],['DX · 黄隽教授','DX · 黄隽教授']],
-['日期协调与留言',['医生选择建议日期、时段及备注后提交，CX 收到协调通知。','患者查看新日期，可留言协商；医生可回复或重新提出日期。达成一致后患者点击“同意新日期”。'],['确认之前保留原日期，患者不能自行修改日期。','双方留言保留历史，回复会产生双端通知。'],['DX · 黄隽教授','CX 患者端 / DX · 黄隽教授']],
-['预约确认与就诊',['CX 查看“预约已确认”卡片中的日期、时段、备注和地点，门诊直接前往住院部医生办公室。','在“预约通知”查看处理结果与门诊就诊前一天提醒。'],['门诊不走门诊大厅人工加号；住院确认不代表分配床位。','提醒仅在演示页面运行，可通过演示时钟验证。'],['CX 患者端','CX 患者端']],
-['取消预约',['门诊点击“取消预约”，再次阅读加粗规则，填写原因后确认；第 3 次主动取消后停约门诊 3 个月，住院不受影响。','住院距离预约超过 48 小时可自助取消；48 小时内通过“电话联系（模拟）”提交原因及期望日期，由医生查看记录并取消。'],['医生批量改期、患者不接受造成的取消不计入主动取消次数。','提交电话记录后预约仍保留，直到医生处理。'],['CX 患者端','CX 患者端 / DX · 黄隽教授']],
-['门诊号量与批量改期',['DX 门诊展开“门诊号量管理与临时改期”，选日期并保存当日上限。','选择原日期、新日期及原因，发送当日已确认患者的改期通知；CX 接受后生效，不接受则取消并重新预约。'],['上限不能少于已占用名额，新日期须有足够号量。','住院无号量上限，也不提供批量改期；通过逐条日期协调处理。'],['DX · 黄隽教授','DX · 黄隽教授 / CX 患者端']],
-['提醒与通知',['展开 DX“预约演示控制”，载入住院 48 小时内样例，检查带“请尽快处理”的通知。','推进 1 小时验证未处理申请再次提醒；开始处理后停止催办。门诊确认后可推进到就诊前一天验证患者提醒。'],['申请、处理、改期、留言、取消均可在通知中心回看。','时钟和电话均为模拟，不会发送真实短信或拨打电话。'],['演示控制台','演示控制台']]
+['选择预约方向',['CX 首页点击“预约就诊”，老患者选择“门诊就诊”或“住院预约”。','选择预约方向后进入申请页，查看已有预约可进入“我的预约”。'],['门诊和住院共用入口，取消规则不同。'],['CX 患者端','CX 患者端']],
+['填写并提交申请',['门诊选择工作日、治疗分类、就诊类型并填写原因；住院普通周末可预约，节假日不可选，填写穿刺／手术／化疗及需求说明，可添加附件。','阅读取消规则后点击“提交申请”。DX 的患者管理同步待处理申请。'],['门诊默认每日 10 个号，约满不可选；调休上班日开放；双端节假日均不可选，未开放年度不可预约。','附件仅本地预览，语音输入为示例；未接入真实 AI 解析。'],['CX 患者端','CX 患者端']],
+['医生处理申请',['在 DX 患者管理打开预约申请，选择门诊或住院；切换“黄隽教授处理预约”。','核对患者资料及日期，点击“同意”，填写可选备注，再点击“确认并通知患者”；门诊需调整时展开“该患者预约改期”；住院点击“发起日期协调”。'],['当前仅黄隽教授演示角色可审核。','默认通知前往住院部医生办公室就诊或办理入院。'],['DX · 黄隽教授','DX · 黄隽教授']],
+['日期协调与确认',['医生选择建议日期、时段及备注后提交，CX 收到协调通知。','患者可“同意新日期”，或点击“拒绝新日期”并确认；拒绝后原预约与新日期均不保留，需要自行重新预约。'],['确认之前保留原日期；拒绝医生改期不计入门诊主动取消次数。','日期调整结果通过双端顶部短提醒同步，预约详情保留最新安排。'],['DX · 黄隽教授','CX 患者端 / DX · 黄隽教授']],
+['预约确认与就诊',['CX 查看“预约已确认”卡片中的日期、时段、备注和地点，门诊直接前往住院部医生办公室。','留意患者端顶部的预约短提醒；提醒自动收起，后续可从“我的预约”查看最新安排。'],['门诊不走门诊大厅人工加号；住院确认不代表分配床位。','提醒仅在演示页面运行，不发送真实消息。'],['CX 患者端','CX 患者端']],
+['取消预约',['门诊点击“取消预约”，再次阅读加粗规则，填写原因后确认；第 3 次主动取消后停约门诊 3 个月，住院不受影响。','住院距离预约超过 48 小时可自助取消；48 小时内通过“电话联系（模拟）”提交原因及期望日期，由医生查看记录并取消。'],['医生建议改期、患者拒绝造成的取消不计入主动取消次数。','提交电话记录后预约仍保留，直到医生处理。'],['CX 患者端','CX 患者端 / DX · 黄隽教授']],
+['门诊号量与批量改期',['按需调整每日号量：在“门诊号量管理与临时改期”中选择日期，核对现有上限后保存。无需调整号量时可直接进行批量改期。','整日改期使用上方“整日批量改期”：选择原日期与新日期，核对人数和剩余号量；不足时勾选临时加号，原因选填。发送后等待各患者确认：接受后释放原号源，不接受则取消且不计入主动取消次数。仅调整一位患者时，展开该患者卡片的“该患者预约改期”，无需重复操作批量表单。'],['上限不能少于已占用名额，新日期须有足够号量。','住院无号量上限，也不提供批量改期；通过逐条日期协调处理。'],['DX · 黄隽教授','DX · 黄隽教授 / CX 患者端']],
+['提醒与通知',['使用上方“补齐前序并载入”准备待处理样例，查看医生端顶部的预约短提醒；点击提醒可进入预约处理。','医生确认、调整或取消预约时，患者端顶部显示对应短提醒，几秒后自动收起；预约详情保留最新状态。'],['双端不再展示累积通知列表；同一端同一时间只显示一条最新提醒。','时钟和电话均为模拟，不会发送真实短信或拨打电话。'],['DX 医生端','CX / DX 双端']]
 ];const g=guides[n-1];return [`预约步骤 ${n} · ${appointmentGuideNames[n-1]}`,g[0],g[1],g[2],g[3]]}
 currentGuide=function(){return state.page==='appointments'?appointmentStepGuide():guideModesBase.currentGuide()};
-avCommand=function(cmd,id){appointmentGuidePick=null;return guideModesBase.avCommand(cmd,id)};
+avCommand=function(cmd,id){if(!(['capacity-save','batch','notification-read'].includes(cmd)&&appointmentGuidePick===7))appointmentGuidePick=null;return guideModesBase.avCommand(cmd,id)};
+function guideProgressMarkup(){
+ const appointment=state.page==='appointments';
+ const step=appointment?appointmentGuideStep():demoStep();
+ const name=(appointment?appointmentGuideNames:demoNames)[step-1];
+ const viewing=appointment&&appointmentGuidePick&&appointmentGuidePick!==step;
+ return `<section class="guide-progress" role="status" aria-live="polite"><span class="guide-progress-label">${appointment?'预约':'纳排'} · 当前步骤</span><strong>步骤 ${step} · ${esc(name)}</strong><span class="guide-progress-note">${viewing?`正在查看步骤 ${appointmentGuidePick} 的说明，实际进度仍为步骤 ${step}。`:'完成 CX / DX 中的对应操作后，此处自动更新。'}</span></section>`;
+}
 function guideModeSelect(){return `<label class="guide-mode-label">操作指引<select data-guide-mode aria-label="操作指引类型"><option value="research" ${state.page!=='appointments'?'selected':''}>纳排步骤（9 步）</option><option value="appointment" ${state.page==='appointments'?'selected':''}>预约步骤（门诊 / 住院）</option></select></label>`}
-render=function(){guideModesBase.render();const toolbar=document.querySelector('.dx-clinical-toolbar');if(toolbar){toolbar.insertAdjacentHTML('beforeend',`<div class="guide-mode-toolbar">${guideModeSelect()}</div>`)}const guide=document.querySelector('.guide');if(guide){guide.insertAdjacentHTML('afterbegin',`<div class="guide-mode-panel">${guideModeSelect()}${state.page==='appointments'?`<label>查看步骤说明<select data-appointment-guide aria-label="预约步骤说明">${appointmentGuideNames.map((name,i)=>`<option value="${i+1}" ${(appointmentGuidePick||appointmentGuideStep())===i+1?'selected':''}>步骤 ${i+1} · ${name}</option>`).join('')}</select></label><small>当前业务进度：步骤 ${appointmentGuideStep()}。选择说明不会提交或跳过业务操作。</small>`:''}</div>`);if(state.page==='appointments'){const footer=guide.querySelector('.stage-gate p');if(footer)footer.textContent='请在 CX / DX 中完成上述操作，指引随业务进度更新；可用上方选项查看其他步骤。';}}document.querySelectorAll('[data-guide-mode]').forEach(el=>el.onchange=()=>chooseGuideMode(el.value));document.querySelector('[data-appointment-guide]')?.addEventListener('change',e=>{appointmentGuidePick=Number(e.target.value);render()});document.querySelector('.reviewbar span').textContent=' V0.10.1';};
+render=function(){guideModesBase.render();const toolbar=document.querySelector('.dx-clinical-toolbar');if(toolbar){toolbar.insertAdjacentHTML('beforeend',`<div class="guide-mode-toolbar">${guideModeSelect()}</div>`)}const guide=document.querySelector('.guide');if(guide){guide.insertAdjacentHTML('afterbegin',`<div class="guide-mode-panel">${guideModeSelect()}${state.page==='appointments'?`<label>查看步骤说明<select data-appointment-guide aria-label="预约步骤说明">${appointmentGuideNames.map((name,i)=>`<option value="${i+1}" ${(appointmentGuidePick||appointmentGuideStep())===i+1?'selected':''}>步骤 ${i+1} · ${name}</option>`).join('')}</select></label>`:''}</div>`);if(state.page==='appointments'){const footer=guide.querySelector('.stage-gate p');if(footer)footer.textContent='请在 CX / DX 中完成上述操作，指引随业务进度更新；可用上方选项查看其他步骤。';}}document.querySelectorAll('[data-guide-mode]').forEach(el=>el.onchange=()=>chooseGuideMode(el.value));document.querySelector('[data-appointment-guide]')?.addEventListener('change',e=>{appointmentGuidePick=Number(e.target.value);render()});document.querySelector('.reviewbar span').textContent=' V0.10.2';};
+
+// Appointment console: load existing state, or add explicitly requested fictional prerequisites.
+let appointmentStepNotice='';
+function appointmentStepRecord(n){return [...apt.requests].reverse().find(r=>avTime(r.date,r.period)>avNow().getTime()&&(n===8?r.kind==='in'&&r.status==='pending':n===3?r.status==='pending':n===4?!!r.proposal:n===5||n===7?r.status==='approved'&&(n!==7||r.kind==='out'):n===6?avActive(r):false))}
+function appointmentSeedRecord(n){
+ const kind=n===8?'in':av.kind;
+ const useKind=n===7?'out':kind;
+ let date=avAdd(avToday(),n===8?1:3),found=false;
+ for(let i=0;i<90;i++,date=avAdd(date,1)){if(!avDateIssue(useKind,date)){found=true;break}}
+ if(!found){appointmentStepNotice='未找到可用的演示日期，请先调整号量或演示时间。';return null}
+ const record=avCreate({...avNew().draft,date,name:'预约演示患者 '+(++av.serial),treatment:avTreatments[0],visitType:avVisits[0],reason:avReasons[0],note:'补齐前序生成的虚构预约样例。'},useKind);
+ if(n===4){let next=avAdd(date,1);for(let i=0;i<90&&avDateIssue(useKind,next);i++)next=avAdd(next,1);if(avDateIssue(useKind,next)){record.proposal={date,period:'下午',note:'虚构协调示例，请患者确认。',batch:false}}else record.proposal={date:next,period:'上午',note:'虚构协调示例，请患者确认。',batch:false};record.status='coordinating';record.processingAt=avAt();avLog(record,'演示补齐：医生已提出新日期，等待患者确认');avNotify('patient','演示日期协调',record.proposal.date+' · 请确认新日期',record.id)}
+ if([5,6,7].includes(n))avConfirm(record,date,record.period,'演示补齐的预约确认，请携带既往资料。');
+ if(n===8)avRemind();
+ return record;
+}
+function appointmentLoadStep(n,seed=false){
+ appointmentStepNotice='';
+ let record=n>=3?appointmentStepRecord(n):null;
+ if(n>=3&&!record&&seed)record=appointmentSeedRecord(n);
+ if(n>=3&&!record){appointmentStepNotice=appointmentStepNotice||'该步骤的前序尚未完成，请先完成当前操作，或点击“补齐前序并载入”添加虚构样例。';render();return}
+ shellSection='clinical';state.page='appointments';cxSubpage='appointment';cxView='home';av.error='';av.editor=null;
+ if(n===1){av.view='home';role='patient'}
+ if(n===2){av.view='apply';role='patient';if(seed&&!av.draft.note)av.draft.note='虚构演示：希望按计划就诊，请医生协助安排。'}
+ if(record){av.selected=record.id;av.kind=record.kind;av.doctorKind=record.kind;av.view='detail';av.filter=record.proposal?'coordinating':record.status;role=[3,7,8].includes(n)?'manager':'patient';if(n===6)av.editor=(record.kind==='in'&&avTime(record.date,record.period)-avNow().getTime()<=48*3600000?'call:':'cancel:')+record.id;if(n===7)av.batchDate=record.date;if(n===8){av.editor=null;avNotify('doctor','请尽快处理预约',record.name+' · '+record.date+' '+record.period,record.id)}}
+ appointmentGuidePick=n;appointmentStepNotice=seed?'已补齐必要的虚构前序并载入步骤 '+n+'；当前操作仍需手动完成，已有记录保留。':'已载入步骤 '+n+'；已有记录保留，未代替你完成当前操作。';render();
+}
+
+// Highlight the relevant operation from existing business state, never complete it.
+const guideLayoutBaseRender=render;
+function guideOperationIndex(){
+ if(state.page==='appointments'){
+  const step=appointmentGuideStep();
+  if(appointmentGuidePick&&appointmentGuidePick!==step)return -1;
+  if(step===1)return 0;
+  if(step===2)return av.draft.date&&av.draft.note&&(av.kind==='in'?av.draft.reason:av.draft.treatment&&av.draft.visitType)?1:0;
+  if(step===3)return avDoctor()?1:0;
+  if(step===4)return 1;
+  if(step===5){const r=apt.requests.find(x=>x.id===av.selected);return av.view==='notifications'||r?.confirmationViewed?1:0;}
+  if(step===6)return av.kind==='in'?1:0;
+  return 0;
+ }
+ if(flow.guidePhase==='complete')return 0;
+ if(flow.guidePhase==='case'&&currentCase()){
+  const r=currentCase(),d=r.draft||{},s=r.status;
+  if(isTerminal(r))return 1;
+  const ready={crc:d.opinion,consent:d.disclosed&&d.icfVersion&&d.signedDate&&d.signRef&&d.signed,review:d.reviewNote,decision:d.decisionNote};
+  if(ready[s])return 2;
+  if(s==='crc')return state.page==='review'||Object.values(d).some(Boolean)?1:0;
+  if(s==='consent')return d.disclosed?1:0;
+  if(s==='confirm')return 1;
+  if(s==='plan')return d.plan&&d.checkDate?1:0;
+  if(s==='checks')return d.lab&&d.imaging&&d.baseline?1:0;
+  if(s==='review'||s==='decision')return Object.values(d).some(Boolean)?1:0;
+  if(s==='enrolled')return d.followDate&&d.followContent?1:0;
+  return 0;
+ }
+ if(flow.guidePhase==='results')return state.modal?2:state.selected.size?1:0;
+ if(demoStep()===3)return preparation.screened?2:preparation.kind?1:0;
+ if(demoStep()===2)return preparation.submitted?2:materialCount()?1:0;
+ return extra.scanned?2:extra.invite?1:0;
+}
+function updateGuideOperation(){
+ const rows=document.querySelectorAll('.guide .stage-steps>li');
+ const index=guideOperationIndex();
+ rows.forEach((el,i)=>{const active=i===index;el.classList.toggle('current-operation',active);if(active)el.setAttribute('aria-current','step');else el.removeAttribute('aria-current');});
+}
+render=function(){
+ guideLayoutBaseRender();
+ const guide=document.querySelector('.guide');
+ if(guide){
+  // Put actionable instructions first, matching the reference guide.
+  const intro=guide.querySelector('h3'),description=intro?.nextElementSibling,gate=guide.querySelector('.stage-gate');
+  if(intro&&description&&gate){gate.after(intro,description);}
+  // Keep selectors in the top console, like the reference; the guide starts at its title.
+  const panel=guide.querySelector('.guide-mode-panel'),toolbar=document.querySelector('.guide-mode-toolbar');
+  const stepSelect=panel?.querySelector('[data-appointment-guide]');
+  if(stepSelect&&toolbar)toolbar.append(stepSelect.closest('label'));
+  panel?.remove();
+  if(toolbar){
+   const shell=toolbar.parentElement,research=shell.querySelector('.demo-step-toolbar');
+   toolbar.classList.add('unified-guide-toolbar');
+   if(state.page!=='appointments'&&research){
+    const stepLabel=research.querySelector('label');
+    if(stepLabel){stepLabel.firstChild.textContent='演示步骤';toolbar.append(stepLabel)}
+    const actions=document.createElement('div');actions.className='guide-toolbar-actions';
+    research.querySelectorAll('button').forEach(button=>actions.append(button));toolbar.append(actions);
+    const hint=research.querySelector('small');if(hint)toolbar.append(hint);
+    research.remove();
+   }else if(stepSelect){
+    stepSelect.closest('label').firstChild.textContent='演示步骤';
+    toolbar.insertAdjacentHTML('beforeend','<div class="guide-toolbar-actions"><button data-guide-preview>载入步骤</button><button data-guide-follow>补齐前序并载入</button></div><small>补齐仅添加必要的虚构前序，保留已有预约和纳排记录；当前步骤仍需手动操作。</small>');
+    let pick=appointmentGuidePick||appointmentGuideStep();
+    const select=stepSelect.cloneNode(true);stepSelect.replaceWith(select);
+    select.onchange=()=>{pick=Number(select.value)};
+    toolbar.querySelector('[data-guide-preview]').onclick=()=>appointmentLoadStep(pick);
+    toolbar.querySelector('[data-guide-follow]').onclick=()=>appointmentLoadStep(pick,true);
+    if(appointmentStepNotice){const note=toolbar.querySelector(':scope > small');if(note){note.setAttribute('role','status');note.textContent=appointmentStepNotice;}}
+   }
+  }
+
+  const modeLabel=toolbar?.querySelector('.guide-mode-label'),kicker=guide.querySelector('.stage-guide-kicker');
+  if(modeLabel&&kicker){
+   const head=document.createElement('div');head.className='guide-header-row';kicker.before(head);head.append(kicker,modeLabel);
+   modeLabel.firstChild.textContent='';
+   modeLabel.querySelector('select').title='操作指引：切换纳排或预约';
+   modeLabel.querySelector('option[value="research"]').textContent='纳排步骤（9 步）';
+   modeLabel.querySelector('option[value="appointment"]').textContent='预约步骤（8 步）';
+  }
+  const phase=guide.querySelector('.stage-phase');
+  if(phase)phase.textContent=state.page==='appointments'?'黄隽教授团队 · 门诊 / 住院':'黄隽教授团队 · 纳排研究';
+  guide.querySelectorAll('.stage-steps>li').forEach((el,i)=>{
+   const number=el.querySelector('.stage-step-number'),actor=el.querySelector('b');
+   number?.remove();if(actor)actor.textContent=`${i+1}. ${actor.textContent}`;
+  });
+  if(state.page==='appointments'){
+   const n=appointmentGuidePick||appointmentGuideStep();
+   const results=[
+    ['选择服务后进入对应申请页，填写预约信息。','查看已有预约可进入详情。'],
+    ['按所选预约方向补全日期与申请资料。','申请进入 DX 患者管理，等待医生处理。'],
+    ['确认待处理的患者与预约方向。','同意后通知患者；需要改期时进入日期协调。'],
+    ['患者收到建议日期，确认前保留原日期。','患者同意后新日期生效，处理记录保留。'],
+    ['按确认的时间、地点和备注准备就诊。','顶部短提醒自动收起，预约详情可查看最新安排。'],
+    ['取消结果及门诊取消次数同步更新。','48 小时内的电话记录需由医生处理后才取消。'],
+    ['保存后更新对应日期可预约名额。','患者接受后改期生效；不接受则取消，且不计入主动取消次数。'],
+    ['医生端顶部显示待处理申请短提醒。','仅演示提醒，不发送真实短信或拨打电话。']
+   ];
+   guide.querySelectorAll('.stage-steps>li>div').forEach((el,i)=>{if(!el.querySelector('.stage-outcome'))el.insertAdjacentHTML('beforeend',`<div class="stage-outcome">→ ${esc(results[n-1][i])}</div>`)});
+   if(appointmentGuidePick&&![7,8].includes(appointmentGuidePick)&&appointmentGuidePick!==appointmentGuideStep())guide.querySelector('h2')?.insertAdjacentHTML('afterend',`<p class="guide-preview-note">正在查看步骤 ${appointmentGuidePick} 的说明；实际进度为步骤 ${appointmentGuideStep()}。</p>`);
+  }
+  const roleHelp=document.querySelector('.av-doctor .av-role-card');
+  if(roleHelp){
+   roleHelp.querySelector('p').textContent='点击 DX 医生端即可自动切换为黄隽主任，也可在这里手动切换。';
+   guide.querySelector('.stage-steps')?.before(roleHelp);
+  }
+  if(state.page==='appointments'&&appointmentGuidePick===7)document.querySelectorAll('.av-doctor details.card').forEach(el=>{if(el.querySelector('summary')?.textContent.includes('门诊号量'))el.open=true});
+  updateGuideOperation();
+  document.querySelectorAll('[data-draft],[data-av-field]').forEach(el=>el.addEventListener('input',updateGuideOperation));
+ }
+ document.querySelector('.reviewbar span').textContent=' V0.10.36';
+};
 
 // Preserve the workspace while render wrappers rebuild and reparent both devices.
 const stableViewBaseRender=render;
@@ -1375,7 +1876,7 @@ function viewKeys(){return {shell:shellSection,doctor:state.page+':'+(state.page
 render=function(){
  const app=document.querySelector('#app'),next=viewKeys(),previous=stableViewKeys;
  const outer={x:window.scrollX,y:window.scrollY};
- const selectors=['.dx-sidebar','.product','.patient-device','.cx-sit-scroll','.guide','.flow-layout'];
+ const selectors=['.dx-sidebar','.product','.patient-device','.cx-sit-scroll','.cx-subcontent','.guide','.flow-layout'];
  const positions=selectors.map(selector=>{const el=document.querySelector(selector);return {selector,top:el?.scrollTop||0,left:el?.scrollLeft||0}});
  const minHeight=app?.style.minHeight||'';
  // Retain document height during synchronous DOM replacement so the browser
@@ -1384,11 +1885,71 @@ render=function(){
  try{stableViewBaseRender();
   const sameShell=previous&&previous.shell===next.shell;
   if(sameShell){for(const saved of positions){const el=document.querySelector(saved.selector);if(!el)continue;
-   const same=saved.selector==='.product'?previous.doctor===next.doctor:['.patient-device','.cx-sit-scroll'].includes(saved.selector)?previous.patient===next.patient:saved.selector==='.guide'?previous.guide===next.guide:true;
+   const same=saved.selector==='.product'?previous.doctor===next.doctor:['.patient-device','.cx-sit-scroll','.cx-subcontent'].includes(saved.selector)?previous.patient===next.patient:saved.selector==='.guide'?previous.guide===next.guide:true;
    el.scrollTop=same?saved.top:0;el.scrollLeft=same?saved.left:0;
   }}
  }finally{if(app)app.style.minHeight=minHeight;stableViewKeys=viewKeys();}
  if(previous&&previous.shell===next.shell)window.scrollTo({left:outer.x,top:outer.y,behavior:'instant'});
 };
+
+// Selecting the doctor device in appointment mode also selects its demo role.
+let appointmentRoleRenderEpoch=0;
+const appointmentRoleBaseRender=render;
+render=function(){appointmentRoleRenderEpoch++;appointmentRoleBaseRender()};
+function appointmentDoctorContext(event){
+ if(state.page!=='appointments'||role==='manager'||!event.target?.closest('.product'))return;
+ role='manager';
+ const epoch=appointmentRoleRenderEpoch;
+ // Let the clicked control act with the doctor role before refreshing the shell.
+ queueMicrotask(()=>{
+  if(epoch!==appointmentRoleRenderEpoch)return;
+  const host=document.querySelector('.product');
+  const expanded=[...host.querySelectorAll('details[open]')].map(el=>el.querySelector('summary')?.textContent);
+  const focused=document.activeElement;
+  const field=focused?.getAttribute('data-av-field'),group=focused?.getAttribute('data-av-group');
+  render();
+  document.querySelectorAll('.product details').forEach(el=>{if(expanded.includes(el.querySelector('summary')?.textContent))el.open=true});
+  if(field){const input=[...document.querySelectorAll('.product [data-av-field]')].find(el=>el.dataset.avField===field&&el.dataset.avGroup===group);input?.focus({preventScroll:true})}
+ });
+}
+document.addEventListener('click',appointmentDoctorContext,true);
+// Disabled controls do not emit click; touching one still selects the doctor.
+document.addEventListener('pointerdown',event=>{if(event.target?.closest('.product button:disabled'))appointmentDoctorContext(event)},true);
+
+// Demonstration photos stay in this browser; no OCR/model endpoint is configured.
+const directReviewBase={action,render,currentGuide,workflowForm};
+function addReviewPhotos(pid,key,fileList){
+ if(!canEditReview())return deny('当前角色只读');
+ const rv=reviewState(pid),filesToAdd=Array.from(fileList||[]);
+ if(!filesToAdd.length)return;
+ if(filesToAdd.some(f=>!['image/jpeg','image/png','image/webp'].includes(f.type)||f.size>10*1024*1024)||(rv.photos?.length||0)+filesToAdd.length>12){rv.photoError='请选择 JPG、PNG 或 WebP 图片，每张不超过 10 MB，每个项目最多 12 张。';render();return}
+ if(flow.failNext){flow.failNext=false;rv.photoError='模拟上传失败，请重新选择照片。';render();return}
+ rv.photos=rv.photos||[];rv.photoError='';
+ for(const file of filesToAdd)rv.photos.push({id:'photo-'+(++reviewPhotoSerial),key,name:file.name,url:URL.createObjectURL(file)});
+ rv.photoVersion=(rv.photoVersion||0)+1;
+ rv.history.push({at:stamp(),by:ROLE_NAMES[role],reason:'添加照片，重新运行演示规则分析；原条目选择已归档'});
+ reviewState(pid);extra.ruleEditor=null;render();toast('照片已添加，演示分析已更新，请选择条目结论');
+}
+let reviewPhotoSerial=0;
+action=function(a,id){
+ if(a==='review-choice'){
+  if(!canEditReview())return deny('当前角色只读');
+  const [key,status]=id.split(':'),rv=reviewState(extra.reviewProject);
+  if(!rv.items.some(x=>x.key===key)||!['pass','fail'].includes(status))return;
+  if(flow.failNext){flow.failNext=false;return deny('模拟保存失败，条目选择未改变，请重试')}
+  rv.decisions=rv.decisions||{};rv.history.push({key,previous:structuredClone(rv.values[key]),status,by:ROLE_NAMES[role],at:stamp()});
+  rv.decisions[key]=status;rv.values[key]={...(rv.values[key]||{}),status,by:ROLE_NAMES[role],decisionAt:stamp()};extra.ruleEditor=null;flow.error='';render();return;
+ }
+ if(a==='review-photo-remove'){
+  if(!canEditReview())return deny('当前角色只读');
+  const rv=reviewState(extra.reviewProject),photo=rv.photos?.find(p=>p.id===id);if(!photo)return;
+  URL.revokeObjectURL(photo.url);rv.photos=rv.photos.filter(p=>p.id!==id);rv.photoVersion=(rv.photoVersion||0)+1;reviewState(extra.reviewProject);render();return;
+ }
+ if(a==='review-edit'||a==='review-save'||a==='ai-confirm')return;
+ return directReviewBase.action(a,id);
+};
+render=function(){directReviewBase.render();document.querySelectorAll('[data-review-photo]').forEach(input=>input.onchange=()=>addReviewPhotos(extra.reviewProject,input.dataset.reviewPhoto,input.files));};
+workflowForm=function(r){let h=directReviewBase.workflowForm(r);if(['review','decision'].includes(r.status))h='<section class="card"><h3>纳排条目与照片</h3><p>查看 AI 分析和条目选择结果，可补充报告照片。</p><button class="primary full" data-action="crc-review" data-id="criteria">查看条目 / 上传照片</button></section>'+h;return h};
+currentGuide=function(){const g=directReviewBase.currentGuide();if(state.page==='review'&&extra.reviewTab==='criteria'){g[1]='上传报告照片，查看 AI 演示分析，直接选择条目结论。';g[2]=['点击“上传照片”，添加报告或对应条目的资料照片。','AI 自动刷新演示分析；CRC 在每条下直接点“符合”或“不符合”，选择即时保存，可改选。','完成后返回项目流程，提交拟入组或不纳入决定。'];g[3]=['没有整体复核说明、勾选确认或重复保存弹窗。','排除标准：符合表示未触发排除；不符合表示触发排除。','照片仅本地预览，尚未接入真实图片识别；资料不足不会自动判为符合。'];g[4]=g[2].map(()=>'DX · CRC / 研究者');}else if(flow.guidePhase==='case'&&currentCase()?.status==='review'){g[2]=['打开“查看条目 / 上传照片”，补充资料并查看 AI 演示分析。','直接选择各条目的“符合 / 不符合”，返回项目填写审核结论。','点击推荐入组交 PI，或选择不符合并终止。'];g[4]=g[2].map(()=>'DX · CRC');}return g;};
 
 render();</script></body></html>
