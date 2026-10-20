@@ -1,8 +1,8 @@
 # 湘雅纳排与预约演示
 
-V0.10.36，与 DeepTrace 已发布版本一致。
+V0.10.36 独立副本，与 DeepTrace 张抖抖独立留存版一致，包含 RX0099 编号与药物名称间距调整。
 
-[打开在线演示](https://doudouzhang-cloud.github.io/dx-cx-clinical-demo-online/?v=0.10.36)
+[打开在线演示](https://doudouzhang-cloud.github.io/dx-cx-clinical-demo-online/?v=0.10.36-spacing)
 
 支持 CX 患者端与 DX 医生端联动、科研纳排流程、照片上传预览与条目直接选择，以及预约申请、日期协调、号量管理和通知。
 
